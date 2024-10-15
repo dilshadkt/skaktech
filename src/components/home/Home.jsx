@@ -75,7 +75,7 @@ const HomePage = () => {
             quality={100}
           />
           <Image
-            className="  block md:hidden   mt-16     "
+            className="  block md:hidden   mt-5     "
             src={"/assets/images/about1.png"}
             width={380}
             layout="responsive"
