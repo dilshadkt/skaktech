@@ -35,3 +35,69 @@ export const industriesWeServe = [
   { id: 25, icon: "travel.png", title: "Travel and Hospitality" },
   { id: 26, icon: "challenges.png", title: "All Challenges Accepted" },
 ];
+export const technologies = [
+  {
+    id: 30,
+    icon: "dotnet.png",
+  },
+  {
+    id: 31,
+    icon: "oracle.png",
+  },
+  {
+    id: 32,
+    icon: "flutter.png",
+  },
+  {
+    id: 33,
+    icon: "api.png",
+  },
+  {
+    id: 34,
+    icon: "android.png",
+  },
+  {
+    id: 35,
+    icon: "ios.png",
+  },
+  {
+    id: 36,
+    icon: "angular.png",
+  },
+  {
+    id: 37,
+    icon: "css.png",
+  },
+  {
+    id: 38,
+    icon: "git.png",
+  },
+  {
+    id: 39,
+    icon: "aws.png",
+  },
+  {
+    id: 40,
+    icon: "Vector.png",
+  },
+  {
+    id: 41,
+    icon: "sql.png",
+  },
+  {
+    id: 42,
+    icon: "html.png",
+  },
+  {
+    id: 43,
+    icon: "js.png",
+  },
+  {
+    id: 44,
+    icon: "react.png",
+  },
+  {
+    id: 45,
+    icon: "json.png",
+  },
+];

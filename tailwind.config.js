@@ -10,7 +10,10 @@ module.exports = {
       colors: {
         primary: "#268BBF",
       },
+      lineHeight: {
+        custom: "30px", 
+      },
     },
   },
-  plugins: [],
+  plugins: [], 
 };
