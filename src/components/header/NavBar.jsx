@@ -9,7 +9,7 @@ export const NavBar = () => {
  
    
   return (
-    <nav className="  w-full  bg-white">
+    <nav className="  w-full  z-50 bg-white">
       <section className=" px-3 py-5 md:px-10  flex-btw items-center">
         <div>
           <Image
@@ -22,7 +22,7 @@ export const NavBar = () => {
           />
         </div>
         <div>
-          <ul className=" hidden lg:flex justify-between">
+          <ul className=" hidden 2xl:flex justify-between">
             {NavBarData.map((item) => (
               <Link className=" " href={item.path} key={item.id}>
                 <li className=" hover:font-bold cursor-pointer mx-5 text-[22px] font-medium text-black">
@@ -34,7 +34,7 @@ export const NavBar = () => {
         </div>
         <div
           onClick={() => setShowMenu((prev) => !prev)}
-          className=" md:hidden flex  "
+          className=" lg:hidden flex  "
         >
           <MenuIcon />
         </div>
