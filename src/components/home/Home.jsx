@@ -94,7 +94,7 @@ const HomePage = () => {
           </p>
         </div>
         {/* visible for medium screens */}
-        <div className="  hidden 2xl:hidden  md:flex   justify-between    mt-[50px] px-5 md:px-0 ">
+        <div className="  hidden 2xl:hidden    md:flex   justify-between    mt-[50px] px-5 md:px-0 ">
           <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]   md:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
             At Skaktech, we pride ourselves on creating high-quality software
             products that drive efficiency, productivity, and growth. Our
@@ -124,7 +124,7 @@ const HomePage = () => {
         </div>
 
         {/* Visible for large screens */}
-        <div className="    mt-5   md:hidden 2xl:block  relative lg:mt-[100px] md:mt-[50px]     w-full  ">
+        <div className="    mt-5     md:hidden 2xl:block  relative lg:mt-[100px] md:mt-[50px]     w-full  ">
           <Image
             className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
             src={"/assets/images/about2.png"}
@@ -144,7 +144,7 @@ const HomePage = () => {
           />
           <div className=" w-full ">
             <div className="md:px-10 px-5   ">
-              <p className="   mt-5  w-full leading-[30px]   max-w-[900px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px] ">
+              <p className="   mt-5  w-full leading-[30px]   max-w-[900px] pr-5 lg:leading-[40px] text-[18px]   2xl:pl-5 lg:text-[20px] ">
                 At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
                 growth. Our talented team of developers, engineers, and

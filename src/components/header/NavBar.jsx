@@ -11,7 +11,7 @@ export const NavBar = () => {
    
   return (
     <nav className="  w-full fixed top-0 left-0 right-0 m-auto shadow-lg  z-50 bg-white">
-      <section className=" px-3 py-5 md:px-10  flex-btw items-center">
+      <section className=" px-3 py-4 md:px-10  flex-btw items-center">
         <div>
           <Image
             className="  sm:block hidden cursor-pointer "
@@ -54,22 +54,23 @@ export const NavBar = () => {
         </div>
       </section>
       <div
-        className={`h-fit w-[200px] bg-gray-800 absolute p-3 py-5 ${
-          showMenu ? `right-0` : `hidden`
-        }  transition-all duration-500`}
+  className={`h-fit w-[200px] bg-gray-800 absolute p-3 py-5 transition-all duration-700 ${
+    showMenu ? `right-0` : `-right-[200px]`
+  }`}
+>
+  <ul className="w-full text-white text-xs">
+    {NavBarData.map((item) => (
+      <Link
+        href={item.path}
+        key={item.id}
+        onClick={() => setShowMenu((prev) => !prev)}
       >
-        <ul className="w-full  text-white text-xs">
-          {NavBarData.map((item) => (
-            <Link
-              href={item.path}
-              key={item.id}
-              onClick={() => setShowMenu((prev) => !prev)}
-            >
-              <li className="py-2 pl-3">{item.title}</li>
-            </Link>
-          ))}
-        </ul>
-      </div>
+        <li className="py-2 pl-3">{item.title}</li>
+      </Link>
+    ))}
+  </ul>
+</div>
+
     </nav>
   );
 };
