@@ -6,9 +6,9 @@ const HomePage = () => {
   return (
     <div>
       <section className="">
-        <div className=" relative  overflow-hidden  xl:min-h-screen      bg-[#51A2CC]">
+        <div className=" relative  overflow-hidden  2xl:min-h-screen      bg-[#51A2CC]">
           <div>
-            <div className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10 py-16">
+            <div className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16">
               <div className=" z-40 flex flex-col">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
@@ -61,11 +61,11 @@ const HomePage = () => {
       </section>
 
       <section className="    ">
-        <h1 className="  text-center py-5 text-[40px] font-semibold">
+        <h1 className="  text-center py-5  md:py-2 text-[40px] font-semibold">
           <span>About</span>
           <span className=" text-primary ml-2">Skaktech</span>
         </h1>
-        <div className="  flex flex-col md:flex-row  px-5 md:px-0 ">
+        <div className="    flex flex-col md:flex-row  px-5 md:px-0 ">
           <Image
             className=" hidden md:block    mt-16     "
             src={"/assets/images/about1.png"}
@@ -74,7 +74,7 @@ const HomePage = () => {
             alt="about"
             quality={100}
           />
-           <Image
+          <Image
             className="  block md:hidden   mt-16     "
             src={"/assets/images/about1.png"}
             width={380}
@@ -93,8 +93,54 @@ const HomePage = () => {
             world with customized solutions that meet their unique needs.
           </p>
         </div>
-        
-        <div className=" flex relative mt-[100px]   flex-col-reverse md:flex-row     w-full  ">
+        <div className="   hidden mt-[50px]     md:flex  lg:hidden flex-col md:flex-row  px-5 md:px-0 ">
+          <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
+            At Skaktech, we pride ourselves on creating high-quality software
+            products that drive efficiency, productivity, and growth. Our
+            talented team of developers, engineers, and consultants work
+            collaboratively to provide tailored solutions that align with our
+            clients’ goals. From enterprise-level systems to specialized
+            software, our offerings are designed to enhance operations, improve
+            decision-making, and foster digital transformation.
+          </p>
+          <Image
+            className=" hidden md:block    mt-16     "
+            src={"/assets/images/about2.png"}
+            width={380}
+            height={280}
+            alt="about"
+            quality={100}
+          />
+          <Image
+            className="  block md:hidden   mt-16     "
+            src={"/assets/images/about2.png"}
+            width={380}
+            layout="responsive"
+            height={280}
+            alt="about"
+            quality={100}
+          />
+        </div>
+
+        {/* Visible for medium screens */}
+        <div className="    mt-5   md:hidden relative lg:mt-[100px] md:mt-[50px]   flex-col-reverse       w-full  ">
+          <Image
+            className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
+            src={"/assets/images/about2.png"}
+            width={480}
+            height={250}
+            alt="about"
+            quality={100}
+          />
+          <Image
+            className="   block md:hidden  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
+            src={"/assets/images/about2.png"}
+            width={480}
+            height={250}
+            layout="responsive"
+            alt="about"
+            quality={100}
+          />
           <div className=" w-full ">
             <div className="md:px-10 px-5   ">
               <p className="   mt-5  w-full leading-[30px]   max-w-[900px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px] ">
@@ -107,35 +153,17 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center ">
+              <div className=" mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center ">
                 <Image
                   src={"/assets/icons/download.png"}
                   height={15}
                   width={30}
                   alt="download"
                 />
-                <span className=" ml-2">Company Profile</span>
+                <span className="  ml-2">Company Profile</span>
               </div>
             </div>
           </div>
-          <Image
-            className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
-            src={"/assets/images/about2.png"}
-            width={480}
-            height={250}
-           
-            alt="about"
-            quality={100}
-          />
-           <Image
-            className="   block md:hidden  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
-            src={"/assets/images/about2.png"}
-            width={480}
-            height={250}
-            layout="responsive"
-            alt="about"
-            quality={100}
-          />
         </div>
       </section>
       <section className=" py-10 ">
