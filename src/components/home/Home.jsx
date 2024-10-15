@@ -5,8 +5,8 @@ import React from "react";
 const HomePage = () => {
   return (
     <div>
-      <section className="">
-        <div className=" relative  overflow-hidden  2xl:min-h-screen      bg-[#51A2CC]">
+      <section className=" w-full">
+        <div className=" relative  overflow-hidden  2xl:min-h-screen      bg-[#51A2CC]   w-full">
           <div>
             <div className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16">
               <div className=" z-40 flex flex-col">
@@ -84,7 +84,7 @@ const HomePage = () => {
             quality={100}
           />
 
-          <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
+          <p className=" md:ml-4 lg:ml-0 h   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
             Welcome to Skaktech, a global provider of innovative software
             solutions and services. Established in 2015, Skaktech has been
             dedicated to delivering cutting-edge technologies that empower
@@ -93,8 +93,9 @@ const HomePage = () => {
             world with customized solutions that meet their unique needs.
           </p>
         </div>
-        <div className="   hidden mt-[50px]     md:flex  lg:hidden flex-col md:flex-row  px-5 md:px-0 ">
-          <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
+        {/* visible for medium screens */}
+        <div className="  hidden 2xl:hidden  md:flex   justify-between    mt-[50px] px-5 md:px-0 ">
+          <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]   md:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
             At Skaktech, we pride ourselves on creating high-quality software
             products that drive efficiency, productivity, and growth. Our
             talented team of developers, engineers, and consultants work
@@ -122,8 +123,8 @@ const HomePage = () => {
           />
         </div>
 
-        {/* Visible for medium screens */}
-        <div className="    mt-5   md:hidden relative lg:mt-[100px] md:mt-[50px]   flex-col-reverse       w-full  ">
+        {/* Visible for large screens */}
+        <div className="    mt-5   md:hidden 2xl:block  relative lg:mt-[100px] md:mt-[50px]     w-full  ">
           <Image
             className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
             src={"/assets/images/about2.png"}
@@ -193,7 +194,7 @@ const HomePage = () => {
           </ul>
         </div>
       </section>
-      <section className=" px-5 my-10 xl:my-5">
+      <section className=" px-5 my-10  lg:pb-10 xl:my-5">
         <div className=" w-full flex flex-col    lg:flex-row  lg:justify-between">
           <div className=" w-full flex justify-center items-center  lg:w-1/2">
             <Image

@@ -11,6 +11,7 @@ export const Footer = () => {
           <ul className=" flex-btw flex-col md:flex-row  py-10">
             <li className="   flex items-center">
               <Image
+              className=" mr-2 lg:mr-0"
                 src={"/assets/icons/phone.png"}
                 alt="phone"
                 height={30}
