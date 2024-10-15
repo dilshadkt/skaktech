@@ -7,7 +7,7 @@ export const Footer = () => {
     <div>
       <div className=" bg-black   w-full">
         {/* Contact Section */}
-        <section className=" text-white lg:px-28 md:text-[22px] text-[16px] px-5 font-semibold">
+        <section className=" text-white  lg:px-28 md:text-[22px] text-[16px] px-5 font-semibold">
           <ul className=" flex-btw flex-col md:flex-row  py-10">
             <li className="   flex items-center">
               <Image
@@ -58,7 +58,7 @@ export const Footer = () => {
         <div className=" px-10 ">
           {/* Quick Link Section */}
           <section className=" my-5 md:my-10">
-            <div className=" md:flex-btw">
+            <div className="  flex flex-col md:flex-row md:justify-between">
               <h3 className="  font-semibold text-[22px] text-primary">
                 Quick Links
               </h3>
@@ -71,10 +71,14 @@ export const Footer = () => {
               />
             </div>
             <ul className=" mt-5 flex flex-col md:flex-row">
-              {NavBarData.map((item) => (
+              {NavBarData.map((item, index) => (
                 <Link key={item.id} href={item.path}>
                   <li className="mr-10 mt-3">
-                    <span className="md:border-r-2 border-primary pr-5 text-[20px] text-white hover:font-semibold">
+                    <span
+                      className={` ${
+                        index === NavBarData.length - 1 ? "md:border-none" : "md:border-r-2"
+                      }  border-primary pr-5 text-[20px] text-white hover:font-semibold`}
+                    >
                       {item.title}
                     </span>
                   </li>
@@ -89,9 +93,15 @@ export const Footer = () => {
             </h3>
 
             <ul className=" flex flex-col md:flex-row  mt-5 ">
-              {services.map((item) => (
+              {services.map((item, index) => (
                 <li key={item.id} className="mr-10 mt-3">
-                  <span className="md:border-r-2  cursor-pointer border-primary pr-5 text-[20px] text-white hover:font-semibold">
+                  <span
+                    className={` cursor-pointer ${
+                      index === services.length - 1
+                        ? "md:border-none"
+                        : "md:border-r-2 "
+                    } border-primary pr-5 text-[20px] text-white hover:font-semibold`}
+                  >
                     {item.title}
                   </span>
                 </li>

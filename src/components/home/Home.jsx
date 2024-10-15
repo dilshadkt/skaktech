@@ -5,63 +5,72 @@ import React from "react";
 const HomePage = () => {
   return (
     <div>
-      <section>
-        <div className=" flex justify-between    bg-[#51A2CC]">
-          <div className=" flex flex-col ml-10 py-16">
-            <div className=" flex flex-col">
-              <span className=" text-[34px] max-w-[600px] font-semibold text-white">
-                The Google Pub/Sub service has made PO and shipment integrations
-                very easy and seamless with Warehouse360.
-              </span>
-              <span className=" max-w-[500px] mt-7 mb-5 max-w-[100px]: text-[20px] text-white">
-                Customers now have a clear view of product details and the
-                ability to contact customer care 24/7 using the Mobile app.
-              </span>
-            </div>
-            <div className=" mt-5">
-              <div className=" cursor-pointer bg-white px-4 py-2 rounded-md inline-flex items-center">
-                <Image
-                  height={30}
-                  alt="g-paly"
-                  width={30}
-                  src={"/assets/icons/g-play.png"}
-                />{" "}
-                <span className=" cursor-pointer font-semibold text-[24px] ml-3">
-                  Google Play
-                </span>
-              </div>
-              <div className="bg-[#268BBF] ml-5 px-4 py-2 rounded-md inline-flex items-center">
-                <Image
-                  width={30}
-                  height={30}
-                  alt="app-store"
-                  src={"/assets/icons/apple-logo.png"}
-                />{" "}
-                <span className=" font-semibold text-[24px] ml-3 text-white">
-                  App Store
-                </span>
-              </div>
-            </div>
-          </div>
+      <section className="">
+        <div className=" relative    min-h-screen overflow-hidden    z-50  bg-[#51A2CC]">
           <div>
-            <div className=" flex   justify-center items-center content-center bg-[#7DB9D9] size-[600px] rounded-full">
-              <div className=" flex  justify-center items-center content-center bg-[#71B3D5] size-[400px] rounded-full">
-                <div className=" ml-3 bg-[#E9F3F9] size-[295px] rounded-full">
-                  <div>
-                    <Image
-                      className=" z-10"
-                      src={"/assets/images/redmi.png"}
-                      width={400}
-                      height={300}
-                      alt="mobile"
-                    />
-                  </div>
+            <div className=" flex flex-col ml-10 py-16">
+              <div className=" flex flex-col">
+                <span className=" text-[34px] max-w-[600px] font-semibold text-white">
+                  The Google Pub/Sub service has made PO and shipment
+                  integrations very easy and seamless with Warehouse360.
+                </span>
+                <span className=" max-w-[500px] mt-7 mb-5 max-w-[100px]: text-[20px] text-white">
+                  Customers now have a clear view of product details and the
+                  ability to contact customer care 24/7 using the Mobile app.
+                </span>
+              </div>
+              <div className=" mt-5">
+                <div className=" cursor-pointer bg-white px-4 py-2 rounded-md inline-flex items-center">
+                  <Image
+                    height={30}
+                    alt="g-paly"
+                    width={30}
+                    src={"/assets/icons/g-play.png"}
+                  />{" "}
+                  <span className=" cursor-pointer font-semibold text-[24px] ml-3">
+                    Google Play
+                  </span>
+                </div>
+                <div className="bg-[#268BBF] ml-5 px-4 py-2 rounded-md inline-flex items-center">
+                  <Image
+                    width={30}
+                    height={30}
+                    alt="app-store"
+                    src={"/assets/icons/apple-logo.png"}
+                  />{" "}
+                  <span className=" font-semibold text-[24px] ml-3 text-white">
+                    App Store
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -right-[100px] -top-[100px] overflow-hidden bg-[#61AAD1] w-[1000px] h-[1000px] rounded-full">
+              <div className="bg-[#71B3D5] w-[700px] h-[700px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="bg-[#81BCDA] w-[500px] h-[500px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <Image
+                    src={"/assets/images/redmi.png"}
+                    width={400}
+                    height={800}
+                    alt="mobile"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* <div className=" z-40    absolute top-0">
+            <div className=" relative">
+              <div className=" flex absolute top-0  z-30  justify-center items-center content-center bg-black size-[700px] rounded-full">
+                <div className=" flex z-20  justify-center items-center content-center bg-red-500 size-[400px] rounded-full">
+                  <div className="  z-10 bg-yellow-600 size-[295px]   rounded-full">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
       </section>
+
       <section className="  z-50 mb-20">
         <h1 className=" text-center py-5 text-[40px] font-semibold">
           <span>About</span>
