@@ -6,43 +6,47 @@ const HomePage = () => {
   return (
     <div>
       <section>
-        <div className=" flex justify-between   bg-primary">
-          <div>
-            <div>
-              <span className=" text-[34px] font-semibold text-white">
+        <div className=" flex justify-between    bg-[#51A2CC]">
+          <div className=" flex flex-col ml-10 py-16">
+            <div className=" flex flex-col">
+              <span className=" text-[34px] max-w-[600px] font-semibold text-white">
                 The Google Pub/Sub service has made PO and shipment integrations
                 very easy and seamless with Warehouse360.
               </span>
-              <span className=" text-[20px] text-white">
+              <span className=" max-w-[500px] mt-7 mb-5 max-w-[100px]: text-[20px] text-white">
                 Customers now have a clear view of product details and the
                 ability to contact customer care 24/7 using the Mobile app.
               </span>
             </div>
-            <div>
-              <div>
+            <div className=" mt-5">
+              <div className=" cursor-pointer bg-white px-4 py-2 rounded-md inline-flex items-center">
                 <Image
-                  height={32}
+                  height={30}
                   alt="g-paly"
-                  width={32}
+                  width={30}
                   src={"/assets/icons/g-play.png"}
                 />{" "}
-                <span>Google Play</span>
+                <span className=" cursor-pointer font-semibold text-[24px] ml-3">
+                  Google Play
+                </span>
               </div>
-              <div>
+              <div className="bg-[#268BBF] ml-5 px-4 py-2 rounded-md inline-flex items-center">
                 <Image
-                  width={32}
-                  height={32}
+                  width={30}
+                  height={30}
                   alt="app-store"
                   src={"/assets/icons/apple-logo.png"}
                 />{" "}
-                <span>App Store</span>
+                <span className=" font-semibold text-[24px] ml-3 text-white">
+                  App Store
+                </span>
               </div>
             </div>
           </div>
           <div>
-            <div className=" flex   justify-center items-center content-center bg-[#51A2CC] size-[600px] rounded-full">
+            <div className=" flex   justify-center items-center content-center bg-[#7DB9D9] size-[600px] rounded-full">
               <div className=" flex  justify-center items-center content-center bg-[#71B3D5] size-[400px] rounded-full">
-                <div className=" bg-[#E9F3F9] size-[295px] rounded-full">
+                <div className=" ml-3 bg-[#E9F3F9] size-[295px] rounded-full">
                   <div>
                     <Image
                       className=" z-10"
