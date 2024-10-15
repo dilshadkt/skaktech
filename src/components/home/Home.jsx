@@ -8,7 +8,7 @@ const HomePage = () => {
       <section className="">
         <div className=" relative  overflow-hidden  xl:min-h-screen      bg-[#51A2CC]">
           <div>
-            <div className=" z-50 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10 py-16">
+            <div className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10 py-16">
               <div className=" z-40 flex flex-col">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
@@ -141,7 +141,7 @@ const HomePage = () => {
       <section className=" py-10 ">
         <h1 className=" text-[30px] sm:text-[40px] lg:text-[60px] text-center text-primary">
           <span className=" font-medium">Industries</span>
-          <span className=" font-bold ml-2">We serve</span>
+          <span className=" font-bold ml-2">we serve</span>
         </h1>
         <div>
           <ul className=" grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2   lg:grid-cols-6 place-items-center items-center ">

@@ -13,6 +13,9 @@ module.exports = {
       lineHeight: {
         custom: "30px", 
       },
+      backgroundImage:{
+        landing:"url(/assets/images/landing-bg.png)"
+      }
     },
   },
   plugins: [], 

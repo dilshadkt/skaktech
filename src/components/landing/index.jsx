@@ -1,12 +1,14 @@
-import { technologies } from "@/constants";
+import { servicesList, technologies } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import { Services } from "../services";
+import { Registration } from "../registration";
 
 const LandingPage = () => {
   return (
     <div>
-      <section className="   lg:min-h-screen  bg-black">
-        <div className=" py-10 lg:py-0 w-full  px-5 lg:px-0 pt-28 flex flex-col justify-center items-center content-center h-full my-auto ">
+      <section className="   lg:min-h-screen flex flex-col justify-center items-center bg-landing bg-cover bg-center bg-no-repeat">
+        <div className=" py-10 lg:py-0 w-full  px-5 lg:px-0 pt-28 flex flex-col  justify-center items-center content-center h-full my-auto ">
           <h1 className=" text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-white ">
             Products You Can Rely On, Service that Makes
             <span className=" text-primary"> You Feel Valued</span>{" "}
@@ -22,7 +24,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className=" my-16">
-        <div className=" w-full  flex justify-between flex-col  items-center  px-10">
+        <div className=" w-full  flex justify-between flex-col lg:flex-row items-center  px-10">
           <div className=" w-full lg:w-1/2">
             <Image
               className="lg:p-3"
@@ -49,7 +51,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className=" my-16">
-        <div className=" px-10 flex justify-between flex-col w-full">
+        <div className=" px-10 flex justify-between flex-col  lg:flex-row w-full">
           <div className=" w-full lg:w-1/2">
             <ul className=" grid mt-10 grid-cols-2 md:grid-cols-4 gap-10 place-items-center md:gap-20">
               {technologies.map((item) => (
@@ -86,6 +88,23 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
+      </section>
+      <section className=" py-16">
+        <Registration />
+      </section>
+      <section>
+        <ul>
+          {servicesList.map((item, index) => (
+            <li className=" " key={item.id}>
+              <Services
+                index={index}
+                title={item.title}
+                content={item.content}
+                image={item.image}
+              />
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
