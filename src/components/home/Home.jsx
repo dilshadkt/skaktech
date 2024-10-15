@@ -60,21 +60,31 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section className="  z-50  md:mb-64 mb-[400px]  2xl:mb-[200px] ">
+      <section className="    ">
         <h1 className="  text-center py-5 text-[40px] font-semibold">
           <span>About</span>
           <span className=" text-primary ml-2">Skaktech</span>
         </h1>
-        <div className=" relative flex flex-col md:justify-center items-center  lg:flex-row mb-5 lg:mb-0 px-5 lg:px-0">
+        <div className="  flex flex-col md:flex-row  px-5 md:px-0 ">
           <Image
-            className=" lg:mt-16 mt-7  "
+            className=" hidden md:block    mt-16     "
             src={"/assets/images/about1.png"}
             width={380}
             height={280}
             alt="about"
             quality={100}
           />
-          <p className="  text-center  w-full leading-[30px] mt-5 lg:mt-0 lg:leading-[40px] text-[18px]  lg:text-[20px]">
+           <Image
+            className="  block md:hidden   mt-16     "
+            src={"/assets/images/about1.png"}
+            width={380}
+            layout="responsive"
+            height={280}
+            alt="about"
+            quality={100}
+          />
+
+          <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
             Welcome to Skaktech, a global provider of innovative software
             solutions and services. Established in 2015, Skaktech has been
             dedicated to delivering cutting-edge technologies that empower
@@ -83,10 +93,11 @@ const HomePage = () => {
             world with customized solutions that meet their unique needs.
           </p>
         </div>
-        <div className="  md:mt-10 lg:mt-10 2xl:mt-0 mt-10  flex  flex-col-reverse justify-center items-center lg:flex-row">
-          <div className="  relative w-full flex   px-4  lg:mx-7 ">
-            <div className=" lg:top-[100px]  lg:absolute">
-              <p className=" text-center  w-full leading-[30px] mt-5 lg:mt-0 lg:leading-[40px] text-[18px]  lg:text-[20px] ">
+        
+        <div className=" flex relative mt-[100px]   flex-col-reverse md:flex-row     w-full  ">
+          <div className=" w-full ">
+            <div className="md:px-10 px-5   ">
+              <p className="   mt-5  w-full leading-[30px]   max-w-[900px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px] ">
                 At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
                 growth. Our talented team of developers, engineers, and
@@ -96,7 +107,7 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" text-white bg-primary cursor-pointer px-5 my-5 py-2 inline-flex w-full justify-center rounded-md items-center">
+              <div className=" bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center ">
                 <Image
                   src={"/assets/icons/download.png"}
                   height={15}
@@ -107,17 +118,26 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
           <Image
-            className="  px-5  lg:px-0 "
+            className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
             src={"/assets/images/about2.png"}
             width={480}
             height={250}
+           
+            alt="about"
+            quality={100}
+          />
+           <Image
+            className="   block md:hidden  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
+            src={"/assets/images/about2.png"}
+            width={480}
+            height={250}
+            layout="responsive"
             alt="about"
             quality={100}
           />
         </div>
-      </section> */}
+      </section>
       <section className=" py-10 ">
         <h1 className=" text-[30px] sm:text-[40px] lg:text-[60px] text-center text-primary">
           <span className=" font-medium">Industries</span>
