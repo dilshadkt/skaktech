@@ -40,7 +40,7 @@ const HomePage = () => {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16"
             >
               <div className=" z-40 flex flex-col">
@@ -86,7 +86,7 @@ const HomePage = () => {
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                   >
                     <Image
                       src={"/assets/images/redmi.png"}
@@ -114,7 +114,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="    flex flex-col md:flex-row  px-5 md:px-0 "
           >
             <Image
@@ -149,7 +149,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="  hidden 2xl:hidden      md:flex   justify-between    mt-[50px] px-5 md:px-0 "
           >
             <div className="md:ml-4 lg:ml-4    ">
@@ -202,7 +202,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="    mt-5      md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
           >
             <Image
@@ -226,7 +226,7 @@ const HomePage = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className=" w-full "
             >
               <div className="md:px-10 px-5   ">
@@ -303,7 +303,7 @@ const HomePage = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className=" w-full flex justify-center items-center  xl:w-1/2"
           >
             <Image
@@ -317,7 +317,7 @@ const HomePage = () => {
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className=" mt-10    px-5"
           >
             <h3 className=" text-[18px] sm:text-[20px] text-center  xl:text-start  font-medium text-[#8D8D8D]">
