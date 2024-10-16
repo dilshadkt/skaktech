@@ -168,29 +168,29 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white md:px-28 px-10   font-medium text-[16px] bg-primary">
-        <ul className=" flex  py-8  flex-col md:flex-row justify-center items-center content-center   md:justify-evenly">
-          <li className=" mt-5 md:mt-0  hover:underline">
-            <a href="">
-              <span className=" md:border-r-2 pr-5">
-                Made with Scantekk Technologies{" "}
+      <section className=" text-white md:px-28 px-10  py-5  font-medium text-[16px] bg-primary">
+        <ul className="flex flex-wrap  justify-center  items-center md:flex-nowrap">
+          <li className="mt-5 md:mt-0 hover:underline w-1/2 md:w-auto">
+            <a className=" px-2 md:px-0" href="">
+              <span className="xl:border-r-2 pr-5">
+                Made with Scantekk Technologies
               </span>
             </a>
           </li>
-          <li className=" mt-5 md:mt-0 hover:underline">
+          <li className="mt-5 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
-              <span className=" flex flex-col md:flex-row md:border-r-2 pr-5">
-                <span>Copyright 2008-2019</span>{" "}
-                <span className=" md:ml-10">All Rights Reserved</span>
+              <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
+                <span>Copyright 2008-2019</span>
+                <span className="md:ml-4 pr-4">All Rights Reserved</span>
               </span>
             </a>
           </li>
-          <li className=" mt-5 md:mt-0 hover:underline">
+          <li className="mt-5 xl:pl-2   md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
-              <span className=" md:border-r-2 pr-5"> Privacy Policy</span>
+              <span className="xl:border-r-2 pr-5">Privacy Policy</span>
             </a>
           </li>
-          <li className=" mt-5 md:mt-0 hover:underline">
+          <li className="mt-5 xl:pl-2 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span>Terms and Conditions</span>
             </a>

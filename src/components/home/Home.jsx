@@ -266,34 +266,35 @@ const HomePage = () => {
           <span className=" font-bold ml-2">we serve</span>
         </h1>
         <div>
-          <motion.ul
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className=" grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10   lg:grid-cols-6 place-items-center items-center "
-          >
-            {industriesWeServe.map((item) => (
-              <motion.li
-                variants={itemVariants}
-                className="    flex flex-col items-center  cursor-pointer"
-                key={item.id}
-                whileHover={{ translateY: "-10px" }}
-                transition={{ duration: 0.2 }}
-              >
-                <Image
-                  className=" "
-                  src={`/assets/icons/${item.icon}`}
-                  alt={item.title}
-                  width={26}
-                  height={25}
-                />
-                <span className=" text-black text-[14px] md:text-[16px] px-5  font-normal pt-3 text-center">
-                  {item.title}
-                </span>
-              </motion.li>
-            ))}
-          </motion.ul>
+        <motion.ul
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  className="grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
+>
+  {industriesWeServe.map((item) => (
+    <motion.li
+      variants={itemVariants}
+      className="flex flex-col  content-center justify-center items-center cursor-pointer"
+      key={item.id}
+      whileHover={{ translateY: "-10px" }}
+      transition={{ duration: 0.2 }}
+    >
+      <Image
+        className=" "  
+        src={`/assets/icons/${item.icon}`}
+        alt={item.title}
+        width={26}
+        height={25}
+      />
+      <span className="text-black text-[12px] md:text-[16px] px-5 font-normal   mt-3 text-center whitespace-normal">  
+      {item.title}
+      </span>
+    </motion.li>
+  ))}
+</motion.ul>
+
         </div>
       </section>
       {/* Newsletter Section */}
