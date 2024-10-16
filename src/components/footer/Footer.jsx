@@ -166,8 +166,8 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white px-28   font-medium text-[16px] bg-primary">
-        <ul className=" flex  py-8  flex-col md:flex-row  md:justify-evenly">
+      <section className=" text-white md:px-28 px-10   font-medium text-[16px] bg-primary">
+        <ul className=" flex  py-8  flex-col md:flex-row justify-center items-center content-center   md:justify-evenly">
           <li className=" mt-5 md:mt-0  hover:underline">
             <a href="">
               <span className=" md:border-r-2 pr-5">

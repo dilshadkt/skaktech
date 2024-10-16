@@ -39,7 +39,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration:1 }}
+              transition={{ duration: 1 }}
               viewport={{ once: true }}
               className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16"
             >
@@ -133,7 +133,7 @@ const HomePage = () => {
               quality={100}
             />
 
-            <p className=" md:ml-4 lg:ml-0 h   mt-5  w-full leading-[30px]  lg:pl-24 xl:pl-[230px] max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
+            <p className=" md:ml-4 lg:ml-0 h   mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
               Welcome to Skaktech, a global provider of innovative software
               solutions and services. Established in 2015, Skaktech has been
               dedicated to delivering cutting-edge technologies that empower
@@ -142,7 +142,7 @@ const HomePage = () => {
               the world with customized solutions that meet their unique needs.
             </p>
           </motion.div>
-          {/* visible for medium large screens screens */}
+          {/* visible for medium and large  screens */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -150,10 +150,10 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="  hidden 2xl:hidden     md:flex   justify-between    mt-[50px] px-5 md:px-0 "
           >
-            <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[30px]   md:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[18px]  lg:text-[20px]">
-              At Skaktech, we pride ourselves on creating high-quality software
-              products that drive efficiency, productivity, and growth. Our
-              talented team of developers, engineers, and consultants work
+            <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[28px]  d:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[16px]  lg:text-[20px]">
+              18 At Skaktech, we pride ourselves on creating high-quality
+              software products that drive efficiency, productivity, and growth.
+              Our talented team of developers, engineers, and consultants work
               collaboratively to provide tailored solutions that align with our
               clients’ goals. From enterprise-level systems to specialized
               software, our offerings are designed to enhance operations,
@@ -184,10 +184,10 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="    mt-5     md:hidden 2xl:block  relative lg:mt-[100px] md:mt-[50px]     w-full  "
+            className="    mt-5     md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
           >
             <Image
-              className="  hidden md:block  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
+              className="  hidden md:block  px-5   xl:absolute  right-0 -top-[130px]  lg:px-0 "
               src={"/assets/images/about2.png"}
               width={480}
               height={250}
@@ -211,7 +211,7 @@ const HomePage = () => {
               className=" w-full "
             >
               <div className="md:px-10 px-5   ">
-                <p className="   mt-5  w-full leading-[30px]   max-w-[900px] pr-5 lg:leading-[40px] text-[18px]   2xl:pl-5 lg:text-[20px] ">
+                <p className="   mt-5  w-full leading-[28px]   max-w-[900px] pr-5 lg:leading-[40px] text-[16px]   2xl:pl-5 lg:text-[18px] ">
                   At Skaktech, we pride ourselves on creating high-quality
                   software products that drive efficiency, productivity, and
                   growth. Our talented team of developers, engineers, and
@@ -241,7 +241,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* Industry Section */}
-      <section className=" py-10 ">
+      <section className=" py-5 ">
         <h1 className=" text-[30px] sm:text-[40px] lg:text-[60px] text-center text-primary">
           <span className=" font-medium">Industries</span>
           <span className=" font-bold ml-2">we serve</span>
@@ -267,7 +267,7 @@ const HomePage = () => {
                   width={26}
                   height={25}
                 />
-                <span className=" text-black text-[16px] px-5  font-normal pt-3 text-center">
+                <span className=" text-black text-[14px] md:text-[16px] px-5  font-normal pt-3 text-center">
                   {item.title}
                 </span>
               </motion.li>
@@ -281,7 +281,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.5 }}
             viewport={{ once: true }}
             className=" w-full flex justify-center items-center  lg:w-1/2"
           >
@@ -295,7 +295,7 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.5 }}
             viewport={{ once: true }}
             className=" mt-10  px-5"
           >
