@@ -9,7 +9,7 @@ export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="  w-full fixed z-50 top-0 left-0 right-0 m-auto shadow-xl md:h-[80px]  h-[60px]   bg-white ">
+    <nav className="  w-full fixed z-50 top-0 left-0 right-0 m-auto shadow-xl md:h-[80px]     bg-white ">
        <div
   className={`h-screen w-[250px] z-50 bg-primary absolute p-3 py-5 transition-all duration-700 ${
     showMenu ? `right-0` : `-right-[300px]`
@@ -49,7 +49,7 @@ export const NavBar = () => {
               height={45}
             />
             <Image
-              className=" block md:hidden cursor-pointer "
+              className=" block sm:hidden cursor-pointer "
               src={"/assets/icons/logo.png"}
               quality={100}
               width={100}
