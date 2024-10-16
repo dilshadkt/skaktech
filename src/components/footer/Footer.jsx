@@ -45,12 +45,11 @@ export const Footer = () => {
                 Info@sktechnologies.com
               </a>
             </li>
-            <li className=" md:mt-2 lg:mt-0  flex items-center">
+            <li className="   md:mt-2 lg:mt-0  flex items-center">
               <Image
                 src={"/assets/icons/download-footer.png"}
                 alt="phone"
                 height={30}
-
                 quality={100}
                 width={30}
               />
@@ -61,63 +60,65 @@ export const Footer = () => {
             </li>
           </ul>
         </section>
-        <div className=" px-10 ">
+        <div className=" px-10 lg:px-5  ">
           {/* Quick Link Section */}
-          <section className=" my-5 md:my-10">
-            <div className="  flex flex-col md:flex-row md:justify-between">
-              <h3 className="  font-semibold text-[22px] text-primary">
-                Quick Links
+          <div className="   w-full">
+            <section className=" my-5 md:my-10">
+              <div className="  flex flex-col md:flex-row md:justify-between">
+                <h3 className="  font-semibold text-[22px] text-primary">
+                  Quick Links
+                </h3>
+                <Link href={"/"}>
+                  <Image
+                    src={"/assets/icons/logo.png"}
+                    width={150}
+                    height={50}
+                    className=" mt-3 md:mt-0 cursor-pointer"
+                    alt="logo"
+                  />
+                </Link>
+              </div>
+              <ul className=" mt-5 flex flex-col flex-wrap md:flex-row">
+                {NavBarData.map((item, index) => (
+                  <Link key={item.id} href={item.path}>
+                    <li className="mr-10 mt-3">
+                      <span
+                        className={` ${
+                          index === NavBarData.length - 1
+                            ? "md:border-none"
+                            : "md:border-r-2"
+                        }  border-primary pr-5 text-[20px] text-white hover:font-semibold tranisio duration-150`}
+                      >
+                        {item.title}
+                      </span>
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+            </section>
+            {/* Services Section */}
+            <section className="      my-16">
+              <h3 className="   font-semibold text-[22px] text-primary">
+                Services
               </h3>
-              <Link  href={'/'}>
-                <Image
-                  src={"/assets/icons/logo.png"}
-                  width={150}
-                  height={50}
-                  className=" mt-3 md:mt-0 cursor-pointer"
-                  alt="logo"
-                />
-              </Link>
-            </div>
-            <ul className=" mt-5 flex flex-col flex-wrap md:flex-row">
-              {NavBarData.map((item, index) => (
-                <Link key={item.id} href={item.path}>
-                  <li className="mr-10 mt-3">
+
+              <ul className=" flex flex-col md:flex-row  mt-5 ">
+                {services.map((item, index) => (
+                  <li key={item.id} className="mr-10 mt-3">
                     <span
-                      className={` ${
-                        index === NavBarData.length - 1
+                      className={` cursor-pointer ${
+                        index === services.length - 1
                           ? "md:border-none"
-                          : "md:border-r-2"
-                      }  border-primary pr-5 text-[20px] text-white hover:font-semibold tranisio duration-150`}
+                          : "md:border-r-2 "
+                      } border-primary pr-5 text-[20px] text-white hover:font-semibold transition-all duration-200`}
                     >
                       {item.title}
                     </span>
                   </li>
-                </Link>
-              ))}
-            </ul>
-          </section>
-          {/* Services Section */}
-          <section className=" my-16">
-            <h3 className="   font-semibold text-[22px] text-primary">
-              Services
-            </h3>
-
-            <ul className=" flex flex-col md:flex-row  mt-5 ">
-              {services.map((item, index) => (
-                <li key={item.id} className="mr-10 mt-3">
-                  <span
-                    className={` cursor-pointer ${
-                      index === services.length - 1
-                        ? "md:border-none"
-                        : "md:border-r-2 "
-                    } border-primary pr-5 text-[20px] text-white hover:font-semibold transition-all duration-200`}
-                  >
-                    {item.title}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </section>
+                ))}
+              </ul>
+            </section>
+          </div>
           {/* Address Section */}
           <section className=" pb-5 mt-16">
             <h3 className="  font-semibold text-[22px] text-primary">

@@ -53,7 +53,7 @@ const HomePage = () => {
                   ability to contact customer care 24/7 using the Mobile app.
                 </span>
               </div>
-              <div className=" z-40 mt-5">
+              <div className=" flex  items-center justify-center content-center  md:flex-none md:content-normal md:items-start md:justify-normal  z-40 mt-5">
                 <div className=" cursor-pointer bg-white hover:bg-primary hover:text-white transition-all duration-300 px-4 py-2 rounded-md inline-flex items-center">
                   <Image
                     height={30}
@@ -104,9 +104,11 @@ const HomePage = () => {
       {/* About Section */}
       <section className="    ">
         <div>
-          <h1 className="  text-center py-5  md:py-2 text-[40px] font-semibold">
-            <span>About</span>
-            <span className=" text-primary ml-2">Skaktech</span>
+          <h1 className="  lg:my-10 text-center py-5  md:py-2 text-[40px] font-semibold">
+            <div>
+              <span>About</span>
+              <span className=" text-primary ml-2">Skaktech</span>
+            </div>
           </h1>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -116,7 +118,7 @@ const HomePage = () => {
             className="    flex flex-col md:flex-row  px-5 md:px-0 "
           >
             <Image
-              className=" hidden md:block    mt-16     "
+              className=" hidden md:block    mt-16      "
               src={"/assets/images/about1.png"}
               width={380}
               height={280}
@@ -133,7 +135,7 @@ const HomePage = () => {
               quality={100}
             />
 
-            <p className=" md:ml-4 lg:ml-0 h   mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
+            <p className=" md:ml-4 lg:ml-0 h   md:mt-16 md:pl-10 lg:mt-0      mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
               Welcome to Skaktech, a global provider of innovative software
               solutions and services. Established in 2015, Skaktech has been
               dedicated to delivering cutting-edge technologies that empower
@@ -148,19 +150,36 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="  hidden 2xl:hidden     md:flex   justify-between    mt-[50px] px-5 md:px-0 "
+            className="  hidden 2xl:hidden      md:flex   justify-between    mt-[50px] px-5 md:px-0 "
           >
-            <p className=" md:ml-4 lg:ml-0   mt-5  w-full leading-[28px]  d:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[16px]  lg:text-[20px]">
-              18 At Skaktech, we pride ourselves on creating high-quality
-              software products that drive efficiency, productivity, and growth.
-              Our talented team of developers, engineers, and consultants work
-              collaboratively to provide tailored solutions that align with our
-              clients’ goals. From enterprise-level systems to specialized
-              software, our offerings are designed to enhance operations,
-              improve decision-making, and foster digital transformation.
-            </p>
+            <div className="md:ml-4 lg:ml-4    ">
+              <p className="   mt-5  w-full leading-[28px]    d:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[16px]  lg:text-[20px]">
+                18 At Skaktech, we pride ourselves on creating high-quality
+                software products that drive efficiency, productivity, and
+                growth. Our talented team of developers, engineers, and
+                consultants work collaboratively to provide tailored solutions
+                that align with our clients’ goals. From enterprise-level
+                systems to specialized software, our offerings are designed to
+                enhance operations, improve decision-making, and foster digital
+                transformation.
+              </p>
+              <motion.div
+                whileHover={{
+                  translateY: "-3px",
+                }}
+                className=" hover:font-semibold  2xl:ml-5 mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center "
+              >
+                <Image
+                  src={"/assets/icons/download.png"}
+                  height={15}
+                  width={30}
+                  alt="download"
+                />
+                <span className="  ml-2">Company Profile</span>
+              </motion.div>
+            </div>
             <Image
-              className=" hidden md:block    mt-16     "
+              className=" hidden md:block     mt-16     "
               src={"/assets/images/about2.png"}
               width={380}
               height={280}
@@ -184,7 +203,7 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="    mt-5     md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
+            className="    mt-5      md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
           >
             <Image
               className="  hidden md:block  px-5   xl:absolute  right-0 -top-[130px]  lg:px-0 "
@@ -252,13 +271,15 @@ const HomePage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className=" grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2   lg:grid-cols-6 place-items-center items-center "
+            className=" grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10   lg:grid-cols-6 place-items-center items-center "
           >
             {industriesWeServe.map((item) => (
               <motion.li
                 variants={itemVariants}
                 className="    flex flex-col items-center  cursor-pointer"
                 key={item.id}
+                whileHover={{ translateY: "-10px" }}
+                transition={{ duration: 0.2 }}
               >
                 <Image
                   className=" "
@@ -277,13 +298,13 @@ const HomePage = () => {
       </section>
       {/* Newsletter Section */}
       <section className=" px-5 my-10  lg:pb-10 xl:my-5">
-        <div className=" w-full flex flex-col    lg:flex-row  lg:justify-between">
+        <div className=" w-full flex flex-col    xl:flex-row  lg:justify-between">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
-            className=" w-full flex justify-center items-center  lg:w-1/2"
+            className=" w-full flex justify-center items-center  xl:w-1/2"
           >
             <Image
               src={"/assets/images/newsletter.png"}
@@ -297,12 +318,12 @@ const HomePage = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
-            className=" mt-10  px-5"
+            className=" mt-10    px-5"
           >
-            <h3 className=" text-[18px] sm:text-[20px] text-center  md:text-start  font-medium text-[#8D8D8D]">
+            <h3 className=" text-[18px] sm:text-[20px] text-center  xl:text-start  font-medium text-[#8D8D8D]">
               Receive newsletters from Skaktech on a regular basis
             </h3>
-            <h1 className=" text-center  md:text-start font-semibold text-[30px] sm:text-[40px] py-3">
+            <h1 className=" text-center  xl:text-start font-semibold text-[30px] sm:text-[40px] py-3">
               Subscribe to the Newsletter
             </h1>
             <div>
