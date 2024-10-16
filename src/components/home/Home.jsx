@@ -21,7 +21,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className=" w-full overflow-hidden">
+    <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
       <section className=" w-full">
         <div
@@ -211,7 +211,7 @@ const HomePage = () => {
               className=" w-full "
             >
               <div className="md:px-10 px-5   ">
-                <p className="   mt-5  w-full leading-[28px]   max-w-[900px] pr-5 lg:leading-[40px] text-[16px]   2xl:pl-5 lg:text-[18px] ">
+                <p className="   mt-5  w-full leading-[28px]    max-w-[900px] pr-5 lg:leading-[40px] text-[16px]   2xl:pl-5 lg:text-[18px] ">
                   At Skaktech, we pride ourselves on creating high-quality
                   software products that drive efficiency, productivity, and
                   growth. Our talented team of developers, engineers, and

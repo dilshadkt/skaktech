@@ -8,11 +8,11 @@ import Link from "next/link";
 import React from "react";
 export const Footer = () => {
   return (
-    <div className="">
-      <div className=" bg-black  ">
+    <div className=" w-full ">
+      <div className=" bg-black w-full  ">
         {/* Contact Section */}
-        <section className=" text-white  lg:px-28 md:text-[22px] text-[16px] px-5 font-semibold">
-          <ul className=" flex-btw flex-col md:flex-row  py-10">
+        <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
+          <ul className=" flex-btw flex-col md:flex-row  flex-wrap  py-10">
             <li className="   flex items-center">
               <Image
                 className=" mr-2 lg:mr-0"
@@ -45,11 +45,12 @@ export const Footer = () => {
                 Info@sktechnologies.com
               </a>
             </li>
-            <li className=" flex items-center">
+            <li className=" md:mt-2 lg:mt-0  flex items-center">
               <Image
                 src={"/assets/icons/download-footer.png"}
                 alt="phone"
                 height={30}
+
                 quality={100}
                 width={30}
               />
@@ -77,7 +78,7 @@ export const Footer = () => {
                 />
               </Link>
             </div>
-            <ul className=" mt-5 flex flex-col md:flex-row">
+            <ul className=" mt-5 flex flex-col flex-wrap md:flex-row">
               {NavBarData.map((item, index) => (
                 <Link key={item.id} href={item.path}>
                   <li className="mr-10 mt-3">
