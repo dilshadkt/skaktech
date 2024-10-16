@@ -282,13 +282,17 @@ const HomePage = () => {
                 transition={{ duration: 0.2 }}
               >
                 <Image
-                  className=" mb-2 md:mb-0 "
+                  className=" mb-5 md:mb-0 "
                   src={`/assets/icons/${item.icon}`}
                   alt={item.title}
                   width={26}
                   height={25}
                 />
-                <span className="text-black text-[12px] md:text-[16px] md:px-5 font-normal     pt-5 md:mt-0 text-center whitespace-normal">
+                <span
+                  className={` ${
+                    item.id === 18 ? "  text-nowrap" : ""
+                  }text-black text-[12px] md:text-[16px] md:px-5 font-normal       pt-5 md:mt-0 text-center whitespace-normal`}
+                >
                   {item.title}
                 </span>
               </motion.li>
