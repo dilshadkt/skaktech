@@ -6,37 +6,43 @@ import React from "react";
 
 const HomePage = () => {
   const containerVariants = {
-    hidden: { opacity: 0 }, 
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,  
+        staggerChildren: 0.2,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },  
-    visible: { opacity: 1, y: 0 }, 
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
     <div className=" w-full overflow-hidden">
       {/* Banner section */}
       <section className=" w-full">
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ rotate: 0, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            duration: 1000,
-          }}
+        <div
+          // initial={{ scale: 0 }}
+          // animate={{ rotate: 0, scale: 1 }}
+          // transition={{
+          //   type: "spring",
+          //   stiffness: 260,
+          //   damping: 20,
+          //   duration: 1000,
+          // }}
           className=" relative  overflow-hidden  2xl:min-h-screen      bg-[#51A2CC]   w-full"
         >
           <div>
-            <div className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16">
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16"
+            >
               <div className=" z-40 flex flex-col">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
@@ -71,22 +77,29 @@ const HomePage = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
             {/* banner right side mobile sectio  */}
             <div className="absolute hidden md:size-[900px] lg:size-[1000px] md:block  z-10 xl:-right-[100px] md:-right-[240px] lg:-right-[220px]  -top-[100px] overflow-hidden bg-[#61AAD1]   rounded-full">
               <div className="bg-[#71B3D5]  md:size-[500px] lg:size-[700px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="bg-[#81BCDA]  md:size-[300px] lg:size-[500px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <Image
-                    src={"/assets/images/redmi.png"}
-                    width={400}
-                    height={800}
-                    alt="mobile"
-                  />
+                  <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      src={"/assets/images/redmi.png"}
+                      width={400}
+                      height={800}
+                      alt="mobile"
+                    />
+                  </motion.div>
                 </div>
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
       {/* About Section */}
       <section className="    ">
