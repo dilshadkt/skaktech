@@ -177,7 +177,7 @@ export const Footer = () => {
               </span>
             </a>
           </li>
-          <li className="mt-5 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="mt-5  pl-1 md:pl-0 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
                 <span>Copyright 2008-2019</span>
@@ -185,12 +185,12 @@ export const Footer = () => {
               </span>
             </a>
           </li>
-          <li className="mt-5 xl:pl-2   md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="mt-5 xl:pl-5   md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span className="xl:border-r-2 pr-5">Privacy Policy</span>
             </a>
           </li>
-          <li className="mt-5 xl:pl-2 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="mt-5 pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span>Terms and Conditions</span>
             </a>
