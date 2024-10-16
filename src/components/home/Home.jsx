@@ -39,7 +39,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration:1 }}
               viewport={{ once: true }}
               className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16"
             >
@@ -85,7 +85,7 @@ const HomePage = () => {
                   <motion.div
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                   >
                     <Image
