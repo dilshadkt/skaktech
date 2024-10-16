@@ -282,7 +282,7 @@ const HomePage = () => {
                 transition={{ duration: 0.2 }}
               >
                 <Image
-                  className=" "
+                  className=" mb-2 md:mb-0 "
                   src={`/assets/icons/${item.icon}`}
                   alt={item.title}
                   width={26}
