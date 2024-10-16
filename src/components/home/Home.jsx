@@ -154,7 +154,7 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center ">
+              <div className="  2xl:ml-5 mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center ">
                 <Image
                   src={"/assets/icons/download.png"}
                   height={15}
