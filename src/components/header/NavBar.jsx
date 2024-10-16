@@ -54,7 +54,7 @@ export const NavBar = () => {
         </div>
       </section>
       <div
-  className={`h-fit w-[200px] bg-gray-800 absolute p-3 py-5 transition-all duration-700 ${
+  className={` h-screen w-[200px] bg-primary absolute p-3 py-5 transition-all duration-700 ${
     showMenu ? `right-0` : `-right-[200px]`
   }`}
 >
@@ -63,9 +63,10 @@ export const NavBar = () => {
       <Link
         href={item.path}
         key={item.id}
+         
         onClick={() => setShowMenu((prev) => !prev)}
       >
-        <li className="py-2 pl-3">{item.title}</li>
+        <li className="py-2 border-b-[1px] mt-2 pl-3">{item.title}</li>
       </Link>
     ))}
   </ul>
