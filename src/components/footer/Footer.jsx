@@ -173,7 +173,7 @@ export const Footer = () => {
           <li className="mt-5 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a className=" px-2 md:px-0" href="">
               <span className="xl:border-r-2 pr-5">
-                Made with Scantekk Technologies
+                Made with Scantekk Technologies
               </span>
             </a>
           </li>
