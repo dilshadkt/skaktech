@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${albertSans.className} antialiased`}
+        className={`${albertSans.className}    antialiased`}
       >
         <NavBar/>
         {children}

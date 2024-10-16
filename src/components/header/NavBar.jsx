@@ -10,14 +10,15 @@ export const NavBar = () => {
  
    
   return (
-    <nav className="  w-full fixed top-0 left-0 right-0 m-auto shadow-lg  z-50 bg-white">
+    <nav className="  w-full fixed top-0 left-0 right-0 m-auto shadow-xl  z-50 bg-white ">
       <section className=" px-3 py-4 md:px-10  flex-btw items-center">
-        <div>
+        <div >
+          <Link href={'/'}>
           <Image
             className="  sm:block hidden cursor-pointer "
             src={'/assets/icons/logo.png'}
             quality={100}
-            width={200}
+            width={170}
             alt="logo"
             height={45}
           />
@@ -29,12 +30,13 @@ export const NavBar = () => {
             alt="logo"
             height={45}
           />
+          </Link>
         </div>
         <div>
           <ul className=" hidden xl:flex justify-between">
             {NavBarData.map((item) => (
               <Link className=" " href={item.path} key={item.id}>
-                <li className=" hover:font-bold cursor-pointer mx-5 text-[22px] font-medium text-black">
+                <li className=" hover:font-bold transition-all duration-200 cursor-pointer mx-5 text-[18px] font-medium text-black">
                   {item.title}
                 </li>
               </Link>

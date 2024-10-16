@@ -1,17 +1,21 @@
+"use client";
+
 import { NavBarData, services, socialMedia } from "@/constants";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import React from "react";
 export const Footer = () => {
   return (
-    <div>
-      <div className=" bg-black   w-full">
+    <div className="">
+      <div className=" bg-black  ">
         {/* Contact Section */}
         <section className=" text-white  lg:px-28 md:text-[22px] text-[16px] px-5 font-semibold">
           <ul className=" flex-btw flex-col md:flex-row  py-10">
             <li className="   flex items-center">
               <Image
-              className=" mr-2 lg:mr-0"
+                className=" mr-2 lg:mr-0"
                 src={"/assets/icons/phone.png"}
                 alt="phone"
                 height={30}
@@ -63,13 +67,15 @@ export const Footer = () => {
               <h3 className="  font-semibold text-[22px] text-primary">
                 Quick Links
               </h3>
-              <Image
-                src={"/assets/icons/logo.png"}
-                width={150}
-                height={50}
-                className=" mt-3 md:mt-0 cursor-pointer"
-                alt="logo"
-              />
+              <Link  href={'/'}>
+                <Image
+                  src={"/assets/icons/logo.png"}
+                  width={150}
+                  height={50}
+                  className=" mt-3 md:mt-0 cursor-pointer"
+                  alt="logo"
+                />
+              </Link>
             </div>
             <ul className=" mt-5 flex flex-col md:flex-row">
               {NavBarData.map((item, index) => (
@@ -77,8 +83,10 @@ export const Footer = () => {
                   <li className="mr-10 mt-3">
                     <span
                       className={` ${
-                        index === NavBarData.length - 1 ? "md:border-none" : "md:border-r-2"
-                      }  border-primary pr-5 text-[20px] text-white hover:font-semibold`}
+                        index === NavBarData.length - 1
+                          ? "md:border-none"
+                          : "md:border-r-2"
+                      }  border-primary pr-5 text-[20px] text-white hover:font-semibold tranisio duration-150`}
                     >
                       {item.title}
                     </span>
@@ -101,7 +109,7 @@ export const Footer = () => {
                       index === services.length - 1
                         ? "md:border-none"
                         : "md:border-r-2 "
-                    } border-primary pr-5 text-[20px] text-white hover:font-semibold`}
+                    } border-primary pr-5 text-[20px] text-white hover:font-semibold transition-all duration-200`}
                   >
                     {item.title}
                   </span>
@@ -125,7 +133,11 @@ export const Footer = () => {
                 <div>
                   <ul className=" mt-7 flex items-center">
                     {socialMedia.map((item) => (
-                      <li key={item.id}>
+                      <motion.li
+                        whileHover={{ translateY: "-5px" }}
+                        transition={{ duration: 0.2 }}
+                        key={item.id}
+                      >
                         <a href="">
                           <Image
                             className=" mr-7 mt-5"
@@ -135,14 +147,14 @@ export const Footer = () => {
                             height={25}
                           />
                         </a>
-                      </li>
+                      </motion.li>
                     ))}
                   </ul>
                 </div>
               </div>
               <div className=" p-2">
                 <Image
-                  className=" mt-5 md:mt-0"
+                  className=" cursor-pointer hover:scale-105  transition-all duration-300 mt-5 md:mt-0"
                   src={"/assets/images/map.png"}
                   width={330}
                   height={170}
