@@ -170,8 +170,8 @@ export const Footer = () => {
       {/* Footer Bottom Section */}
       <section className=" text-white md:px-28 px-10  py-5  font-medium text-[16px] bg-primary">
         <ul className="flex flex-wrap  justify-center  items-center md:flex-nowrap">
-          <li className="mt-5 md:mt-0 hover:underline w-1/2 md:w-auto">
-            <a className=" px-2 md:px-0" href="">
+          <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
+            <a className="    " href="">
               <span className="xl:border-r-2 pr-5">
                 Made with Scantekk Technologies
               </span>
