@@ -160,32 +160,76 @@ export const partners = [
   },
 ];
 
+export const clients = [
+  {
+    id: 56,
+    icon: "honda.png",
+  },
+  {
+    id: 57,
+    icon: "scannia.png",
+  },
+  {
+    id: 58,
+    icon: "mobility.png",
+  },
+  {
+    id: 59,
+    icon: "avis.png",
+  },
+  {
+    id: 60,
+    icon: "kelois.png",
+  },
+  {
+    id: 61,
+    icon: "avlta.png",
+  },
+];
 
-export const clients=[
+export const careers = [
   {
-    id:56,
-    icon:'honda.png'
+    id: 62,
+    title: "designer",
+    details: [
+      {
+        role: "UI/UX Designer",
+        postions: "15 postion",
+      },
+      {
+        role: "UI/UX Designer",
+        postions: "15 postion",
+      },
+    ],
   },
   {
-    id:57,
-    icon:'scannia.png'
+    id: 63,
+    title: "marketing",
+    details: [
+      {
+        role: "Digital Marketer",
+        postions: "01 postion",
+      },
+    ],
   },
   {
-    id:58,
-    icon:'mobility.png'
+    id: 64,
+    title: "developer",
+    details: [
+      {
+        role: "Full Stack Developer",
+        postions: "01 postion",
+      },
+    ],
   },
   {
-    id:59,
-    icon:'avis.png'
+    id: 65,
+    title: "others",
+    details: [
+      {
+        role: "BDO",
+        postions: "01 postion",
+      },
+    ],
   },
-  {
-    id:60,
-    icon:'kelois.png'
-  },
-  {
-    id:61,
-    icon:'avlta.png'
-  },
-]
-
-
+];

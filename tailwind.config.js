@@ -11,12 +11,14 @@ module.exports = {
         primary: "#268BBF",
       },
       lineHeight: {
-        custom: "30px", 
+        custom: "30px",
       },
-      backgroundImage:{
-        landing:"url(/assets/images/landing-bg.png)"
-      }
+      backgroundImage: {
+        landing: "url(/assets/images/landing-bg.png)",
+        clientReview: "url(/assets/images/review/review-bg.png)",
+      },
     },
   },
-  plugins: [], 
+  plugins: [    
+],
 };

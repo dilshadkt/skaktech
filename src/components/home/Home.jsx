@@ -1,25 +1,12 @@
 "use client";
-import { industriesWeServe } from "@/constants";
-import { motion } from "framer-motion";
+ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import { Industries } from "../industries";
+import { NewsLetter } from "../newsletter";
 
 const HomePage = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
+  
   return (
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
@@ -261,121 +248,11 @@ const HomePage = () => {
       </section>
       {/* Industry Section */}
       <section className=" py-5 ">
-        <h1 className=" text-[30px] sm:text-[40px] lg:text-[60px] text-center text-primary">
-          <span className=" font-medium">Industries</span>
-          <span className=" font-bold ml-2">we serve</span>
-        </h1>
-        <div>
-          <motion.ul
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
-          >
-            {industriesWeServe.map((item) => (
-              <motion.li
-                variants={itemVariants}
-                className="flex flex-col  content-center justify-center items-center cursor-pointer"
-                key={item.id}
-                whileHover={{ translateY: "-10px" }}
-                transition={{ duration: 0.2 }}
-              >
-                <Image
-                  className=" mb-3 md:mb-0 "
-                  src={`/assets/icons/${item.icon}`}
-                  alt={item.title}
-                  width={26}
-                  height={25}
-                />
-                <span
-                  className={` ${
-                    item.id === 18 ? "  text-nowrap" : ""
-                  }text-black text-[12px] md:text-[16px] md:px-5 font-normal       pt-5 md:mt-0 text-center whitespace-normal`}
-                >
-                  {item.title}
-                </span>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div>
+        <Industries/>
       </section>
       {/* Newsletter Section */}
       <section className=" px-5 my-10  lg:pb-10 xl:my-5">
-        <div className=" w-full flex flex-col    xl:flex-row  lg:justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: false }}
-            className=" w-full flex justify-center items-center  xl:w-1/2"
-          >
-            <Image
-              src={"/assets/images/newsletter.png"}
-              width={680}
-              height={400}
-              alt="newsletter"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: false }}
-            className=" mt-10    px-5"
-          >
-            <h3 className=" text-[18px] sm:text-[20px] text-center  xl:text-start  font-medium text-[#8D8D8D]">
-              Receive newsletters from Skaktech on a regular basis
-            </h3>
-            <h1 className=" text-center  xl:text-start font-semibold text-[30px] sm:text-[40px] py-3">
-              Subscribe to the Newsletter
-            </h1>
-            <div>
-              <form className="  " action="">
-                <input
-                  required
-                  className=" w-full  my-2 border-2 h-[40px] pl-5 rounded-md"
-                  type="text"
-                  placeholder="Full Name*"
-                  name=""
-                  id=""
-                />
-                <div className=" w-full my-3 flex flex-col lg:flex-row">
-                  <input
-                    required
-                    className=" w-full  xl:w-1/2 h-[40px] mr-4 rounded-md pl-5 border-2  "
-                    type="text"
-                    placeholder="E-Mail*"
-                    name=""
-                    id=""
-                  />
-                  <input
-                    required
-                    className="  w-full xl:w-1/2 h-[40px] rounded-md pl-5 border-2  mt-5 2xl:mt-0 2xl:ml-5 "
-                    type="text"
-                    placeholder="Phone Number*"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div className=" my-3">
-                  <input type="checkbox" name="check" id="check" />
-                  <label
-                    className="     text-[14px] ml-2"
-                    htmlFor="check"
-                    id="check"
-                  >
-                    By checking this box you are agreeing to our Privacy Policy
-                    and Skaktech can send me related information
-                  </label>
-                </div>
-                <button className=" w-full lg:w-min hover:bg-black hover:text-white hover:font-semibold transition-all duration-200 text-white bg-primary px-16 mt-5 py-2 rounded-md">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </motion.div>
-        </div>
+        <NewsLetter/>
       </section>
     </div>
   );
