@@ -13,7 +13,7 @@ export const Registration = () => {
           <h1 className=" mb-3  text-center  text-[30px] md:text-[40px] font-semibold text-black">
             Our <span className=" text-primary">Registrations</span>
           </h1>
-          <p className=" text-[20px] text-black">
+          <p className=" mt-3 text-[20px] text-black">
             We prioritize quality, customer satisfaction, and long-term
             partnerships, offering ongoing support and continuously evolving our
             offerings to stay ahead in a rapidly changing technological

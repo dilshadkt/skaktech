@@ -31,7 +31,7 @@ export const Industries = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
+            className="grid px-5 md:px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
           >
             {industriesWeServe.map((item) => (
               <motion.li

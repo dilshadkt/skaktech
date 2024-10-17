@@ -7,7 +7,7 @@ const LandingSecond = () => {
   return (
     <div>
       <section>
-        <div className=" flex lg:justify-between flex-col lg:flex-row   items-center  px-10 w-full">
+        <div className=" flex lg:justify-between flex-col lg:flex-row   items-center px-5  md:px-10 w-full">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +30,7 @@ const LandingSecond = () => {
             viewport={{ once: false }}
             className=" w-full mt-3 lg:mt-0 lg:w-1/2"
           >
-            <p className=" text-[21px] leading-[40px]">
+            <p className=" text-[18px] md:text-[21px] leading-[40px]">
               Founded in 2005, our software company has been at the forefront of
               delivering innovative software solutions and services to clients
               across India, the Middle East, and Africa. Over the years, we have

@@ -36,7 +36,7 @@ export const Services = ({ index, image, content, title }) => {
           transition={{ duration: 2 }}
           viewport={{ once: false }}
           className={`${
-            index % 2 === 0 ? "pl-5" : "pr-5"
+            index % 2 === 0 ? " pl-2 xl:pl-5" : " pr-2 xl:pr-5"
           } w-full lg:w-2/3 lg:max-w-[750px] `}
         >
           <h1 className=" text-[30px] md:text-[48px] my-5 lg:my-0 font-semibold text-black">

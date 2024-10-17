@@ -1,6 +1,7 @@
 'use client'
 import { careers } from "@/constants";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export const Careers = () => {
@@ -29,7 +30,7 @@ export const Careers = () => {
         </motion.div>
         <div className=" lg:mt-5 xl:mt-0 xl:ml-28  xl:w-2/3 ">
           <div className="  ">
-            <div className="flex   career-scrollbar mt-5 lg:mt-0 mb-8 overflow-x-auto space-x-2 lg:space-x-16">
+            <div className="flex   career-scrollbar mt-5 lg:mt-0   overflow-x-auto space-x-2 lg:space-x-16">
               {careers.map((item) => (
                 <button
                   key={item.id}
@@ -43,7 +44,16 @@ export const Careers = () => {
                   {item.title}
                 </button>
               ))}
+                
             </div>
+            <motion.div
+             animate={{ x: [0, 20,  ] }}
+             transition={{ repeat: Infinity, duration: 2, ease: "easeIn" }}
+
+            className=" flex justify-end  items-end content-end  mr-5 mb-5">
+              <Image src={'/assets/icons/next.png'} alt="icon" width={10} height={10}/>
+            </motion.div>
+          
 
             <div className="  pt-4">
               {selectedItem &&

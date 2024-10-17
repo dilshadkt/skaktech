@@ -23,11 +23,11 @@ const LandingPage = () => {
           transition={{ duration: 0.6 }}
           className=" py-10 lg:py-0 w-full  px-5 lg:px-0 pt-28 flex flex-col  justify-center items-center content-center h-full my-auto "
         >
-          <h1 className=" text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-white ">
+          <h1 className=" text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-white ">
             Products You Can Rely On, Service that Makes
             <span className=" text-primary"> You Feel Valued</span>{" "}
           </h1>
-          <p className=" text-white my-5 text-[20px] max-w-[800px] px-10 text-center">
+          <p className=" text-white my-5 text-[16px] md:text-[20px] md:max-w-[800px] md:px-10 px-5 text-center">
             At our software company, we are committed to delivering exceptional
             value through innovative, reliable, and tailored solutions that meet
             the unique needs of our customers.
@@ -85,8 +85,8 @@ const LandingPage = () => {
                     <Image
                       src={`/assets/icons/technologies/${item.icon}`}
                       alt={item.icon}
-                      height={60}
-                      width={60}
+                      height={55}
+                      width={55}
                     />
                   </motion.div>
                 </li>
