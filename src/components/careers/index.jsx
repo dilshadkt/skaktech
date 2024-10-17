@@ -50,8 +50,8 @@ export const Careers = () => {
              animate={{ x: [0, 20,  ] }}
              transition={{ repeat: Infinity, duration: 2, ease: "easeIn" }}
 
-            className=" flex justify-end  items-end content-end  mr-5 mb-5">
-              <Image src={'/assets/icons/next.png'} alt="icon" width={10} height={10}/>
+            className=" flex sm:hidden justify-end  items-end content-end  mr-5 mb-5">
+              <Image src={'/assets/icons/next.png'} alt="icon" width={15} height={15}/>
             </motion.div>
           
 

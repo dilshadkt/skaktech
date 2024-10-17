@@ -70,7 +70,7 @@ const Gallery = () => {
         </div>
 
         {/* Column 3 */}
-        <div className="        space-y-4">
+        <div className="    md:hidden lg:block    space-y-4">
           <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
               className=" hover:scale-105 cursor-pointer transition-all duration-300"
