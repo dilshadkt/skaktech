@@ -11,7 +11,7 @@ export const Services = ({ index, image, content, title }) => {
       <div
         className={`${
           index % 2 === 0 ? "flex-row" : "lg:flex-row-reverse"
-        }  flex px-10 py-10 lg:py-14  lg:px-16  flex-col lg:flex-row lg:justify-between  justify-center items-center content-center  `}
+        }  flex px-3 md:px-10 py-10 lg:py-14  lg:px-16  flex-col lg:flex-row lg:justify-between  justify-center items-center content-center  `}
       >
         <motion.div
           ref={ref}
@@ -39,11 +39,11 @@ export const Services = ({ index, image, content, title }) => {
             index % 2 === 0 ? "pl-5" : "pr-5"
           } w-full lg:w-2/3 lg:max-w-[750px] `}
         >
-          <h1 className=" text-[48px] my-5 lg:my-0 font-semibold text-black">
+          <h1 className=" text-[30px] md:text-[48px] my-5 lg:my-0 font-semibold text-black">
             {" "}
             {title}
           </h1>
-          <p className={` text-[20px] text-black  my-5`}>{content}</p>
+          <p className={` text-[18px] md:text-[20px] text-black  my-5`}>{content}</p>
           <div
             className=" mt-3 md:mt-0 bg-primary hover:bg-red-300 cursor-pointer hover:text-primary transition-all
            duration-300  font-semibold  rounded-md px-5 py-2 text-white inline-flex items-center"

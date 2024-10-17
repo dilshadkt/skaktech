@@ -67,7 +67,7 @@ const LandingPage = () => {
         </div> */}
       </section>
       <section className=" my-10 lg:my-16">
-        <div className=" px-10 flex justify-between flex-col  lg:flex-row w-full">
+        <div className="  px-3 md:px-10 flex justify-between flex-col  lg:flex-row w-full">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ const LandingPage = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className=" ml-5 w-full mt-10 lg:mt-0  lg:w-1/2   mx-auto"
+            className=" md:ml-3  w-full mt-10 lg:mt-0  lg:w-1/2   mx-auto"
           >
             <h1 className=" text-black text-center md:text-start font-semibold text-[40px]">
               Why <span className="   text-primary">Skaktech</span>

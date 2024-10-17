@@ -8,9 +8,9 @@ const ClientReviews = () => {
       <div className="relative  bg-clientReview bg-cover bg-no-repeat">
         <div className="absolute inset-0 opacity-80 bg-primary"></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
+        <div className="relative z-10 flex flex-col items-center py-5 md:py-0 justify-center md:min-h-screen text-white">
           <div className="  text-center  relative  ">
-            <h1 className="text-[60px] font-bold mb-20      ">
+            <h1 className=" text-[46px] md:text-[60px] font-bold mb-20      ">
               Our Client Says
             </h1>
           </div>
@@ -30,7 +30,7 @@ const ClientReviews = () => {
               />
             </motion.div>
 
-            <p className="max-w-[500px] text-[20px] text-center mx-4">
+            <p className="max-w-[500px] text-[18px] md:text-[20px] text-center mx-4">
               Content Players Withdrawal Hasn’t Been Processed Winfest Casino
               Piracy And The Legend Of Blackbeard Freispiele Spielsaal Spiele
               Anna Spielbank Erreichbar
@@ -66,7 +66,7 @@ const ClientReviews = () => {
               />
             </div>
 
-            <h1 className="  text-[22px] my-3">Amit Tiwari, Hyderabad</h1>
+            <h1 className="  text-[18px] md:text-[22px] my-3">Amit Tiwari, Hyderabad</h1>
             <div className=" flex justify-between">
               <div className="  size-3 rounded-full bg-white"></div>
               <div className="  mx-3 size-3 rounded-full bg-[#919191]"></div>

@@ -11,7 +11,7 @@ export const Careers = () => {
 
   return (
     <div>
-      <div className=" px-10 flex lg:justify-between flex-col lg:flex-row ">
+      <div className=" px-3 md:px-10 flex lg:justify-between flex-col lg:flex-row ">
         <motion.div
          initial={{opacity:0}}
          whileInView={{opacity:1}}

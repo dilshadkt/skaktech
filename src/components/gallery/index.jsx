@@ -11,7 +11,7 @@ const Gallery = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{once:false}}
-        className="  w-full px-10"
+        className="  w-full px-3 md:px-10"
       >
         <h1 className=" text-[36px] md:text-[48px] font-bold">
           Life <span className=" text-primary">@Skaktech</span>

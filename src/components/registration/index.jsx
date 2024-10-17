@@ -8,9 +8,9 @@ import React, { useState } from "react";
 export const Registration = () => {
   return (
     <div className=" overflow-hidden">
-      <section className=" px-10 mb-10">
-        <div className=" text-center mt-3">
-          <h1 className=" mb-3 text-[30px] md:text-[40px] font-semibold text-black">
+      <section className=" px-3 md:px-10 mb-10">
+        <div className="  mt-3">
+          <h1 className=" mb-3  text-center  text-[30px] md:text-[40px] font-semibold text-black">
             Our <span className=" text-primary">Registrations</span>
           </h1>
           <p className=" text-[20px] text-black">
@@ -42,9 +42,9 @@ export const Registration = () => {
           </ul>
         </motion.div>
       </section>
-      <section className=" px-10 xl:px-0 pt-10">
-        <div className=" text-center max-w-[950px]  mx-auto ">
-          <h3 className=" text-black font-semibold text-[20px]">
+      <section className=" px-3 md:px-10 xl:px-0 pt-10">
+        <div className=" max-w-[950px]  mx-auto ">
+          <h3 className="  text-center text-black font-semibold text-[20px]">
             Our <span className=" text-primary">Clients</span>
           </h3>
           <p className=" my-10 text-black font-bold text-[24px] md:text-[30px] lg:text-[40px] ">
