@@ -11,7 +11,7 @@ export const Services = ({ index, image, content, title }) => {
       <div
         className={`${
           index % 2 === 0 ? "flex-row" : "lg:flex-row-reverse"
-        }  flex px-3 md:px-10 py-10 lg:py-14  lg:px-16  flex-col lg:flex-row lg:justify-between  justify-center items-center content-center  `}
+        }  flex px-5 md:px-10 py-10 lg:py-14  lg:px-16  flex-col lg:flex-row lg:justify-between  justify-center items-center content-center  `}
       >
         <motion.div
           ref={ref}
@@ -19,7 +19,7 @@ export const Services = ({ index, image, content, title }) => {
           animate={isInView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: "easeInOut" }}
           viewport={{ once: "false" }}
-          className="   flex items-center justify-center lg:flex-none  w-full lg:w-1/3"
+          className="  p-5 xl:p-0  flex items-center justify-center lg:flex-none  w-full lg:w-1/3"
         >
           <Image
             width={470}

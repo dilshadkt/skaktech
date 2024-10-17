@@ -6,7 +6,7 @@ import React from 'react'
 export const NewsLetter = () => {
   return (
     <div>
-        <div className=" px-3 md:px-10 w-full flex flex-col    xl:flex-row  lg:justify-between">
+        <div className=" px-5 lg:pt-10 xl:pt-0 md:px-10 w-full flex flex-col    xl:flex-row  lg:justify-between">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

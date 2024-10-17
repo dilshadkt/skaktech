@@ -67,7 +67,7 @@ const LandingPage = () => {
         </div> */}
       </section>
       <section className=" my-10 lg:my-16">
-        <div className="  px-3 md:px-10 flex justify-between flex-col  lg:flex-row w-full">
+        <div className="  px-5 md:px-10 flex justify-between flex-col  lg:flex-row w-full">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}

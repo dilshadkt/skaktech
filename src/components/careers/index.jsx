@@ -11,23 +11,23 @@ export const Careers = () => {
 
   return (
     <div>
-      <div className=" px-3 md:px-10 flex lg:justify-between flex-col lg:flex-row ">
+      <div className=" px-5 md:px-10 flex xl:justify-between flex-col xl:flex-row ">
         <motion.div
          initial={{opacity:0}}
          whileInView={{opacity:1}}
          transition={{duration:2}}
          viewport={{once:false}}
-        className=" w-full  lg:w-1/3">
+        className=" w-full  xl:w-1/3">
           <h1 className=" mb-3 flex  text-[30px] lg:text-[46px] font-semibold">
             Careers
             <span className=" ml-1 text-primary">@Skaktech</span>
           </h1>
-          <p className=" text-[18px] w-full lg:max-w-[450px]">
+          <p className=" text-[18px] w-full xl:max-w-[450px]">
             At our company, we specialize in software development services that
             cater to the unique needs of businesses across various industries.
           </p>
         </motion.div>
-        <div className=" lg:ml-28  lg:w-2/3 ">
+        <div className=" lg:mt-5 xl:mt-0 xl:ml-28  xl:w-2/3 ">
           <div className="  ">
             <div className="flex   career-scrollbar mt-5 lg:mt-0 mb-8 overflow-x-auto space-x-2 lg:space-x-16">
               {careers.map((item) => (

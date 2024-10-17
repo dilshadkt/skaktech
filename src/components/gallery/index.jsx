@@ -11,13 +11,13 @@ const Gallery = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{once:false}}
-        className="  w-full px-3 md:px-10"
+        className="  w-full px-5   md:px-10"
       >
         <h1 className=" text-[36px] md:text-[48px] font-bold">
           Life <span className=" text-primary">@Skaktech</span>
         </h1>
       </motion.div>
-      <div className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7 gap-4 min-h-screen px-10">
+      <div className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7 gap-4 xl:min-h-screen px-10">
         <div className="flex flex-col space-y-4">
           <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
@@ -70,7 +70,7 @@ const Gallery = () => {
         </div>
 
         {/* Column 3 */}
-        <div className="       space-y-4">
+        <div className="        space-y-4">
           <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
               className=" hover:scale-105 cursor-pointer transition-all duration-300"

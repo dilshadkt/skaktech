@@ -8,7 +8,7 @@ import React, { useState } from "react";
 export const Registration = () => {
   return (
     <div className=" overflow-hidden">
-      <section className=" px-3 md:px-10 mb-10">
+      <section className=" px-5 md:px-10 mb-10">
         <div className="  mt-3">
           <h1 className=" mb-3  text-center  text-[30px] md:text-[40px] font-semibold text-black">
             Our <span className=" text-primary">Registrations</span>
@@ -42,7 +42,7 @@ export const Registration = () => {
           </ul>
         </motion.div>
       </section>
-      <section className=" px-3 md:px-10 xl:px-0 pt-10">
+      <section className=" px-5  text-center md:px-10 xl:px-0 pt-10">
         <div className=" max-w-[950px]  mx-auto ">
           <h3 className="  text-center text-black font-semibold text-[20px]">
             Our <span className=" text-primary">Clients</span>
