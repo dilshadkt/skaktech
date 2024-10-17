@@ -18,8 +18,8 @@ const LandingPage = () => {
     <div className=" overflow-x-hidden">
       <section className="   lg:py-20 xl:min-h-screen flex flex-col justify-center items-center bg-landing bg-cover bg-center bg-no-repeat">
         <motion.div
-          initial={{ scale: 0 }} // Start with a scale of 0
-          animate={{ scale: 1 }} // Animate to a scale of 1
+          initial={{ scale: 0 }} 
+          animate={{ scale: 1 }}  
           transition={{ duration: 0.6 }}
           className=" py-10 lg:py-0 w-full  px-5 lg:px-0 pt-28 flex flex-col  justify-center items-center content-center h-full my-auto "
         >

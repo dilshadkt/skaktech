@@ -19,7 +19,7 @@ const Gallery = () => {
       </motion.div>
       <div className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7 gap-4 min-h-screen px-10">
         <div className="flex flex-col space-y-4">
-          <div className=" flex items-center justify-center h-[300px] relative">
+          <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
               className=" hover:scale-105 cursor-pointer transition-all duration-300"
               src="/assets/images/life/life1.png"
@@ -28,7 +28,7 @@ const Gallery = () => {
               objectFit="cover"
             />
           </div>
-          <div className=" flex items-center justify-center h-[300px] relative">
+          <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
               className=" hover:scale-105 cursor-pointer transition-all duration-300"
               src="/assets/images/life/life2.png"
@@ -71,7 +71,7 @@ const Gallery = () => {
 
         {/* Column 3 */}
         <div className="       space-y-4">
-          <div className=" flex items-center justify-center h-[300px] relative">
+          <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
               className=" hover:scale-105 cursor-pointer transition-all duration-300"
               src="/assets/images/life/life6.png"
@@ -81,7 +81,7 @@ const Gallery = () => {
             />
           </div>
 
-          <div className="flex     space-x-4 h-[300px]">
+          <div className="flex     space-x-4  h-[200px] md:h-[300px]">
             <div className=" flex-1 flex items-center justify-center relative">
               <Image
                 className=" hover:scale-105 cursor-pointer transition-all duration-300"
