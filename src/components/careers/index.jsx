@@ -1,24 +1,44 @@
-'use client'
+"use client";
 import { careers } from "@/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const Careers = () => {
   const [selectedCategory, setSelectedCategory] = useState(careers[0].title);
   const selectedItem = careers.find(
     (i) => i.title.toLowerCase() === selectedCategory.toLowerCase()
   );
+  const [isInRange, setIsInRange] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(
+      "(min-width: 300px) and (max-width: 470px)"
+    );
+
+    const handleChange = (e) => {
+      setIsInRange(e.matches);
+    };
+
+    handleChange(mediaQuery);
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
 
   return (
     <div>
       <div className=" px-5 md:px-10 flex xl:justify-between flex-col xl:flex-row ">
         <motion.div
-         initial={{opacity:0}}
-         whileInView={{opacity:1}}
-         transition={{duration:2}}
-         viewport={{once:false}}
-        className=" w-full  xl:w-1/3">
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+          className=" w-full  xl:w-1/3"
+        >
           <h1 className=" mb-3 flex  text-[30px] lg:text-[46px] font-semibold">
             Careers
             <span className=" ml-1 text-primary">@Skaktech</span>
@@ -44,16 +64,21 @@ export const Careers = () => {
                   {item.title}
                 </button>
               ))}
-                
             </div>
             <motion.div
-             animate={{ x: [0, 20,  ] }}
-             transition={{ repeat: Infinity, duration: 2, ease: "easeIn" }}
-
-            className=" flex sm:hidden justify-end  items-end content-end  mr-5 mb-5">
-              <Image src={'/assets/icons/next.png'} alt="icon" width={15} height={15}/>
+              animate={{ x: [0, 20] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeIn" }}
+              className={` ${
+                isInRange ? "flex" : "hidden"
+              }   justify-end  items-end content-end  mr-5 mb-5`}
+            >
+              <Image
+                src={"/assets/icons/next.png"}
+                alt="icon"
+                width={15}
+                height={15}
+              />
             </motion.div>
-          
 
             <div className="  pt-4">
               {selectedItem &&
