@@ -33,7 +33,7 @@ export const Services = ({ index, image, content, title }) => {
             index % 2 === 0 ? { opacity: 0, x: 100 } : { opacity: 0, x: -100 }
           }
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1.5 }}
           viewport={{ once: false }}
           className={`${
             index % 2 === 0 ? " pl-2 xl:pl-5" : " pr-2 xl:pr-5"
