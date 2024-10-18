@@ -2,7 +2,7 @@ import React from 'react'
 
 const Careers = () => {
   return (
-    <div className=' min-h-screen'>Careers</div>
+    <div className=' min-h-screen'></div>
   )
 }
 

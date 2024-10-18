@@ -80,7 +80,7 @@ export const Careers = () => {
               />
             </motion.div>
 
-            <div className="  pt-4">
+            <div className=" lg:pr-10  pt-4">
               {selectedItem &&
                 selectedItem.details.map((detail, index) => (
                   <div

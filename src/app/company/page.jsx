@@ -1,7 +1,10 @@
+import LandingPage from "@/components/landing";
 import React from "react";
 
 function Company() {
-  return <div  className=' min-h-screen'>Company</div>;
+  return <div  className=' '>
+        <LandingPage />
+  </div>;
 }
 
 export default Company;
