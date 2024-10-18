@@ -1,19 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const NotFound = () => {
+    
   return (
     <div className="  px-5 md:px-10 min-h-screen flex justify-center items-center content-center  ">
-      <div className=" flex flex-col justify-center items-center  content-center">
+      <div className=" mt-10 flex flex-col justify-center items-center  content-center">
         <motion.div
-        className=" "
+          className=" flex items-center "
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className=" text-primary   font-semibold lg:font-bold text-[28px] sm:text-[40px] md:text-[90px]">404</h1>
+          {/* <div>
+            <h1 className=" text-primary    font-semibold lg:font-bold text-[28px] sm:text-[40px] md:text-[90px]">
+              404
+            </h1>
+          </div> */}
+
+          <Image
+            src={"/assets/images/not-found.jpg"}
+            alt="image"
+            width={400}
+            height={350}
+          />
+          
         </motion.div>
         <motion.div
           className=" flex flex-col justify-center items-center  content-center"
@@ -26,10 +40,13 @@ const NotFound = () => {
           </h3>
           <p className=" text-center whitespace-normal w-full md:max-w-[800px] text-[20px] ">
             The page you are looking for might have been removed had its name
-            changed or is temporarily unavailable
-            <Link href="/" className=" text-primary ml-2 font-semibold underline">
+            changed or is temporarily unavailable.
+            <Link
+              href="/"
+              className=" text-primary ml-2 font-semibold underline"
+            >
               {" "}
-              Return to Homepage
+            Click  Return to Homepage
             </Link>
           </p>
         </motion.div>
