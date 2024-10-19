@@ -19,7 +19,7 @@ const HomePage = () => {
           //   damping: 20,
           //   duration: 1000,
           // }}
-          className=" relative  overflow-hidden  min-h-screen  2xl:bg-green-700   lg:bg-red-400 xl:bg-violet-400 md:bg-[#51A2CC]   w-full"
+          className=" relative  overflow-hidden  min-h-screen  bg-[#51A2CC]   w-full"
         >
           <div>
             <motion.div
@@ -121,7 +121,7 @@ const HomePage = () => {
               quality={100}
             />
 
-            <p className=" md:ml-4 lg:ml-0 h   md:mt-16 md:pl-10 lg:mt-0      mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
+            <p className=" md:ml-4 lg:ml-0 h   md:mt-16 md:pl-10 lg:mt-0    2xl:pr-48   mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
               Welcome to Skaktech, a global provider of innovative software
               solutions and services. Established in 2015, Skaktech has been
               dedicated to delivering cutting-edge technologies that empower
