@@ -1,12 +1,11 @@
 "use client";
- import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Industries } from "../industries";
 import { NewsLetter } from "../newsletter";
 
 const HomePage = () => {
-  
   return (
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
@@ -20,7 +19,7 @@ const HomePage = () => {
           //   damping: 20,
           //   duration: 1000,
           // }}
-          className=" relative  overflow-hidden  2xl:min-h-screen      bg-[#51A2CC]   w-full"
+          className=" relative  overflow-hidden  min-h-screen  2xl:bg-green-700   lg:bg-red-400 xl:bg-violet-400 md:bg-[#51A2CC]   w-full"
         >
           <div>
             <motion.div
@@ -137,11 +136,12 @@ const HomePage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
-            className="  hidden 2xl:hidden      md:flex   justify-between    mt-[50px] px-5 md:px-0 "
+            className="relative hidden 2xl:hidden  md:flex justify-between mt-[50px] px-5 md:px-0"
           >
-            <div className="md:ml-4 lg:ml-4    ">
-              <p className="   mt-5  w-full leading-[28px]    d:pl-3 max-w-[1000px] pr-5 lg:leading-[40px] text-[16px]  lg:text-[20px]">
-                18 At Skaktech, we pride ourselves on creating high-quality
+            {/* Left section (Text) */}
+            <div className="md:ml-4 lg:ml-4 w-full md:w-2/3">
+              <p className="mt-5 w-full leading-[28px]  max-w-[1000px] pr-5 lg:leading-[40px] text-[16px] lg:text-[20px]">
+                At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
                 growth. Our talented team of developers, engineers, and
                 consultants work collaboratively to provide tailored solutions
@@ -151,10 +151,8 @@ const HomePage = () => {
                 transformation.
               </p>
               <motion.div
-                whileHover={{
-                  translateY: "-3px",
-                }}
-                className=" hover:font-semibold  2xl:ml-5 mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center "
+                whileHover={{ translateY: "-3px" }}
+                className="hover:font-semibold 2xl:ml-5 mb-4 lg:mb-0 bg-primary cursor-pointer mt-5 px-4 py-2 inline-flex rounded-md text-white items-center"
               >
                 <Image
                   src={"/assets/icons/download.png"}
@@ -162,26 +160,30 @@ const HomePage = () => {
                   width={30}
                   alt="download"
                 />
-                <span className="  ml-2">Company Profile</span>
+                <span className="ml-2">Company Profile</span>
               </motion.div>
             </div>
-            <Image
-              className=" hidden md:block     mt-16     "
-              src={"/assets/images/about2.png"}
-              width={380}
-              height={280}
-              alt="about"
-              quality={100}
-            />
-            <Image
-              className="  block md:hidden   mt-16     "
-              src={"/assets/images/about2.png"}
-              width={380}
-              layout="responsive"
-              height={280}
-              alt="about"
-              quality={100}
-            />
+
+            {/* Right section (Image) */}
+            <div className="relative w-full md:w-1/3">
+              <Image
+                className="hidden md:block absolute right-0 md:-top-[60px] lg:-top-[100px] mb-16"
+                src={"/assets/images/about2.png"}
+                width={380}
+                height={280}
+                alt="about"
+                quality={100}
+              />
+              <Image
+                className="block md:hidden mt-16"
+                src={"/assets/images/about2.png"}
+                width={380}
+                layout="responsive"
+                height={280}
+                alt="about"
+                quality={100}
+              />
+            </div>
           </motion.div>
 
           {/* Visible for small and extra-large screens */}
@@ -193,7 +195,7 @@ const HomePage = () => {
             className="    mt-5      md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
           >
             <Image
-              className="  hidden md:block  px-5   xl:absolute  right-0 -top-[130px]  lg:px-0 "
+              className="  hidden md:block  px-5   xl:absolute  right-0 -top-[140px]  lg:px-0 "
               src={"/assets/images/about2.png"}
               width={480}
               height={250}
@@ -248,11 +250,11 @@ const HomePage = () => {
       </section>
       {/* Industry Section */}
       <section className=" py-5 ">
-        <Industries/>
+        <Industries />
       </section>
       {/* Newsletter Section */}
       <section className=" px-5 my-10  lg:pb-10 xl:my-5">
-        <NewsLetter/>
+        <NewsLetter />
       </section>
     </div>
   );

@@ -7,7 +7,7 @@ import React from "react";
 const NotFound = () => {
     
   return (
-    <div className="  px-5 md:px-10 min-h-screen py-10 flex justify-center items-center content-center  ">
+    <div className="  px-5 md:px-10 min-h-screen py-10 lg:py-5 flex justify-center items-center content-center  ">
       <div className=" mt-10 flex flex-col justify-center items-center  content-center">
         <motion.div
           className=" flex items-center "
