@@ -19,7 +19,7 @@ const HomePage = () => {
           //   damping: 20,
           //   duration: 1000,
           // }}
-          className=" relative  overflow-hidden  min-h-screen  bg-[#51A2CC]   w-full"
+          className=" relative  overflow-hidden     bg-[#51A2CC]   w-full"
         >
           <div>
             <motion.div
