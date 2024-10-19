@@ -19,9 +19,9 @@ const HomePage = () => {
           //   damping: 20,
           //   duration: 1000,
           // }}
-          className=" relative  overflow-hidden     bg-[#51A2CC]   w-full"
+          className=" relative  overflow-hidden  min-h-screen md:min-h-max xl:min-h-screen     bg-[#51A2CC]   w-full"
         >
-          <div>
+          <div className=" ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -167,7 +167,7 @@ const HomePage = () => {
             {/* Right section (Image) */}
             <div className="relative w-full md:w-1/3">
               <Image
-                className="hidden md:block absolute right-0 md:-top-[60px] lg:-top-[100px] mb-16"
+                className="hidden md:block absolute right-0  md:-top-[30px] lg:-top-[100px] mb-16"
                 src={"/assets/images/about2.png"}
                 width={380}
                 height={280}
