@@ -7,7 +7,7 @@ import React from "react";
 const NotFound = () => {
     
   return (
-    <div className="  px-5 md:px-10 min-h-screen flex justify-center items-center content-center  ">
+    <div className="  px-5 md:px-10 min-h-screen py-10 flex justify-center items-center content-center  ">
       <div className=" mt-10 flex flex-col justify-center items-center  content-center">
         <motion.div
           className=" flex items-center "
@@ -35,10 +35,10 @@ const NotFound = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
         >
-          <h3 className=" font-semibold text-center md:text-start text-[24px] sm:text-[30px] md:text-[40px] uppercase  my-4">
+          <h3 className=" font-semibold text-center md:text-start text-[22px] sm:text-[30px] md:text-[40px] uppercase  my-4">
             oops! Nothing was found
           </h3>
-          <p className=" text-center whitespace-normal w-full md:max-w-[800px] text-[20px] ">
+          <p className=" text-center whitespace-normal w-full md:max-w-[800px] text-[18px] lg:text-[20px] ">
             The page you are looking for might have been removed had its name
             changed or is temporarily unavailable.
             <Link
