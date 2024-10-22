@@ -44,13 +44,13 @@ export const NewsLetter = () => {
             </h4>
           </div>
 
-          <ol className="list-disc  list-inside px-5   place-items-center  lg:place-items-start lg:px-0 my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <ol className="list-disc  list-inside px-5   place-items-center  xl:place-items-start lg:px-0 my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {newsletterList.map((item, index) => (
               <li
                 className="text-center xl:text-start flex items-center"
                 key={index}
               >
-                <span className="size-1 bg-black rounded-full"></span>
+                <span className="size-1 hidden pt-3 lg:mt-0 lg:block bg-black rounded-full"></span>
                 <span className="ml-3">{item}</span>
               </li>
             ))}
