@@ -27,17 +27,17 @@ export const socialMedia = [
 
 export const industriesWeServe = [
   { id: 15, icon: "first-aid-kit.png", title: "Healthcare" },
-  { id: 16, icon: "finance.png", title: "Finace" },
-  { id: 17, icon: "retail.png", title: "Retail" },
-  { id: 18, icon: "real-estate.png", title: "Real Estate" },
-  { id: 19, icon: "education.png", title: "Education" },
-  { id: 20, icon: "govt.png", title: "Government" },
-  { id: 21, icon: "tele-communication.png", title: "Tele Communications" },
-  { id: 22, icon: "energy.png", title: "Energy and Utilities" },
-  { id: 23, icon: "transportation.png", title: "Transportation and Logistics" },
-  { id: 24, icon: "media.png", title: "Entertainment and Media" },
-  { id: 25, icon: "travel.png", title: "Travel and Hospitality" },
-  { id: 26, icon: "challenges.png", title: "All Challenges Accepted" },
+  { id: 16, icon: "finance.svg", title: "Finace" },
+  { id: 17, icon: "retail.svg", title: "Retail" },
+  { id: 18, icon: "real-estate.svg", title: "Real Estate" },
+  { id: 19, icon: "education.svg", title: "Education" },
+  { id: 20, icon: "govt.svg", title: "Government" },
+  { id: 21, icon: "tele-communication.svg", title: "Tele Communications" },
+  { id: 22, icon: "energy.svg", title: "Energy and Utilities" },
+  { id: 23, icon: "transportation.svg", title: "Transportation and Logistics" },
+  { id: 24, icon: "media.svg", title: "Entertainment and Media" },
+  { id: 25, icon: "travel.svg", title: "Travel and Hospitality" },
+  { id: 26, icon: "challenges.svg", title: "All Challenges Accepted" },
 ];
 export const technologies = [
   {
