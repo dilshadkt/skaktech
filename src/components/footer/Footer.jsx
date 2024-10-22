@@ -119,12 +119,12 @@ export const Footer = () => {
           </div>
           {/* Address Section */}
           <section className=" pb-5 mt-5 md:mt-14">
-            <h3 className="  font-semibold text-[16px] md:text-[22px] text-primary">
+            <h3 className="  font-semibold text-[22px] text-primary">
               Address
             </h3>
             <div className=" flex flex-col md:flex-row  md:justify-between mt-5">
               <div>
-                <address  className=" text-white text-[20px]">
+                <address  className=" text-white text-[16px] md:text-[20px]">
                   <a href="https://maps.app.goo.gl/QZXjLE8Rmt9fHqQd6">
                   59/7757, Champion Arcade, Kozhikkode, Kerala
                   <br />
