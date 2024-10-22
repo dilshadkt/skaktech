@@ -62,7 +62,7 @@ export const Footer = () => {
           {/* Quick Link Section */}
           <div className="   w-full">
             <section className=" my-5 md:my-5">
-              <div className="  flex flex-col md:flex-row md:justify-between">
+              <div className="  flex  items-center justify-between">
                 <h3 className="  font-semibold text-[22px] text-primary">
                   Quick Links
                 </h3>
@@ -85,7 +85,7 @@ export const Footer = () => {
                           index === NavBarData.length - 1
                             ? "md:border-none"
                             : "lg:border-r-2 "
-                        }  border-primary pr-5 text-[20px] text-white hover:font-semibold tranisio duration-150`}
+                        }  border-primary pr-5 text-[16px] md:text-[20px] text-white hover:font-semibold tranisio duration-150`}
                       >
                         {item.title}
                       </span>
@@ -96,7 +96,7 @@ export const Footer = () => {
             </section>
             {/* Services Section */}
             <section className="     my-5  md:my-10">
-              <h3 className="   font-semibold text-[22px] text-primary">
+              <h3 className="   font-semibold  text-[22px] text-primary">
                 Services
               </h3>
 
@@ -108,7 +108,7 @@ export const Footer = () => {
                         index === services.length - 1
                           ? "md:border-none"
                           : "lg:border-r-2 "
-                      } border-primary pr-5 text-[20px] text-white hover:font-semibold transition-all duration-200`}
+                      } border-primary pr-5 text-[16px] md:text-[20px] text-white hover:font-semibold transition-all duration-200`}
                     >
                       {item.title}
                     </span>
@@ -119,7 +119,7 @@ export const Footer = () => {
           </div>
           {/* Address Section */}
           <section className=" pb-5 mt-5 md:mt-14">
-            <h3 className="  font-semibold text-[22px] text-primary">
+            <h3 className="  font-semibold text-[16px] md:text-[22px] text-primary">
               Address
             </h3>
             <div className=" flex flex-col md:flex-row  md:justify-between mt-5">
