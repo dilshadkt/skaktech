@@ -32,7 +32,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false }}
-              className="  absolute  justify-center items-center lg:justify-normal lg:items-start    bottom-0 z-30 flex flex-col md:text-center mt-40  lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20  lg:mt-0 lg:ml-10  py-16"
+              className="  absolute  justify-center items-center lg:justify-normal lg:items-start    bottom-0 lg:bottom-[150px] z-30 flex flex-col md:text-center     lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20 lg:mt-0    lg:ml-10  py-16"
             >
               <div className="bg-black/30  p-2  lg:p-0 lg:bg-transparent rounded-md lg:rounded-none z-40 flex flex-col md:items-center lg:items-start">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
