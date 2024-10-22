@@ -19,6 +19,7 @@ export const Footer = () => {
                 className=" mr-2 lg:mr-0"
                 src={"/assets/icons/phone.png"}
                 alt="phone"
+                
                 height={30}
                 quality={100}
                 width={30}
@@ -70,13 +71,14 @@ export const Footer = () => {
                   <Image
                     src={"/assets/icons/logo.png"}
                     width={150}
+                    layout="responsive"
                     height={50}
                     className=" mt-3 md:mt-0 cursor-pointer"
                     alt="logo"
                   />
                 </Link>
               </div>
-              <ul className=" mt-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7">
+              <ul className=" mt-5  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7">
                 {NavBarData.map((item, index) => (
                   <Link key={item.id} href={item.path}>
                     <li className="mr-10 mt-3">
@@ -169,8 +171,8 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white md:px-28 px-10  py-5  font-medium text-[16px] bg-primary">
-        <ul className="flex flex-wrap  justify-center  items-center md:flex-nowrap">
+      <section className=" text-white md:px-28 sm:px-10 px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
+        <ul className="flex   justify-center  sm:flex-row  items-center   ">
           <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
             <a className="    " href="https://scanntek.com/">
               <span className="xl:border-r-2 pr-5">

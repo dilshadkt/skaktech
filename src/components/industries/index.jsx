@@ -31,7 +31,7 @@ export const Industries = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid px-5 md:px-16 my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
+            className="grid px-5 md:px-16  my-10 gap-16 sm:grid-cols-3 grid-cols-2 lg:py-10 lg:grid-cols-6 place-items-center items-center"
           >
             {industriesWeServe.map((item) => (
               <motion.li
@@ -42,7 +42,7 @@ export const Industries = () => {
                 transition={{ duration: 0.2 }}
               >
                 <Image
-                  className=" mb-1 md:mb-0 "
+                  className=" mb-1 md:mb-0 object-contain  "
                   src={`/assets/icons/${item.icon}`}
                   alt={item.title}
                   width={26}
