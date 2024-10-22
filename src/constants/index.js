@@ -15,10 +15,14 @@ export const services = [
 ];
 
 export const socialMedia = [
-  { id: 11, icon: "facebook.png" },
-  { id: 12, icon: "insta.png" },
-  { id: 13, icon: "youtube.png" },
-  { id: 14, icon: "x.png" },
+  { id: 11, path: "https://www.facebook.com/Skaktech", icon: "facebook.png" },
+  { id: 12, path: "https://www.instagram.com/Skaktech/", icon: "insta.png" },
+  {
+    id: 13,
+    path: "https://www.youtube.com/channel/UC0Yzi_wZ43IPTNjZIQAPtd",
+    icon: "youtube.png",
+  },
+  { id: 14, path: "https://twitter.com/skaktech", icon: "x.png" },
 ];
 
 export const industriesWeServe = [
@@ -232,4 +236,18 @@ export const careers = [
       },
     ],
   },
+];
+
+export const sliders = [
+  { id: 1, image: "slider1.png" },
+  { id: 2, image: "slider2.png" },
+  { id: 3, image: "slider3.png" },
+  { id: 4, image: "slider4.png" },
+];
+export const newsletterList = [
+  "Insights & trends",
+  "Product & solution news",
+  "Offers",
+  "Company updates",
+  "Customer stories",
 ];

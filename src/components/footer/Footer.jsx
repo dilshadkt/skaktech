@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import React from "react";
+
+import React, { useEffect } from "react";
 export const Footer = () => {
   return (
     <div className=" w-full ">
@@ -23,13 +24,10 @@ export const Footer = () => {
                 width={30}
               />
 
-              <a className="  " href="tel:+91 7242732109">
+              <a className="  " href="tel:+91 9072514080">
                 <span className="border-r-2 ml-3  border-[#268BBF]  pr-5">
-                  +91 7242732109
+                  +91 9072514080
                 </span>
-              </a>
-              <a className=" ml-5" href="tel:+91 7242732109">
-                +91 7242732109
               </a>
             </li>
             <li className=" my-5 md:my-0 flex items-center">
@@ -41,8 +39,8 @@ export const Footer = () => {
                 width={30}
               />
 
-              <a className=" ml-3" href="mail:Info@sktechnologies.com">
-                Info@sktechnologies.com
+              <a className=" ml-3" href="mail:Info@skaktech.com">
+                Info@skaktech.com
               </a>
             </li>
             <li className="   md:mt-2 lg:mt-0  flex items-center">
@@ -126,11 +124,12 @@ export const Footer = () => {
             </h3>
             <div className=" flex flex-col md:flex-row  md:justify-between mt-5">
               <div>
-                <address className=" text-white text-[20px]">
-                  Chandler J Gilbert: 2089 Baker St. London W1U 6RN, England
+                <address  className=" text-white text-[20px]">
+                  <a href="https://maps.app.goo.gl/QZXjLE8Rmt9fHqQd6">
+                  59/7757, Champion Arcade, Kozhikkode, Kerala
                   <br />
-                  <a href=""> www.skaktech.com</a>
-                  <br /> Ph: <a href="tel:+91 7843473024">+91 7843473024</a>
+                  <span>India, PIN: 673002</span>
+                  </a>
                 </address>
                 <div>
                   <ul className=" mt-7 flex items-center">
@@ -140,7 +139,7 @@ export const Footer = () => {
                         transition={{ duration: 0.2 }}
                         key={item.id}
                       >
-                        <a href="">
+                        <a href={item.path}>
                           <Image
                             className=" mr-7 mt-5"
                             src={`/assets/icons/${item.icon}`}
@@ -155,13 +154,16 @@ export const Footer = () => {
                 </div>
               </div>
               <div className=" p-2">
-                <Image
-                  className=" cursor-pointer hover:scale-105  transition-all duration-300 mt-5 md:mt-0"
-                  src={"/assets/images/map.png"}
-                  width={330}
-                  height={170}
-                  alt="map"
-                />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29756.856909044865!2d75.74480077431639!3d11.24444720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6846545e8603d%3A0x5467ed3da5a2ec1c!2sSkaktech%20Software%20Solutions%20LLP!5e1!3m2!1sen!2sin!4v1729584041110!5m2!1sen!2sin"
+                  width="330"
+                  height="170"
+                  className=" rounded-md hover:scale-105  transition-all duration-300"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </section>
@@ -171,7 +173,7 @@ export const Footer = () => {
       <section className=" text-white md:px-28 px-10  py-5  font-medium text-[16px] bg-primary">
         <ul className="flex flex-wrap  justify-center  items-center md:flex-nowrap">
           <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
-            <a className="    " href="">
+            <a className="    " href="https://scanntek.com/">
               <span className="xl:border-r-2 pr-5">
                 Made with Scantekk Technologies
               </span>

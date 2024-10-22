@@ -16,9 +16,9 @@ module.exports = {
       backgroundImage: {
         landing: "url(/assets/images/landing-bg.png)",
         clientReview: "url(/assets/images/review/review-bg.png)",
+        home: "url(/assets/images/home-bg.svg)",
       },
     },
   },
-  plugins: [    
-],
+  plugins: [],
 };

@@ -1,33 +1,38 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Industries } from "../industries";
 import { NewsLetter } from "../newsletter";
+import { sliders } from "@/constants";
 
 const HomePage = () => {
+  const [sliderIndex, setSliderIndex] = useState(0);
+  const [sliderImage, setSliderImage] = useState(sliders[0].image);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSliderIndex((prevIndex) => (prevIndex + 1) % sliders.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setSliderImage(sliders[sliderIndex].image);
+  }, [sliderIndex, sliders]);
   return (
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
       <section className=" w-full">
-        <div
-          // initial={{ scale: 0 }}
-          // animate={{ rotate: 0, scale: 1 }}
-          // transition={{
-          //   type: "spring",
-          //   stiffness: 260,
-          //   damping: 20,
-          //   duration: 1000,
-          // }}
-          className=" relative  overflow-hidden           bg-[#51A2CC]   w-full"
-        >
-          <div className=" ">
+        <div className=" relative     overflow-hidden min-h-screen bg-home bg-cover object-cover   w-full">
+          <div className="  flex flex-col-reverse lg:flex-row lg:justify-between ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false }}
-              className=" z-30 flex flex-col px-5 lg:px-0  mt-20 lg:ml-10  py-16"
+              className=" z-30 flex flex-col px-5 lg:px-0  w-full lg:w-1/2 mt-20 lg:ml-10  py-16"
             >
               <div className=" z-40 flex flex-col">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
@@ -65,24 +70,20 @@ const HomePage = () => {
               </div>
             </motion.div>
             {/* banner right side mobile sectio  */}
-            <div className="absolute hidden md:size-[900px] lg:size-[1000px] md:block  z-10 xl:-right-[100px] md:-right-[240px] lg:-right-[220px]  -top-[100px] overflow-hidden bg-[#61AAD1]   rounded-full">
-              <div className="bg-[#71B3D5]  md:size-[500px] lg:size-[700px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-[#81BCDA]  md:size-[300px] lg:size-[500px] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: false }}
-                  >
-                    <Image
-                      src={"/assets/images/redmi.png"}
-                      width={400}
-                      height={800}
-                      alt="mobile"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+            <div className=" absolute pt-5 lg:pt-0  bottom-0 right-0 w-full lg:w-1/2">
+              <motion.div
+                 initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false }}
+              >
+                <Image
+                  src={`/assets/images/slider/${sliderImage}`}
+                  alt="slider"
+                  width={700}
+                  height={450}
+                />
+              </motion.div>
             </div>
           </div>
         </div>
