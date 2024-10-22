@@ -239,10 +239,10 @@ export const careers = [
 ];
 
 export const sliders = [
-  { id: 1, image: "slider1.png" },
-  { id: 2, image: "slider2.png" },
-  { id: 3, image: "slider3.png" },
-  { id: 4, image: "slider4.png" },
+  { id: 1, image: "slider-1.svg" },
+  { id: 2, image: "s2.svg" },
+  { id: 3, image: "s3.svg" },
+  { id: 4, image: "amico.svg" },
 ];
 export const newsletterList = [
   "Insights & trends",

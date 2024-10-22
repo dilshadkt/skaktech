@@ -32,9 +32,9 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false }}
-              className=" z-30 flex flex-col px-5 lg:px-0  w-full lg:w-1/2 mt-20 lg:ml-10  py-16"
+              className="  absolute   bottom-0 z-30 flex flex-col md:text-center  lg:text-start md:items-center md:justify-center px-5 lg:px-0  w-full lg:w-1/2 mt-20 lg:ml-10  py-16"
             >
-              <div className=" z-40 flex flex-col">
+              <div className=" z-40 flex flex-col  md:items-center lg:items-start">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
                   integrations very easy and seamless with Warehouse360.
@@ -44,7 +44,7 @@ const HomePage = () => {
                   ability to contact customer care 24/7 using the Mobile app.
                 </span>
               </div>
-              <div className=" flex  items-center justify-center content-center  md:flex-none md:content-normal md:items-start md:justify-normal  z-40 mt-5">
+              <div className=" flex  items-center justify-center content-center    md:content-normal md:items-start md:justify-normal  z-40 mt-5">
                 <div className=" cursor-pointer bg-white hover:bg-primary hover:text-white transition-all duration-300 px-4 py-2 rounded-md inline-flex items-center">
                   <Image
                     height={30}
@@ -70,21 +70,46 @@ const HomePage = () => {
               </div>
             </motion.div>
             {/* banner right side mobile sectio  */}
-            <div className=" absolute pt-5 lg:pt-0  bottom-0 right-0 w-full lg:w-1/2">
+            <div
+              className={` flex flex-col items-center content-center    absolute   top-[200px] lg:top-auto   md:bottom-0 right-0 w-full lg:w-1/2`}
+            >
               <motion.div
-                 initial={{ opacity: 0, x: 100 }}
+                initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
               >
-                <Image
-                  src={`/assets/images/slider/${sliderImage}`}
-                  alt="slider"
-                  width={700}
-                  height={450}
-                />
+                <motion.div
+                  key={sliderImage}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <Image
+                    className=" p-6 md:p-0"
+                    src={`/assets/images/slider/${sliderImage}`}
+                    alt="slider"
+                    width={
+                      sliderIndex === 0 ? 500 : sliderIndex === 3 ? 650 : 700
+                    }
+                    height={400}
+                  />
+                </motion.div>
               </motion.div>
             </div>
+          </div>
+          <div className=" hidden md:block absolute  left-1/2  bottom-0 mb-2">
+            <ul className=" flex">
+              {sliders.map((item, index) => (
+                <li
+                  key={index}
+                  className={` ${
+                    sliderIndex === index ? " bg-[#D9D9D9] " : "bg-[#767676]"
+                  } rounded-full  mx-1  size-2`}
+                ></li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

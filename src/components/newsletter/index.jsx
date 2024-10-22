@@ -16,7 +16,7 @@ export const NewsLetter = () => {
           className=" w-full flex justify-center items-center  xl:w-1/2"
         >
           <Image
-            src={"/assets/images/newsletter.png"}
+            src={"/assets/images/newsletter-1.svg"}
             width={680}
             height={400}
             alt="newsletter"
@@ -44,14 +44,18 @@ export const NewsLetter = () => {
             </h4>
           </div>
 
-          <ul className="  my-3 grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <ol className="list-disc  list-inside px-5   place-items-center  lg:place-items-start lg:px-0 my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {newsletterList.map((item, index) => (
-              <li className=" font-semibold  text-center  xl:text-start flex items-center" key={index}>
-                <Image src={'/assets/icons/right-arrow-1.png'} width={15} height={15} alt="icon"/>
-                <span className=" ml-1">{item}</span>
+              <li
+                className="text-center xl:text-start flex items-center"
+                key={index}
+              >
+                <span className="size-1 bg-black rounded-full"></span>
+                <span className="ml-3">{item}</span>
               </li>
             ))}
-          </ul>
+          </ol>
+
           <div>
             <form className="  " action="">
               <input

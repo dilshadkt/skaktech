@@ -13,7 +13,7 @@ export const Footer = () => {
       <div className=" bg-black w-full  ">
         {/* Contact Section */}
         <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
-          <ul className=" flex-btw flex-col md:flex-row  flex-wrap  py-10">
+          <ul className=" flex-btw flex-col md:flex-row  flex-wrap  py-5">
             <li className="   flex items-center">
               <Image
                 className=" mr-2 lg:mr-0"
@@ -61,7 +61,7 @@ export const Footer = () => {
         <div className=" px-10 lg:px-5  ">
           {/* Quick Link Section */}
           <div className="   w-full">
-            <section className=" my-5 md:my-10">
+            <section className=" my-5 md:my-5">
               <div className="  flex flex-col md:flex-row md:justify-between">
                 <h3 className="  font-semibold text-[22px] text-primary">
                   Quick Links
@@ -95,7 +95,7 @@ export const Footer = () => {
               </ul>
             </section>
             {/* Services Section */}
-            <section className="      my-16">
+            <section className="      my-10">
               <h3 className="   font-semibold text-[22px] text-primary">
                 Services
               </h3>
@@ -118,7 +118,7 @@ export const Footer = () => {
             </section>
           </div>
           {/* Address Section */}
-          <section className=" pb-5 mt-16">
+          <section className=" pb-5 mt-14">
             <h3 className="  font-semibold text-[22px] text-primary">
               Address
             </h3>
