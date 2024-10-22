@@ -25,7 +25,7 @@ const HomePage = () => {
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
       <section className=" w-full">
-        <div className=" relative      overflow-hidden  min-h-screen     bg-home bg-cover object-cover   w-full">
+        <div className=" relative      overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[800px]     bg-home bg-cover object-cover   w-full">
           <div className="  flex flex-col-reverse lg:flex-row lg:justify-between ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -34,8 +34,8 @@ const HomePage = () => {
               viewport={{ once: false }}
               className="  absolute  justify-center items-center lg:justify-normal lg:items-start    bottom-0 z-30 flex flex-col md:text-center mt-40  lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20  lg:mt-0 lg:ml-10  py-16"
             >
-              <div className=" z-40 flex flex-col  md:items-center lg:items-start">
-                <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
+<div className="bg-black/30 lg:bg-transparent rounded-md lg:rounded-none z-40 flex flex-col md:items-center lg:items-start">
+<span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
                   integrations very easy and seamless with Warehouse360.
                 </span>
