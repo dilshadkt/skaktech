@@ -13,7 +13,7 @@ export const Footer = () => {
       <div className=" bg-black w-full  ">
         {/* Contact Section */}
         <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
-          <ul className=" flex-btw flex-col md:flex-row  flex-wrap  py-5">
+          <ul className="  grid grid-cols-2 md:grid-cols-3  py-5">
             <li className="   flex items-center">
               <Image
                 className=" mr-2 lg:mr-0"
@@ -58,7 +58,7 @@ export const Footer = () => {
             </li>
           </ul>
         </section>
-        <div className=" px-10 lg:px-5  ">
+        <div className=" px-5 md:px-10 lg:px-5  ">
           {/* Quick Link Section */}
           <div className="   w-full">
             <section className=" my-5 md:my-5">
@@ -76,7 +76,7 @@ export const Footer = () => {
                   />
                 </Link>
               </div>
-              <ul className=" mt-5 flex flex-col flex-wrap md:flex-row">
+              <ul className=" mt-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7">
                 {NavBarData.map((item, index) => (
                   <Link key={item.id} href={item.path}>
                     <li className="mr-10 mt-3">
@@ -84,7 +84,7 @@ export const Footer = () => {
                         className={` ${
                           index === NavBarData.length - 1
                             ? "md:border-none"
-                            : "md:border-r-2"
+                            : "lg:border-r-2 "
                         }  border-primary pr-5 text-[20px] text-white hover:font-semibold tranisio duration-150`}
                       >
                         {item.title}
@@ -95,7 +95,7 @@ export const Footer = () => {
               </ul>
             </section>
             {/* Services Section */}
-            <section className="      my-10">
+            <section className="     my-5  md:my-10">
               <h3 className="   font-semibold text-[22px] text-primary">
                 Services
               </h3>
@@ -107,7 +107,7 @@ export const Footer = () => {
                       className={` cursor-pointer ${
                         index === services.length - 1
                           ? "md:border-none"
-                          : "md:border-r-2 "
+                          : "lg:border-r-2 "
                       } border-primary pr-5 text-[20px] text-white hover:font-semibold transition-all duration-200`}
                     >
                       {item.title}
@@ -118,7 +118,7 @@ export const Footer = () => {
             </section>
           </div>
           {/* Address Section */}
-          <section className=" pb-5 mt-14">
+          <section className=" pb-5 mt-5 md:mt-14">
             <h3 className="  font-semibold text-[22px] text-primary">
               Address
             </h3>
@@ -132,7 +132,7 @@ export const Footer = () => {
                   </a>
                 </address>
                 <div>
-                  <ul className=" mt-7 flex items-center">
+                  <ul className=" md:mt-7 flex items-center">
                     {socialMedia.map((item) => (
                       <motion.li
                         whileHover={{ translateY: "-5px" }}
@@ -153,7 +153,7 @@ export const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="  mt-10 md:mt-0 p-2">
+              <div className="  mt-3 md:mt-0 p-2">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29756.856909044865!2d75.74480077431639!3d11.24444720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6846545e8603d%3A0x5467ed3da5a2ec1c!2sSkaktech%20Software%20Solutions%20LLP!5e1!3m2!1sen!2sin!4v1729584041110!5m2!1sen!2sin"
                   

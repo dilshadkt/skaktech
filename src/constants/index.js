@@ -109,28 +109,28 @@ export const technologies = [
 export const servicesList = [
   {
     id: 46,
-    image: "service1.png",
+    image: "service1.svg",
     title: "Software Development",
     content:
       "At our company, we specialize in software development services that cater to the unique needs of businesses across various industries. Our expert team designs, develops, and maintains custom software solutions that enhance efficiency, streamline operations, and drive innovation. From web and mobile applications to enterprise software systems, we deliver high-quality, scalable, and secure software tailored to meet your specific requirements, ensuring optimal performance and a seamless user experience",
   },
   {
     id: 47,
-    image: "service2.png",
+    image: "service2.svg",
     title: "Low-code development platform",
     content:
       "OutSystems is a leading low-code development platform that enables rapid application development with minimal hand-coding. It provides a visual development environment where developers can design and build applications using drag-and-drop components, pre-built templates, and reusable modules. This approach significantly speeds up the development process, reduces the complexity of coding, and allows both professional developers and business users to create and deploy apps quickly.",
   },
   {
     id: 48,
-    image: "service3.png",
+    image: "service3.svg",
     title: "Robotic process automation (RPA)",
     content:
       'RPA technology that uses software robots, or "bots," to automate repetitive, rule-based tasks and processes across various applications and systems. RPA helps businesses improve efficiency by reducing manual workloads, minimizing errors, and speeding up task execution, allowing human employees to focus on more strategic and value-added activities. It can be applied in numerous industries for tasks such as data entry, invoice processing, customer service, and reporting. By seamlessly integrating with existing software and systems, RPA provides a cost-effective and scalable solution for digital transformation, enhancing productivity and operational agility.',
   },
   {
     id: 49,
-    image: "service4.png",
+    image: "service4.svg",
     title: "Cloud computing services",
     content:
       "Cloud computing services refer to a range of on-demand services provided over the internet that allow individuals and businesses to access computing resources—such as servers, storage, databases, networking, software, and analytics—without having to own or manage physical infrastructure. These services are provided by cloud service providers like Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and others, offering flexibility, scalability, and cost efficiency.",

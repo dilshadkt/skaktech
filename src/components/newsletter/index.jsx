@@ -50,7 +50,7 @@ export const NewsLetter = () => {
                 className="text-center xl:text-start flex items-center"
                 key={index}
               >
-                <span className="size-1 hidden pt-3 lg:mt-0 lg:block bg-black rounded-full"></span>
+                <span className="w-[4px] h-[4px] hidden md:block  rounded-full  pt-3 lg:mt-0  bg-black "></span>
                 <span className="ml-3">{item}</span>
               </li>
             ))}
