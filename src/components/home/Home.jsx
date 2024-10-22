@@ -34,8 +34,8 @@ const HomePage = () => {
               viewport={{ once: false }}
               className="  absolute  justify-center items-center lg:justify-normal lg:items-start    bottom-0 z-30 flex flex-col md:text-center mt-40  lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20  lg:mt-0 lg:ml-10  py-16"
             >
-<div className="bg-black/30 lg:bg-transparent rounded-md lg:rounded-none z-40 flex flex-col md:items-center lg:items-start">
-<span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
+              <div className="bg-black/30  p-2  lg:p-0 lg:bg-transparent rounded-md lg:rounded-none z-40 flex flex-col md:items-center lg:items-start">
+                <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
                   The Google Pub/Sub service has made PO and shipment
                   integrations very easy and seamless with Warehouse360.
                 </span>
@@ -73,7 +73,7 @@ const HomePage = () => {
             <div
               className={`  ${
                 sliderIndex !== 2 ? " top-[40px]" : " top-[100px]"
-              } flex flex-col items-center content-center      absolute    sm:top-[200px]   lg:top-auto   md:bottom-0 right-0 w-full lg:w-1/2`}
+              } flex flex-col items-center content-center      absolute    sm:top-[200px]  md:top-[100px]  lg:top-auto   md:bottom-0 right-0 w-full lg:w-1/2`}
             >
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
