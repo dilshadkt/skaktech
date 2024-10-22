@@ -25,7 +25,7 @@ export const Footer = () => {
               />
 
               <a className="  " href="tel:+91 9072514080">
-                <span className="border-r-2 ml-3  border-[#268BBF]  pr-5">
+                <span className=" ">
                   +91 9072514080
                 </span>
               </a>
