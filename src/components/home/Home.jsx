@@ -71,7 +71,7 @@ const HomePage = () => {
             </motion.div>
             {/* banner right side mobile sectio  */}
             <div
-              className={`   flex flex-col items-center content-center      absolute   top-[50px]  sm:top-[200px]  md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
+              className={`   flex flex-col items-center content-center     absolute   top-[50px]  sm:top-[200px]  md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
             >
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
