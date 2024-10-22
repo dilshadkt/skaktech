@@ -153,7 +153,7 @@ export const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="  mt-3 md:mt-0 p-2">
+              <div className="  mt-3 md:mt-0 lg:p-2">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29756.856909044865!2d75.74480077431639!3d11.24444720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6846545e8603d%3A0x5467ed3da5a2ec1c!2sSkaktech%20Software%20Solutions%20LLP!5e1!3m2!1sen!2sin!4v1729584041110!5m2!1sen!2sin"
                   
