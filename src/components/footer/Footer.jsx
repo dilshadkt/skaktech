@@ -69,7 +69,7 @@ export const Footer = () => {
                 </h3>
                 <Link href={"/"}>
                   <Image
-                    src={"/assets/icons/logo.png"}
+                    src={"/assets/icons/logo-2.svg"}
                     width={150}
                     layout="responsive"
                     height={50}

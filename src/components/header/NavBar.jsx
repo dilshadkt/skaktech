@@ -42,7 +42,7 @@ export const NavBar = () => {
           <Link href={"/"}>
             <Image
               className="  sm:block hidden cursor-pointer "
-              src={"/assets/icons/logo.png"}
+              src={"/assets/icons/logo-2.svg"}
               quality={100}
               width={170}
               alt="logo"
@@ -50,7 +50,7 @@ export const NavBar = () => {
             />
             <Image
               className=" block sm:hidden cursor-pointer "
-              src={"/assets/icons/logo.png"}
+              src={"/assets/icons/logo-2.svg"}
               quality={100}
               width={100}
               alt="logo"
