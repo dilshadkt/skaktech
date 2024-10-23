@@ -25,7 +25,7 @@ const HomePage = () => {
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
       <section className=" w-full">
-        <div className=" relative      overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[800px]     bg-home bg-cover object-cover   w-full">
+        <div className=" relative      overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[750px]     bg-home bg-cover object-cover   w-full">
           <div className="  flex flex-col-reverse lg:flex-row lg:justify-between ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}

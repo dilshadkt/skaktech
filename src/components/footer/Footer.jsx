@@ -13,16 +13,17 @@ export const Footer = () => {
       <div className=" bg-black w-full  ">
         {/* Contact Section */}
         <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
-          <ul className="  grid grid-cols-2 md:grid-cols-3  py-5">
+          <ul className="  grid grid-cols-2  md:place-items-center sm:grid-cols-3  py-5">
             <li className="   flex items-center ">
               <Image
                 className=" mr-2 lg:mr-0"
-                src={"/assets/icons/phone.png"}
+                src={"/assets/icons/phone.svg"}
+                
                 alt="phone"
                 
-                height={30}
+                height={20}
                 quality={100}
-                width={30}
+                width={20}
               />
 
               <a className="  " href="tel:+91 9072514080">
@@ -31,13 +32,13 @@ export const Footer = () => {
                 </span>
               </a>
             </li>
-            <li className=" my-5 md:my-0 flex items-center">
+            <li className=" ml-1 sm:ml-0 my-5 md:my-0 flex items-center">
               <Image
-                src={"/assets/icons/mail.png"}
+                src={"/assets/icons/mail.svg"}
                 alt="phone"
                 quality={100}
-                height={30}
-                width={30}
+                height={20}
+                width={20}
               />
 
               <a className=" ml-3" href="mail:Info@skaktech.com">
@@ -48,9 +49,9 @@ export const Footer = () => {
               <Image
                 src={"/assets/icons/download-footer.png"}
                 alt="phone"
-                height={30}
+                height={20}
                 quality={100}
-                width={30}
+                width={20}
               />
 
               <a className=" ml-3" href="">
