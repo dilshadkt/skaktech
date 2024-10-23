@@ -32,7 +32,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false }}
-              className="  absolute  justify-center items-center lg:justify-normal lg:items-start    bottom-0 lg:bottom-[150px] z-30 flex flex-col md:text-center     lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20 lg:mt-0    lg:ml-10  py-16"
+              className="  absolute  md:bottom-0   justify-center items-center lg:justify-normal lg:items-start    bottom-0 lg:top-[90px] z-30 flex flex-col md:text-center     lg:text-start  px-5 lg:px-0  w-full lg:w-1/2 sm:mt-20 lg:mt-0    lg:ml-10  py-16"
             >
               <div className="bg-black/30  p-2  lg:p-0 lg:bg-transparent rounded-md lg:rounded-none z-40 flex flex-col md:items-center lg:items-start">
                 <span className=" lg:text-[28px] xl:text-[34px] md:max-w-[450px] xl:max-w-[600px] font-semibold text-white">
@@ -71,9 +71,14 @@ const HomePage = () => {
             </motion.div>
             {/* banner right side mobile sectio  */}
             <div
-              className={`  ${
-                sliderIndex === 1 || 2 ? " top-[100px]  " : "top-[10px]  "
-              }  flex flex-col items-center content-center     absolute   top-[50px]  sm:top-[200px]  md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
+              className={`
+                ${
+                  sliderIndex === 1 || sliderIndex === 2
+                    ? "top-[100px]"
+                    : "top-[50px] "
+                }
+                
+                flex flex-col items-center content-center     absolute     md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
             >
               <motion.div
                 initial={{ opacity: 0, x: 100 }}

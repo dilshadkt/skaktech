@@ -14,7 +14,7 @@ export const Footer = () => {
         {/* Contact Section */}
         <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
           <ul className="  grid grid-cols-2 md:grid-cols-3  py-5">
-            <li className="   flex items-center">
+            <li className="   flex items-center ">
               <Image
                 className=" mr-2 lg:mr-0"
                 src={"/assets/icons/phone.png"}
