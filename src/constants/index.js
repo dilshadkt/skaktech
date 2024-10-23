@@ -15,14 +15,14 @@ export const services = [
 ];
 
 export const socialMedia = [
-  { id: 11, path: "https://www.facebook.com/Skaktech", icon: "facebook.png" },
-  { id: 12, path: "https://www.instagram.com/Skaktech/", icon: "insta.png" },
+  { id: 11, path: "https://www.facebook.com/Skaktech", icon: "facebook.svg" },
+  { id: 12, path: "https://www.instagram.com/Skaktech/", icon: "insta.svg" },
   {
     id: 13,
     path: "https://www.youtube.com/channel/UC0Yzi_wZ43IPTNjZIQAPtd",
-    icon: "youtube.png",
+    icon: "youtube.svg",
   },
-  { id: 14, path: "https://twitter.com/skaktech", icon: "x.png" },
+  { id: 14, path: "https://twitter.com/skaktech", icon: "twitter.svg" },
 ];
 
 export const industriesWeServe = [

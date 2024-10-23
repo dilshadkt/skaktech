@@ -45,13 +45,13 @@ export const Industries = () => {
                   className=" mb-1 md:mb-0 object-contain  "
                   src={`/assets/icons/${item.icon}`}
                   alt={item.title}
-                  width={26}
-                  height={25}
+                  width={23}
+                  height={23}
                 />
                 <span
                   className={` ${
                     item.id === 18 ? "  text-nowrap" : ""
-                  }text-black text-[12px] md:text-[16px] md:px-5 font-normal       pt-5 md:mt-0 text-center whitespace-normal`}
+                  }text-black text-[12px] md:text-[16px] md:px-5 font-normal       pt-3 md:pt-5 md:mt-0 text-center whitespace-normal`}
                 >
                   {item.title}
                 </span>

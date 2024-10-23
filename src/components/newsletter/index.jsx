@@ -29,17 +29,17 @@ export const NewsLetter = () => {
           viewport={{ once: false }}
           className=" mt-10    px-5"
         >
-          <h1 className=" text-center  xl:text-start font-semibold text-[30px] sm:text-[40px] py-3">
+          <h1 className=" text-center  xl:text-start font-semibold text-[24px] sm:text-[40px] py-3">
             Subscribe to the Newsletter
           </h1>
-          <div className="text-[16px] sm:text-[18px] text-center  xl:text-start  font-medium text-[#8D8D8D]">
+          <div className="text-[14px] sm:text-[18px]     font-medium text-[#8D8D8D]">
             <h3 className=" ">
               Receive newsletters from Skaktech on a regular basis
             </h3>
             <h4>
               Stay-up-to date with the latest news and updates on our journey.
             </h4>
-            <h4 className=" text-black my-1">
+            <h4 className=" text-black text-[14px] my-1">
               In our newsletter you get the latest :
             </h4>
           </div>

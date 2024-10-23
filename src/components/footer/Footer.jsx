@@ -147,8 +147,8 @@ export const Footer = () => {
                             className=" mr-7 mt-5"
                             src={`/assets/icons/${item.icon}`}
                             alt="icon"
-                            width={30}
-                            height={25}
+                            width={20}
+                            height={20}
                           />
                         </a>
                       </motion.li>
