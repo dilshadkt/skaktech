@@ -22,7 +22,7 @@ export const socialMedia = [
     path: "https://www.youtube.com/channel/UC0Yzi_wZ43IPTNjZIQAPtd",
     icon: "youtube.svg",
   },
-  { id: 14, path: "https://twitter.com/skaktech", icon: "twitter.svg" },
+  { id: 14, path: "https://twitter.com/skaktech", icon: "x.svg" },
 ];
 
 export const industriesWeServe = [
