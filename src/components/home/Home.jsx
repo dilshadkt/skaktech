@@ -39,7 +39,7 @@ const HomePage = () => {
                   The Google Pub/Sub service has made PO and shipment
                   integrations very easy and seamless with Warehouse360.
                 </span>
-                <span className=" md:max-w-[350px] xl:max-w-[500px] mt-7 mb-5  text-[20px] text-white">
+                <span className=" md:max-w-[350px] xl:max-w-[500px] mt-7 mb-5  text-[18px] sm:text-[20px] text-white">
                   Customers now have a clear view of product details and the
                   ability to contact customer care 24/7 using the Mobile app.
                 </span>
@@ -71,7 +71,9 @@ const HomePage = () => {
             </motion.div>
             {/* banner right side mobile sectio  */}
             <div
-              className={`   flex flex-col items-center content-center     absolute   top-[50px]  sm:top-[200px]  md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
+              className={`  ${
+                sliderIndex === 1 || 2 ? " top-[100px]  " : "top-[10px]  "
+              }  flex flex-col items-center content-center     absolute   top-[50px]  sm:top-[200px]  md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
             >
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
