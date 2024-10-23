@@ -27,12 +27,12 @@ export const Footer = () => {
               />
 
               <a className="  " href="tel:+91 9072514080">
-                <span className=" ">
+                <span className="  ml-1">
                   +91 9072514080
                 </span>
               </a>
             </li>
-            <li className=" ml-1 sm:ml-0 my-5 md:my-0 flex items-center">
+            <li className=" ml-2 sm:ml-0 my-5 md:my-0 flex items-center">
               <Image
                 src={"/assets/icons/mail.svg"}
                 alt="phone"
@@ -41,20 +41,20 @@ export const Footer = () => {
                 width={20}
               />
 
-              <a className=" ml-3" href="mail:Info@skaktech.com">
+              <a className=" ml-2" href="mail:Info@skaktech.com">
                 Info@skaktech.com
               </a>
             </li>
             <li className="   md:mt-2 lg:mt-0  flex items-center">
               <Image
-                src={"/assets/icons/download-footer.png"}
+                src={"/assets/icons/download-footer.svg"}
                 alt="phone"
                 height={20}
                 quality={100}
                 width={20}
               />
 
-              <a className=" ml-3" href="">
+              <a className=" ml-2" href="">
                 Brochure
               </a>
             </li>

@@ -102,7 +102,7 @@ const LandingPage = () => {
             <h1 className=" text-black text-center md:text-start font-semibold text-[40px]">
               Why <span className="   text-primary">Skaktech</span>
             </h1>
-            <p className="  mt-3 leading-[38px] text-[20px] ">
+            <p className="  mt-3 leading-[38px]  tex-[16px] md:text-[20px] ">
               At our software company, we are committed to delivering
               exceptional value through innovative, reliable, and tailored
               solutions that meet the unique needs of our customers. With nearly
