@@ -87,7 +87,7 @@ const HomePage = () => {
                   transition={{ duration: 1 }}
                 >
                   <Image
-                    className=" p-6 md:p-0"
+                    className={`    p-6 md:p-0`}
                     src={`/assets/images/slider/${sliderImage}`}
                     alt="slider"
                     width={

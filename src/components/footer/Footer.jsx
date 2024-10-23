@@ -63,17 +63,17 @@ export const Footer = () => {
           {/* Quick Link Section */}
           <div className="   w-full">
             <section className=" my-5 md:my-5">
-              <div className="  flex  items-center justify-between">
+              <div className="  flex   items-center  justify-between">
                 <h3 className="  font-semibold text-[22px] text-primary">
                   Quick Links
                 </h3>
                 <Link href={"/"}>
                   <Image
                     src={"/assets/icons/logo-2.svg"}
-                    width={150}
+                    width={120}
                     layout="responsive"
                     height={50}
-                    className=" mt-3 md:mt-0 cursor-pointer"
+                    className=" mt-3 md:mt-0  w-full h-full object-contain cursor-pointer"
                     alt="logo"
                   />
                 </Link>
