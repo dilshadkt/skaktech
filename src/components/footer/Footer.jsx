@@ -70,10 +70,10 @@ export const Footer = () => {
                 <Link href={"/"}>
                   <Image
                     src={"/assets/icons/logo-2.svg"}
-                    width={120}
-                    layout="responsive"
-                    height={50}
-                    className=" mt-3 md:mt-0  w-full h-full object-contain cursor-pointer"
+                    width={150}
+                   
+                    height={40}
+                    className=" mt-3 md:mt-0     object-contain cursor-pointer"
                     alt="logo"
                   />
                 </Link>
@@ -171,8 +171,8 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white md:px-28 sm:px-10 px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
-        <ul className="flex   justify-center  sm:flex-row  items-center   ">
+      <section className=" text-white md:px-28   px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
+        <ul className="flex   justify-center    sm:flex-row  items-center   ">
           <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
             <a className="    " href="https://scanntek.com/">
               <span className="xl:border-r-2 pr-5">
@@ -180,20 +180,20 @@ export const Footer = () => {
               </span>
             </a>
           </li>
-          <li className="mt-5  pl-1 md:pl-0 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 mt-2  sm:pl-1 md:pl-0 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
                 <span>Copyright 2008-2019</span>
-                <span className="md:ml-4 pr-4">All Rights Reserved</span>
+                <span className="md:ml-4 hidden sm:block pr-4">All Rights Reserved</span>
               </span>
             </a>
           </li>
-          <li className="mt-5 xl:pl-5   md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 xl:pl-5 ml-5 sm:ml-0 mt-2     md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span className="xl:border-r-2 pr-5">Privacy Policy</span>
             </a>
           </li>
-          <li className="mt-5 pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 mt-2 sm:pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline w-1/2 md:w-auto">
             <a href="">
               <span>Terms and Conditions</span>
             </a>
