@@ -13,7 +13,7 @@ export const Footer = () => {
       <div className=" bg-[#EAEFF2] w-full  ">
         {/* Contact Section */}
         <section className=" text-[#414141]  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
-          <ul className="  grid grid-cols-2  md:place-items-center sm:grid-cols-3  py-5">
+          <ul className="  grid grid-cols-2  md:place-items-center sm:grid-cols-3  py-2">
             <li className="   flex items-center ">
               <Image
                 className=" mr-2 lg:mr-0"
@@ -63,7 +63,7 @@ export const Footer = () => {
         <div className=" px-5 md:px-10 lg:px-5  ">
           {/* Quick Link Section */}
           <div className="   w-full">
-            <section className=" my-5 md:my-5">
+            <section className=" my-1">
               <div className="  flex   items-center  justify-between">
                 <h3 className="  font-semibold text-[22px] text-primary">
                   Quick Links
@@ -79,10 +79,10 @@ export const Footer = () => {
                   />
                 </Link>
               </div>
-              <ul className=" mt-5  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7">
+              <ul className=" mt-2  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7">
                 {NavBarData.map((item, index) => (
                   <Link key={item.id} href={item.path}>
-                    <li className="mr-10 mt-3">
+                    <li className="mr-10 ">
                       <span
                         className={` ${
                           index === NavBarData.length - 1
@@ -98,14 +98,14 @@ export const Footer = () => {
               </ul>
             </section>
             {/* Services Section */}
-            <section className="     my-5  md:my-10">
+            <section className="     my-3   mt-5">
               <h3 className="   font-semibold  text-[22px] text-primary">
                 Services
               </h3>
 
-              <ul className=" flex flex-col md:flex-row  mt-5 ">
+              <ul className=" flex flex-col md:flex-row  mt-1 ">
                 {services.map((item, index) => (
-                  <li key={item.id} className="mr-10 mt-3">
+                  <li key={item.id} className="mr-10 ">
                     <span
                       className={` cursor-pointer ${
                         index === services.length - 1
@@ -121,11 +121,11 @@ export const Footer = () => {
             </section>
           </div>
           {/* Address Section */}
-          <section className=" pb-5 mt-5 md:mt-14">
+          <section className=" pb-5 mt-3 md:mt-5">
             <h3 className="  font-semibold text-[22px] text-primary">
               Address
             </h3>
-            <div className=" flex flex-col md:flex-row  md:justify-between mt-5">
+            <div className=" flex flex-col md:flex-row  md:justify-between mt-2">
               <div>
                 <address  className=" text-[#414141] text-[16px] md:text-[20px]">
                   <a href="https://maps.app.goo.gl/QZXjLE8Rmt9fHqQd6">
@@ -173,7 +173,7 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-[#414141] md:px-28   px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
+      <section className=" text-white md:px-28   px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
         <ul className="flex   justify-center    sm:flex-row  items-center   ">
           <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
             <a className="    " href="https://scanntek.com/">

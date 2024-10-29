@@ -156,7 +156,7 @@ const HomePage = () => {
             <Image
               className=" pl-5"
               src={"/assets/images/about1.svg"}
-              width={480}
+              width={380}
               height={500}
               alt="about1"
             />
@@ -167,11 +167,11 @@ const HomePage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className=" relative   md:px-5 lg:px-0 mt-10   md:mt-0  flex flex-col  md:flex-row md:justify-between"
+          className=" relative  md:mt-5 items-center  md:px-5 lg:px-0 mt-10    xl:mt-0  flex flex-col  md:flex-row md:justify-between"
         >
           <div className=" md:pl-5   px-5 md:px-0  flex justify-center md:justify-normal">
             <Image
-              className="xl:absolute   md:p-1 lg:p-0 -top-[100px] mb-5 md:mb-0 md:mt-5 lg:mt-0 lg:pl-10"
+              className="    md:p-1 lg:p-0   mb-5 md:mb-0 md:mt-5 lg:mt-0 lg:pl-10"
               src={"/assets/images/about2.svg"}
               width={450}
               height={330}
@@ -179,7 +179,7 @@ const HomePage = () => {
             />
           </div>
           <div>
-            <div className="  px-5 md:pl-10 xl:pl-0 md:mt-20">
+            <div className="  px-5 md:pl-10 xl:pl-0  ">
               <p className=" max-w-[800px] md:max-w-[1000px] lg:max-w-[800px] leading-[36px] md:px-5   text-[16px] md:text-[18px] xl:text-[20px]">
                 At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
@@ -190,7 +190,10 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" mt-3 md:ml-5    cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white">
+              <motion.div
+                whileHover={{ translateY: "-3px" }}
+                className=" mt-3 md:ml-5    cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white"
+              >
                 <Image
                   src={"/assets/images/download1.svg"}
                   alt="icon"
@@ -198,7 +201,7 @@ const HomePage = () => {
                   height={20}
                 />
                 <span className=" ml-2">Company Profile</span>{" "}
-              </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
