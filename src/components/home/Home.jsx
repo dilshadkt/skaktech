@@ -156,7 +156,7 @@ const HomePage = () => {
             <Image
               className=" pl-5"
               src={"/assets/images/about1.svg"}
-              width={380}
+              width={330}
               height={500}
               alt="about1"
             />
