@@ -10,9 +10,9 @@ import React, { useEffect } from "react";
 export const Footer = () => {
   return (
     <div className=" w-full ">
-      <div className=" bg-black w-full  ">
+      <div className=" bg-[#EAEFF2] w-full  ">
         {/* Contact Section */}
-        <section className=" text-white  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
+        <section className=" text-[#414141]  lg:px-28 md:text-[20px] text-[14px] px-5 font-semibold">
           <ul className="  grid grid-cols-2  md:place-items-center sm:grid-cols-3  py-5">
             <li className="   flex items-center ">
               <Image
@@ -88,7 +88,7 @@ export const Footer = () => {
                           index === NavBarData.length - 1
                             ? "md:border-none"
                             : "lg:border-r-2 "
-                        }  border-primary pr-5 text-[16px] md:text-[20px] text-white hover:font-semibold tranisio duration-150`}
+                        }  border-primary pr-5 text-[16px] md:text-[20px] text-[#414141] hover:font-semibold tranisio duration-150`}
                       >
                         {item.title}
                       </span>
@@ -111,7 +111,7 @@ export const Footer = () => {
                         index === services.length - 1
                           ? "md:border-none"
                           : "lg:border-r-2 "
-                      } border-primary pr-5 text-[16px] md:text-[20px] text-white hover:font-semibold transition-all duration-200`}
+                      } border-primary pr-5 text-[16px] md:text-[20px] text-[#414141] hover:font-semibold transition-all duration-200`}
                     >
                       {item.title}
                     </span>
@@ -127,7 +127,7 @@ export const Footer = () => {
             </h3>
             <div className=" flex flex-col md:flex-row  md:justify-between mt-5">
               <div>
-                <address  className=" text-white text-[16px] md:text-[20px]">
+                <address  className=" text-[#414141] text-[16px] md:text-[20px]">
                   <a href="https://maps.app.goo.gl/QZXjLE8Rmt9fHqQd6">
                   59/7757, Champion Arcade, Kozhikkode, Kerala
                   <br />
@@ -141,6 +141,7 @@ export const Footer = () => {
                         whileHover={{ translateY: "-5px" }}
                         transition={{ duration: 0.2 }}
                         key={item.id}
+                        className=" "
                       >
                         <a href={item.path}>
                           <Image
@@ -172,7 +173,7 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white md:px-28   px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
+      <section className=" text-[#414141] md:px-28   px-5  py-2 md:py-5  font-medium text-[10px] sm:text-[16px] bg-primary">
         <ul className="flex   justify-center    sm:flex-row  items-center   ">
           <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
             <a className="    " href="https://scanntek.com/">

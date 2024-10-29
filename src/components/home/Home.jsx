@@ -121,40 +121,20 @@ const HomePage = () => {
         </div>
       </section>
       {/* About Section */}
-      <section className="    ">
-        <div>
-          <h1 className="  lg:my-10 text-center py-5  md:py-2 text-[40px] font-semibold">
-            <div>
+      <section className="  pb-10   ">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false }}
+          className=" relative  flex flex-col-reverse   md:flex-row md:justify-between"
+        >
+          <div className=" px-5  md:pl-10 md:mt-10 mt-5">
+            <h1 className=" text-[30px]  md:text-[38px] font-semibold">
               <span>About</span>
               <span className=" text-primary ml-2">Skaktech</span>
-            </div>
-          </h1>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false }}
-            className="    flex flex-col md:flex-row  px-5 md:px-0 "
-          >
-            <Image
-              className=" hidden md:block    mt-16      "
-              src={"/assets/images/about1.png"}
-              width={380}
-              height={280}
-              alt="about"
-              quality={100}
-            />
-            <Image
-              className="  block md:hidden   mt-5     "
-              src={"/assets/images/about1.png"}
-              width={380}
-              layout="responsive"
-              height={280}
-              alt="about"
-              quality={100}
-            />
-
-            <p className=" md:ml-4 lg:ml-0 h   md:mt-16 md:pl-10 lg:mt-0    2xl:pr-48   mt-5  w-full leading-[28px]  lg:pl-24 xl:pl-[230px]  xl:px-10 pr-5 lg:leading-[40px] text-[16px]  lg:text-[18px]">
+            </h1>
+            <p className=" max-w-[800px]   text-[16px] md:text-[18px] xl:text-[20px] leading-[36px] mt-5">
               Welcome to Skaktech, a global provider of innovative software
               solutions and services. Established in 2015, Skaktech has been
               dedicated to delivering cutting-edge technologies that empower
@@ -162,18 +142,45 @@ const HomePage = () => {
               expanded our services and expertise, serving clients from around
               the world with customized solutions that meet their unique needs.
             </p>
-          </motion.div>
-          {/* visible for medium and large  screens */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false }}
-            className="relative hidden 2xl:hidden  md:flex justify-between mt-[50px] px-5 md:px-0"
-          >
-            {/* Left section (Text) */}
-            <div className="md:ml-4 lg:ml-4 w-full md:w-2/3">
-              <p className="mt-5 w-full leading-[28px]  max-w-[1000px] pr-5 lg:leading-[40px] text-[16px] lg:text-[20px]">
+          </div>
+          <div className=" flex   items-center justify-center my-3 md:hidden">
+            <Image
+              className=" pl-5"
+              src={"/assets/images/about1-1.svg"}
+              width={480}
+              height={300}
+              alt="about1"
+            />
+          </div>
+          <div className=" md:flex hidden justify-end   ">
+            <Image
+              className=" pl-5"
+              src={"/assets/images/about1.svg"}
+              width={480}
+              height={500}
+              alt="about1"
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false }}
+          className=" relative   md:px-5 lg:px-0 mt-10   md:mt-0  flex flex-col  md:flex-row md:justify-between"
+        >
+          <div className=" md:pl-5   px-5 md:px-0  flex justify-center md:justify-normal">
+            <Image
+              className="xl:absolute   md:p-1 lg:p-0 -top-[100px] mb-5 md:mb-0 md:mt-5 lg:mt-0 lg:pl-10"
+              src={"/assets/images/about2.svg"}
+              width={450}
+              height={330}
+              alt="about2"
+            />
+          </div>
+          <div>
+            <div className="  px-5 md:pl-10 xl:pl-0 md:mt-20">
+              <p className=" max-w-[800px] md:max-w-[1000px] lg:max-w-[800px] leading-[36px] md:px-5   text-[16px] md:text-[18px] xl:text-[20px]">
                 At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
                 growth. Our talented team of developers, engineers, and
@@ -183,103 +190,18 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <motion.div
-                whileHover={{ translateY: "-3px" }}
-                className="hover:font-semibold 2xl:ml-5 mb-4 lg:mb-0 bg-primary cursor-pointer mt-5 px-4 py-2 inline-flex rounded-md text-white items-center"
-              >
+              <div className=" mt-3 md:ml-5    cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white">
                 <Image
-                  src={"/assets/icons/download.png"}
-                  height={15}
-                  width={30}
-                  alt="download"
+                  src={"/assets/images/download1.svg"}
+                  alt="icon"
+                  width={20}
+                  height={20}
                 />
-                <span className="ml-2">Company Profile</span>
-              </motion.div>
-            </div>
-
-            {/* Right section (Image) */}
-            <div className="relative w-full md:w-1/3">
-              <Image
-                className="hidden md:block absolute right-0  md:-top-[30px] lg:-top-[100px] mb-16"
-                src={"/assets/images/about2.png"}
-                width={380}
-                height={280}
-                alt="about"
-                quality={100}
-              />
-              <Image
-                className="block md:hidden mt-16"
-                src={"/assets/images/about2.png"}
-                width={380}
-                layout="responsive"
-                height={280}
-                alt="about"
-                quality={100}
-              />
-            </div>
-          </motion.div>
-
-          {/* Visible for small and extra-large screens */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false }}
-            className="    mt-5      md:hidden 2xl:block  relative  md:mt-[50px]     w-full  "
-          >
-            <Image
-              className="  hidden md:block  px-5   xl:absolute  right-0 -top-[140px]  lg:px-0 "
-              src={"/assets/images/about2.png"}
-              width={480}
-              height={250}
-              alt="about"
-              quality={100}
-            />
-            <Image
-              className="   block md:hidden  px-5   xl:absolute  right-0 -top-[100px]  lg:px-0 "
-              src={"/assets/images/about2.png"}
-              width={480}
-              height={250}
-              layout="responsive"
-              alt="about"
-              quality={100}
-            />
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: false }}
-              className=" w-full "
-            >
-              <div className="md:px-10 px-5   ">
-                <p className="   mt-5  w-full leading-[28px]    max-w-[900px] pr-5 lg:leading-[40px] text-[16px]   2xl:pl-5 lg:text-[18px] ">
-                  At Skaktech, we pride ourselves on creating high-quality
-                  software products that drive efficiency, productivity, and
-                  growth. Our talented team of developers, engineers, and
-                  consultants work collaboratively to provide tailored solutions
-                  that align with our clients’ goals. From enterprise-level
-                  systems to specialized software, our offerings are designed to
-                  enhance operations, improve decision-making, and foster
-                  digital transformation.
-                </p>
-                <motion.div
-                  whileHover={{
-                    translateY: "-3px",
-                  }}
-                  className=" hover:font-semibold  2xl:ml-5 mb-4 lg:mb-0   bg-primary cursor-pointer  mt-5  px-4 py-2 inline-flex rounded-md text-white items-center "
-                >
-                  <Image
-                    src={"/assets/icons/download.png"}
-                    height={15}
-                    width={30}
-                    alt="download"
-                  />
-                  <span className="  ml-2">Company Profile</span>
-                </motion.div>
+                <span className=" ml-2">Company Profile</span>{" "}
               </div>
-            </motion.div>
-          </motion.div>
-        </div>
+            </div>
+          </div>
+        </motion.div>
       </section>
       {/* Industry Section */}
       <section className=" py-5 ">
