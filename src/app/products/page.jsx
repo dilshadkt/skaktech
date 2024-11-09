@@ -1,7 +1,10 @@
+import Updation from "@/components/content-updation";
 import React from "react";
 
 function Products() {
-  return <div  className=' min-h-screen'>Products</div>;
+  return <div  className=' h-screen'>
+    <Updation/>
+  </div>;
 }
 
 export default Products;

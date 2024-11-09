@@ -1,9 +1,12 @@
-import React from 'react'
+import Updation from "@/components/content-updation";
+import React from "react";
 
 const Services = () => {
   return (
-    <div className=' min-h-screen'>Services</div>
-  )
-}
+    <div className=" h-screen">
+      <Updation />
+    </div>
+  );
+};
 
-export default Services
+export default Services;

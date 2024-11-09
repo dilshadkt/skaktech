@@ -1,8 +1,11 @@
+import Updation from '@/components/content-updation'
 import React from 'react'
 
 const Blogs = () => {
   return (
-    <div  className=' min-h-screen'>Blogs</div>
+    <div  className='  h-screen'>
+      <Updation/>
+    </div>
   )
 }
 
