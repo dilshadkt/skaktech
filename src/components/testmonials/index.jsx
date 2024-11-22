@@ -5,7 +5,7 @@ import TestimonialSlider from "./slider";
 const Testimonial = () => {
   return (
     <>
-      <div className="h-[100vh] md:h-[110vh]  relative">
+      <div className="h-[95vh] md:h-[110vh]  relative">
         <Image
           src={"/assets/images/testimonials.png"}
           alt="testimonial"

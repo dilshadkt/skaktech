@@ -70,11 +70,14 @@ const Services = () => {
           <h5 className="text-sm md:text-base text-[#8D8D8D]">
             About Our Service
           </h5>
-          <h2 className="text-2xl md:text-5xl font-medium mt-2 md:mt-7 leading-[65px]">
+          <h2 className="text-2xl md:text-5xl font-medium mt-2 md:mt-7 md:leading-[65px]">
             Decarbonise your future with us
           </h2>
         </div>
-        <div className="flex text-sm flex-col gap-y-2 md:gap-y-4 leading-10 md:text-base lg:text-lg">
+        <div
+          className="flex text-sm flex-col mt-4 md:mt-0 gap-y-2 md:gap-y-4 leading-7 md:leading-10 
+        md:text-base lg:text-lg"
+        >
           <p>
             At our company, we specialize in software development services that
             cater to the unique needs of businesses across various industries.
@@ -94,7 +97,7 @@ const Services = () => {
       </div>
       <div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
-      gap-y-20 mb-16 mt-0 md:my-16 px-5 md:px-10 lg:px-12 2xl:px-16"
+       gap-y-12 md:gap-y-20 mb-16 mt-0 md:my-16 px-5 md:px-10 lg:px-12 2xl:px-16"
       >
         {services.map((service) => (
           <div key={service.id} className="flex flex-col gap-y-4 items-center">
