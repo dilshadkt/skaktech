@@ -1,9 +1,9 @@
 export const NavBarData = [
-  { id: 1, title: "Company", path: "/company" },
+  { id: 1, title: "Home", path: "/company" },
+  { id: 5, title: "About Us", path: "/about" },
   { id: 2, title: "Services", path: "/services" },
   { id: 3, title: "Products", path: "/products" },
   { id: 4, title: "Careers", path: "/careers" },
-  { id: 5, title: "Blogs", path: "/blogs" },
   { id: 6, title: "Contact Us", path: "/contact" },
 ];
 
@@ -13,16 +13,19 @@ export const services = [
   { id: 9, title: "Robotic Process Automation (RPA)" },
   { id: 10, title: "Cloud Computing Services" },
 ];
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import XIcon from "@mui/icons-material/X";
 export const socialMedia = [
-  { id: 11, path: "https://www.facebook.com/Skaktech", icon: "facebook.svg" },
-  { id: 12, path: "https://www.instagram.com/Skaktech/", icon: "insta.svg" },
+  { id: 11, path: "https://www.facebook.com/Skaktech", Icon: FacebookIcon },
+  { id: 12, path: "https://www.instagram.com/Skaktech/", Icon: InstagramIcon },
   {
     id: 13,
     path: "https://www.youtube.com/channel/UC0Yzi_wZ43IPTNjZIQAPtd",
-    icon: "youtube.svg",
+    Icon: YouTubeIcon,
   },
-  { id: 14, path: "https://twitter.com/skaktech", icon: "x.svg" },
+  { id: 14, path: "https://twitter.com/skaktech", Icon: XIcon },
 ];
 
 export const industriesWeServe = [

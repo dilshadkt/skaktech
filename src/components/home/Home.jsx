@@ -25,7 +25,7 @@ const HomePage = () => {
     <div className=" w-full overflow-hidden overflow-x-hidden">
       {/* Banner section */}
       <section className=" w-full">
-        <div className=" relative      overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[750px]     bg-home bg-cover object-cover   w-full">
+        <div className=" relative  lg:px-10 2xl:px-16   overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[750px]     bg-home bg-cover object-cover   w-full">
           <div className="  flex flex-col-reverse lg:flex-row lg:justify-between ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -121,20 +121,20 @@ const HomePage = () => {
         </div>
       </section>
       {/* About Section */}
-      <section className="  pb-10   ">
+      <section className="  pb-10  flex flex-col md:gap-y-5 lg:gap-y-16 relative ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className=" relative  flex flex-col-reverse   md:flex-row md:justify-between"
+          className=" lg:px-10 2xl:px-16  flex flex-col-reverse   md:flex-row md:justify-between"
         >
           <div className=" px-5  md:pl-10 md:mt-10 mt-5">
             <h1 className=" text-[30px]  md:text-[38px] font-semibold">
               <span>About</span>
               <span className=" text-primary ml-2">Skaktech</span>
             </h1>
-            <p className=" max-w-[800px]   text-[16px] md:text-[18px] xl:text-[20px] leading-[36px] mt-5">
+            <p className=" max-w-[800px]  relative z-20  text-[16px] md:text-[18px] xl:text-[20px] leading-[36px] mt-7">
               Welcome to Skaktech, a global provider of innovative software
               solutions and services. Established in 2015, Skaktech has been
               dedicated to delivering cutting-edge technologies that empower
@@ -152,9 +152,9 @@ const HomePage = () => {
               alt="about1"
             />
           </div>
-          <div className=" md:flex hidden justify-end   ">
+          <div className=" absolute right-0 md:flex hidden justify-end   ">
             <Image
-              className=" pl-5"
+              className=" pl-5 md:opacity-50 lg:opacity-100 md:w-[240px] lg:w-[330px]"
               src={"/assets/images/about1.svg"}
               width={330}
               height={500}
@@ -167,7 +167,7 @@ const HomePage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className=" relative  md:mt-5 items-center  md:px-5 lg:px-0 mt-10    xl:mt-0  flex flex-col  md:flex-row md:justify-between"
+          className=" relative  md:mt-5 items-center   md:px-5 lg:px-10 2xl:px-16  mt-10    xl:mt-0  flex flex-col  md:flex-row md:justify-between"
         >
           <div className=" md:pl-5   px-5 md:px-0  flex justify-center md:justify-normal">
             <Image
@@ -180,7 +180,11 @@ const HomePage = () => {
           </div>
           <div>
             <div className="  px-5 md:pl-10 xl:pl-0  ">
-              <p className=" max-w-[800px] md:max-w-[1000px] lg:max-w-[800px] leading-[36px] md:px-5   text-[16px] md:text-[18px] xl:text-[20px]">
+              <p
+                className=" max-w-[800px] md:max-w-[1000px]
+               text-left md:text-right lg:max-w-[800px] leading-[36px] md:px-5   
+              text-[16px] md:text-[18px] xl:text-[20px]"
+              >
                 At Skaktech, we pride ourselves on creating high-quality
                 software products that drive efficiency, productivity, and
                 growth. Our talented team of developers, engineers, and
@@ -190,28 +194,30 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <motion.div
-                whileHover={{ translateY: "-3px" }}
-                className=" mt-3 md:ml-5    cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white"
-              >
-                <Image
-                  src={"/assets/images/download1.svg"}
-                  alt="icon"
-                  width={20}
-                  height={20}
-                />
-                <span className=" ml-2">Company Profile</span>{" "}
-              </motion.div>
+              <div className=" flex items-center justify-start md:justify-end ">
+                <motion.div
+                  whileHover={{ translateY: "-3px" }}
+                  className=" mt-3 md:ml-5     cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white"
+                >
+                  <Image
+                    src={"/assets/images/download1.svg"}
+                    alt="icon"
+                    width={20}
+                    height={20}
+                  />
+                  <span className=" ml-2">Company Profile</span>{" "}
+                </motion.div>
+              </div>
             </div>
           </div>
         </motion.div>
       </section>
       {/* Industry Section */}
-      <section className=" py-5 ">
+      <section className=" py-5  lg:px-10 2xl:px-16">
         <Industries />
       </section>
       {/* Newsletter Section */}
-      <section className=" px-5 my-10  lg:pb-10 xl:my-5">
+      <section className=" md:px-5 my-10 lg:px-10 2xl:px-16  lg:pb-10 xl:my-5">
         <NewsLetter />
       </section>
     </div>

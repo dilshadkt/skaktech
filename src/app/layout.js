@@ -1,9 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Albert_Sans } from 'next/font/google';
+import { Albert_Sans } from "next/font/google";
 import { NavBar } from "@/components/header/NavBar";
 import { Footer } from "@/components/footer/Footer";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -16,9 +17,9 @@ import { Footer } from "@/components/footer/Footer";
 // });
 
 const albertSans = Albert_Sans({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata = {
@@ -29,13 +30,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-      <body
-        className={`${albertSans.className}    antialiased`}
-      >
-        <NavBar/>
+      <body className={`${albertSans.className}    antialiased`}>
+        <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

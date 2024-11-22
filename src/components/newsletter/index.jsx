@@ -6,8 +6,8 @@ import React from "react";
 
 export const NewsLetter = () => {
   return (
-    <div>
-      <div className=" px-5 lg:pt-10 xl:pt-0 md:px-10 w-full flex flex-col    xl:flex-row  lg:justify-between">
+    <div className="">
+      <div className=" lg:pt-10 xl:pt-0 md:px-10 w-full flex flex-col    xl:flex-row  lg:justify-between">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -39,17 +39,18 @@ export const NewsLetter = () => {
             <h4>
               Stay-up-to date with the latest news and updates on our journey.
             </h4>
-            <h4 className=" text-black text-[14px] my-1">
+            <h4 className=" text-black text-[14px] my-5 md:my-1">
               In our newsletter you get the latest :
             </h4>
           </div>
 
-          <ol className="list-disc  list-inside px-5 lg:px-0 my-3 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3">
+          <ol
+            className="list-disc  list-inside gap-y-3 md:gap-y-0
+             text-sm md:px-5 lg:px-0 my-3 grid grid-cols-1
+            sm:grid-cols-2 md:grid-cols-3"
+          >
             {newsletterList.map((item, index) => (
-              <li
-                className="  flex items-center"
-                key={index}
-              >
+              <li className="  flex items-center" key={index}>
                 <span className="w-[4px] h-[4px]   rounded-full  pt-3 lg:mt-0  bg-black "></span>
                 <span className="ml-3">{item}</span>
               </li>
@@ -77,7 +78,8 @@ export const NewsLetter = () => {
                 />
                 <input
                   required
-                  className="  w-full xl:w-1/2 h-[40px] rounded-md pl-5 border-2  mt-5 2xl:mt-0 2xl:ml-5 "
+                  className="  w-full xl:w-1/2 h-[40px] rounded-md pl-5 
+                  border-2  mt-5 2xl:mt-0 2xl:ml-5 "
                   type="text"
                   placeholder="Phone Number*"
                   name=""
@@ -87,7 +89,7 @@ export const NewsLetter = () => {
               <div className=" my-3">
                 <input type="checkbox" name="check" id="check" />
                 <label
-                  className="     text-[14px] ml-2"
+                  className="   text-xs  md:text-sm ml-2"
                   htmlFor="check"
                   id="check"
                 >
