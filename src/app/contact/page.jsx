@@ -46,7 +46,7 @@ function Contact() {
             </form>
           </div>
           <div className=" order-1  md:order-2 col-span-1 flex flex-col items-center">
-            <div className="w-32 bg-red-200 h-32 rounded-full overflow-hidden">
+            <div className="w-32  h-32 rounded-full overflow-hidden">
               <Image
                 src={"/assets/images/Ellipse 179 (1).png"}
                 alt="experts"
