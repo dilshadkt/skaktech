@@ -78,11 +78,11 @@ function Products() {
          leading-8 md:leading-9 2xl:leading-10"
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived
+            not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged.
           </p>
           <div className="grid grid-cols-3 gap-x-3 md:gap-x-0 gap-y-10 mt-14 2xl:-translate-x-10 ">
             {features.map((feature, index) => (
