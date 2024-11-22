@@ -159,16 +159,16 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-white md:px-28   px-5  py-2 md:py-5  font-medium text-xs sm:text-sm bg-primary">
-        <ul className="flex   justify-center    sm:flex-row  items-center   ">
-          <li className="mt-5  md:mt-0 hover:underline w-1/2 md:w-auto">
+      <section className=" text-white md:px-28  px-3  bg-re  py-2 md:py-5  font-medium text-[10px] sm:text-sm bg-primary">
+        <ul className=" grid grid-cols-2  md:flex   justify-center    sm:flex-row  items-center   ">
+          <li className="mt-5  w-full  md:mt-0 hover:underline md:w-1/2 ">
             <a className="    " href="https://scanntek.com/">
               <span className="xl:border-r-2 pr-5">
                 Made with Scantekk Technologies
               </span>
             </a>
           </li>
-          <li className="sm:mt-5 mt-2  sm:pl-1 md:pl-0 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 mt-2  sm:pl-1 md:pl-0 md:mt-0 hover:underline md:w-1/2 w-full">
             <a href="">
               <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
                 <span>Copyright 2008-2019</span>
@@ -178,12 +178,14 @@ export const Footer = () => {
               </span>
             </a>
           </li>
-          <li className="sm:mt-5 xl:pl-5 ml-5 sm:ml-0 mt-2     md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 xl:pl-5 md:ml-5 sm:ml-0 mt-2      md:mt-0 hover:underline md:w-1/2 w-full">
             <Link href="/privacy-policy">
-              <span className="xl:border-r-2 pr-5">Privacy Policy</span>
+              <span className="xl:border-r-2 text-left  pr-5">
+                Privacy Policy
+              </span>
             </Link>
           </li>
-          <li className="sm:mt-5 mt-2 sm:pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline w-1/2 md:w-auto">
+          <li className="sm:mt-5 mt-2 sm:pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline md:w-1/2 w-full">
             <Link href="/terms-condition">
               <span>Terms and Conditions</span>
             </Link>
