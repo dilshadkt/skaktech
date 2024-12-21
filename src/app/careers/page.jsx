@@ -1,4 +1,7 @@
 import HeaderBanner from "@/components/Banner";
+import JobInfo from "@/components/careers/JobInfo";
+import Life from "@/components/careers/Life";
+import Mission from "@/components/careers/Mission";
 import MeetOurTeam from "@/components/meetOurTeam";
 import WhatAreSkaktech from "@/components/whatAre";
 import Image from "next/image";
@@ -8,11 +11,13 @@ const Careers = () => {
   return (
     <div className=" min-h-screen">
       <HeaderBanner
-        image={"/assets/images/teams.jpg"}
+        image={"/assets/images/Careers.jpg"}
         title={"Accelerate your career with skaktech"}
       />
+      <JobInfo/>
       <MeetOurTeam />
-      <WhatAreSkaktech />
+      <Mission/>
+      <Life/>
     </div>
   );
 };

@@ -44,7 +44,7 @@ export const Registration = () => {
       </section>
       <section className=" px-5  text-center md:px-10 xl:px-0 pt-10">
         <div className=" max-w-[950px]  mx-auto ">
-          <h3 className="  text-center text-black font-semibold text-[20px]">
+          <h3 className="  text-center text-black font-semibold text-[30px] md:text-[40px]">
             Our <span className=" text-primary">Clients</span>
           </h3>
           <p className=" my-10 text-black font-bold text-[24px] md:text-[30px] lg:text-[40px] ">

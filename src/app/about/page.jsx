@@ -11,7 +11,8 @@ const About = () => {
   return (
     <section className="overflow-x-hidden">
       <HeaderBanner
-        image={"/assets/images/about.jpg"}
+        image={"/assets/images/aboutimg.png"}
+        
         title={"Helping you achieve your mission"}
         desc={"Trusted by innovators and industry leaders"}
       />

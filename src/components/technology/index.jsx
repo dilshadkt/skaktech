@@ -34,7 +34,7 @@ const Technologies = ({ className, iconClassName }) => {
   ];
   return (
     <div
-      className={`h-fit md:h-screen   flex flex-col items-center py-14 ${className}`}
+      className={`h-fit md:h-screen   flex flex-col items-center pt-5 pb-5 ${className}`}
     >
       <h3 className="text-center leading-9 md:leading-[58px] text-2xl md:text-4xl font-medium">
         Technologies, services and <br /> Subscriptions we work with

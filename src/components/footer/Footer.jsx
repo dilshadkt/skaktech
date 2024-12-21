@@ -12,12 +12,12 @@ import React, { useEffect } from "react";
 export const Footer = () => {
   return (
     <div className=" w-full ">
-      <div className=" bg-[#EAEFF2] w-full  py-6 md:py-10 lg:px-10 2xl:px-16 ">
+      <div className=" bg-[#363636] w-full  py-6 md:py-10 lg:px-10 2xl:px-16 ">
         {/* Contact Section */}
-        <section className=" text-[#414141]  lg:px-28 text-sm md:text-lg  px-5 font-medium">
+        <section className=" text-white  lg:px-28 text-sm md:text-lg  px-5 font-medium">
           <ul className="grid grid-cols-1 text-sm md:text-base  md:place-items-center sm:grid-cols-3  ">
             <li className=" gap-2  flex items-center ">
-              <CallIcon fontSize="inherit" className="text-[#414141]" />
+              <CallIcon fontSize="inherit" className="text-white" />
 
               <a className="" href="tel:+91 9072514080">
                 <span className="  ml-1">+91 9072514080</span>
@@ -67,7 +67,7 @@ export const Footer = () => {
                       } ${
                         NavBarData.length - 1 !== index &&
                         `md:border-r-2 border-primary`
-                      }   text-[#414141]`}
+                      }   text-white`}
                     >
                       {item.title}
                     </li>
@@ -95,7 +95,7 @@ export const Footer = () => {
                     } ${
                       services.length - 1 !== index &&
                       `md:border-r-2 border-primary `
-                    }    text-[#414141]`}
+                    }    text-white`}
                   >
                     {item.title}
                   </li>
@@ -113,7 +113,7 @@ export const Footer = () => {
 
                 <div className=" flex flex-col md:flex-row  md:justify-between mt-3">
                   <div>
-                    <address className=" text-[#414141] flex flex-col text-sm md:text-base">
+                    <address className=" text-white flex flex-col text-sm md:text-base">
                       <a
                         href="https://maps.app.goo.gl/QZXjLE8Rmt9fHqQd6"
                         className="flex flex-col"
@@ -126,7 +126,7 @@ export const Footer = () => {
                       </a>
                     </address>
                     <div>
-                      <ul className="my-5 md:mt-16 flex items-center gap-6 text-[#414141]">
+                      <ul className="my-5 md:mt-16 flex items-center gap-6 text-white">
                         {socialMedia.map((item) => (
                           <motion.li
                             whileHover={{ translateY: "-5px" }}
