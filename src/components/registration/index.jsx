@@ -56,15 +56,16 @@ export const Registration = () => {
           animate={{ x: [0, -20, 20, 0] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
         >
-          <ul className="  border-[#DAE3FE] lg:border-t-[1px] lg:border-b-[1px]  grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-3 items-center place-items-center py-1  my-2">
+          <ul className="  border-[#DAE3FE]   grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-3 items-center place-items-center py-1  my-2">
             {clients.map((item) => (
               <li className=" my-3 lg:px-2 md:my-0 cursor-pointer" key={item.id}>
                 <Image
                   src={`/assets/images/clients/${item.icon}`}
                   alt={item.icon}
-                  width={200}
-                  height={40}
+                  width={1000}
+                  height={1000}
                   quality={100}
+                  className=" object-cover h-10 w-full"
                 />
               </li>
             ))}

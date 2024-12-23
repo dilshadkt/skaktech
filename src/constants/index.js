@@ -1,11 +1,26 @@
 export const NavBarData = [
-  { id: 1, title: "Home", path: "/company" },
+  { id: 1, title: "Company", path: "/company" },
   { id: 5, title: "About Us", path: "/about" },
   { id: 2, title: "Services", path: "/services" },
-  { id: 3, title: "Products", path: "/products" },
+  {
+    id: 3,
+    title: "Products",
+    hasDropdown: true,
+    path:'#',
+    dropdownItems: [
+      { id: 1, title: "WareHouse360", subtitle:'Warehouse Management System', path: "/products" ,img:'productimg-1.png' },
+      { id: 2, title: "TrackSuite", subtitle:'Product Sales, Service and AMC Management.', path: "/products",img:'productimg-2.png' },
+      { id: 2, title: "Pepper", subtitle:'Restaurant Point of sale system.', path: "/products",img:'productimg-3.png' },
+      { id: 2, title: "QTrack", subtitle:'Queue Management system', path: "/products",img:'productimg-4.png' },
+      { id: 2, title: "TradeEzy", subtitle:'Sales and Inventory management system', path: "/products",img:'productimg-5.png' },
+      
+    ],
+  },
   { id: 4, title: "Careers", path: "/careers" },
   { id: 6, title: "Contact Us", path: "/contact" },
 ];
+
+
 
 export const services = [
   { id: 7, title: "Software Development" },
@@ -17,6 +32,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import XIcon from "@mui/icons-material/X";
+import { patch } from "@mui/material";
 export const socialMedia = [
   { id: 11, path: "https://www.facebook.com/Skaktech", Icon: FacebookIcon },
   { id: 12, path: "https://www.instagram.com/Skaktech/", Icon: InstagramIcon },
@@ -170,28 +186,25 @@ export const partners = [
 export const clients = [
   {
     id: 56,
-    icon: "honda.png",
+    icon: "kent.png",
   },
   {
     id: 57,
-    icon: "scannia.png",
+    icon: "tallyglobe.png",
   },
   {
     id: 58,
-    icon: "mobility.png",
+    icon: "talabat.png",
   },
   {
     id: 59,
-    icon: "avis.png",
+    icon: "lmti.png",
   },
   {
     id: 60,
-    icon: "kelois.png",
+    icon: "technocare.png",
   },
-  {
-    id: 61,
-    icon: "avlta.png",
-  },
+
 ];
 
 export const careers = [

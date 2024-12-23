@@ -16,7 +16,7 @@ const Testimonial = () => {
           <TestimonialSlider />
         </div>
       </div>
-      <div className="bg-[#363636]  h-[150px] md:h-[200px] relative ">
+      <div className="bg-[#EAEFF2]  h-[150px] md:h-[200px] relative ">
         <div
           className="md:h-[400px] bg-white shadow-sm rounded-xl w-[90%] md:w-[60%] left-0
         right-0 mx-auto  absolute -top-full  p-6 md:p-8 pb-10"

@@ -68,32 +68,7 @@ const LandingPage = () => {
       </section>
       <section className=" my-10 lg:my-16">
         <div className="  px-5 md:px-10 flex justify-between flex-col  lg:flex-row w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
-            className=" w-full lg:w-1/2"
-          >
-            <ul className=" grid mt-10 grid-cols-2 lg:pr-5 xl:pr-0 md:grid-cols-4 gap-10 place-items-center md:gap-20">
-              {technologies.map((item) => (
-                <li key={item.id}>
-                  <motion.div
-                    className=" cursor-pointer"
-                    whileHover={{ translateY: "-10px" }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Image
-                      src={`/assets/icons/technologies/${item.icon}`}
-                      alt={item.icon}
-                      height={55}
-                      width={55}
-                    />
-                  </motion.div>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div
+        <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
@@ -119,6 +94,32 @@ const LandingPage = () => {
               focused on your success.
             </p>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            className=" w-full lg:w-1/2"
+          >
+            <ul className=" grid mt-10 grid-cols-2 lg:pr-5 xl:pr-0 md:grid-cols-4 gap-10 place-items-center md:gap-20">
+              {technologies.map((item) => (
+                <li key={item.id}>
+                  <motion.div
+                    className=" cursor-pointer"
+                    whileHover={{ translateY: "-10px" }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Image
+                      src={`/assets/icons/technologies/${item.icon}`}
+                      alt={item.icon}
+                      height={55}
+                      width={55}
+                    />
+                  </motion.div>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+          
         </div>
       </section>
       <section className=" py-5 lg:py-16">

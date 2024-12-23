@@ -79,7 +79,7 @@ export const NewsLetter = () => {
                 <input
                   required
                   className="  w-full xl:w-1/2 h-[40px] rounded-md pl-5 
-                  border-2  mt-5 2xl:mt-0 2xl:ml-5 "
+                  border-2   "
                   type="text"
                   placeholder="Phone Number*"
                   name=""

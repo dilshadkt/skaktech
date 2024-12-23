@@ -16,7 +16,7 @@ const Careers = () => {
       />
       <JobInfo/>
       <MeetOurTeam />
-      <Mission/>
+      {/* <Mission/> */}
       <Life/>
     </div>
   );
