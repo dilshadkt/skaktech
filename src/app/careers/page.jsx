@@ -15,8 +15,8 @@ const Careers = () => {
         title={"Accelerate your career with skaktech"}
       />
       <JobInfo title={"Job Vacancies"}/>
-      <MeetOurTeam />
-      {/* <Mission/> */}
+      
+      <Mission/>
       <Life/>
     </div>
   );

@@ -41,10 +41,13 @@ export const NavBar = () => {
     };
   }, []);
 
+ 
+  const  isHome = pathname === "/"
+
 
 
   return (
-    <nav className={` lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto  md:h-[80px]  transition-colors duration-200 ease-in-out ${isScrolled ? 'bg-white': 'bg-transparent' } `}>
+    <nav className={` lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto  md:h-[80px]  transition-colors duration-200 ease-in-out ${isHome || isScrolled ? 'bg-white': 'bg-transparent' } `}>
       <div
         className={`h-screen w-[250px] z-50 bg-primary absolute p-3 py-5 transition-all duration-700 ${showMenu ? `right-0` : `-right-[300px]`
           }`}
