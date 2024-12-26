@@ -39,7 +39,7 @@ const Detailspage = () => {
                     </p>
                     <div className='grid grid-cols-1 md:grid-cols-2'>
                         {responsibilities.map((item, index)=>(<div key={index} className='flex gap-2 items-center py-3'>
-                            <div className='bg-[#DCE7F9] rounded-full p-1'><IoMdCheckmark /></div>
+                            <div className='bg-[#DCE7F9] rounded-full p-1'><IoMdCheckmark color='58a0ea'/></div>
                             <p>{item}</p>
                         </div>))}
                     </div>
@@ -49,7 +49,7 @@ const Detailspage = () => {
                     </p>
                     <div className='grid grid-cols-1 md:grid-cols-2'>
                         {requirements.map((item, index)=>(<div key={index} className='flex gap-2 items-center py-3'>
-                            <div className='bg-[#DCE7F9] rounded-full p-1'><IoMdCheckmark /></div>
+                            <div className='bg-[#DCE7F9] rounded-full p-1'><IoMdCheckmark color='58a0ea'/></div>
                             <p>{item}</p>
                         </div>))}
                     </div>

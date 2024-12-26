@@ -5,7 +5,7 @@ export const  jobData = [
     code:'GD',
     title:"Senior Graphic Designer",
     duration:"Full time",
-    location:"San Fransisco, US"
+    jobCode:10100
   },
   {
     id:2,
@@ -13,7 +13,7 @@ export const  jobData = [
     code:'UX',
     title:"UI/UX Designer",
     duration:"Remote",
-    location:"Anywhere"
+    jobCode:10101
   },
   {
     id:3,
@@ -21,7 +21,7 @@ export const  jobData = [
     code:'AN',
     title:"Multimedia Artist & Animator",
     duration:"Full time",
-    location:"Birmingam, UK"
+    jobCode:10102
   },
 ]
 

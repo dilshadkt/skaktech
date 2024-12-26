@@ -145,9 +145,9 @@ const LandingPage = () => {
       <section className=" my-12">
         <Industries />
       </section>
-      <section className=" py-20">
+      {/* <section className=" py-20">
         <Careers />
-      </section>
+      </section> */}
 
       <section>
         <Gallery />

@@ -8,17 +8,28 @@ export const NavBarData = [
     hasDropdown: true,
     path:'#',
     dropdownItems: [
-      { id: 1, title: "WareHouse360", subtitle:'Warehouse Management System', path: "/products" ,img:'productimg-1.png' },
-      { id: 2, title: "TrackSuite", subtitle:'Product Sales, Service and AMC Management.', path: "/products",img:'productimg-2.png' },
-      { id: 2, title: "Pepper", subtitle:'Restaurant Point of sale system.', path: "/products",img:'productimg-3.png' },
-      { id: 2, title: "QTrack", subtitle:'Queue Management system', path: "/products",img:'productimg-4.png' },
-      { id: 2, title: "TradeEzy", subtitle:'Sales and Inventory management system', path: "/products",img:'productimg-5.png' },
+      { id: 1, title: "WareHouse360", subtitle:'Warehouse Management System', path: "/products/WareHouse360" ,img:'productimg-1.png' },
+      { id: 2, title: "TrackSuite", subtitle:'Product Sales, Service and AMC Management.', path: "/products/TrackSuite",img:'productimg-2.png' },
+      { id: 3, title: "Pepper", subtitle:'Restaurant Point of sale system.', path: "/products/Pepper",img:'productimg-3.png' },
+      { id: 4, title: "QTrack", subtitle:'Queue Management system', path: "/products/QTrack",img:'productimg-4.png' },
+      { id: 5, title: "TradeEzy", subtitle:'Sales and Inventory management system', path: "/products/TradeEzy",img:'productimg-5.png' },
       
     ],
   },
   { id: 4, title: "Careers", path: "/careers" },
   { id: 6, title: "Contact Us", path: "/contact" },
 ];
+
+export const  products = [
+   
+    { id: 1, title: "WareHouse360", subtitle:'Warehouse Management System' ,img:'productimg-1.png' },
+    { id: 2, title: "TrackSuite", subtitle:'Product Sales, Service and AMC Management.',img:'productimg-2.png' },
+    { id: 3, title: "Pepper", subtitle:'Restaurant Point of sale system.', img:'productimg-3.png' },
+    { id: 4, title: "QTrack", subtitle:'Queue Management system',img:'productimg-4.png' },
+    { id: 5, title: "TradeEzy", subtitle:'Sales and Inventory management system', img:'productimg-5.png' },
+    
+  
+]
 
 
 

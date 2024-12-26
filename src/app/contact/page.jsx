@@ -39,11 +39,11 @@ function Contact() {
             </div>
             <div className="p-5 md:p-10 xl:p-20 flex flex-col gap-5">
               <div className="flex items-start gap-4">
-                <GrLocation size={20} color="#3f78e0" strokeWidth={2}/>
+                <GrLocation size={25} color="#3f78e0" strokeWidth={2}/>
                 <div>
                   <h1 className="font-semibold">Address</h1>
-                  <p>Moonshine St. 14/05 Light City,<br />
-                    London, United Kingdom
+                  <p>Skaktech Software Solutions LLP, #59/7757, Champion Arcade,<br /> 
+                  Annie hall cross road, Kozhikode ,PIN 673002, Kerala, India
                   </p>
                 </div>
               </div>
@@ -52,8 +52,7 @@ function Contact() {
                 
                   <div>
                     <h1 className="font-semibold">Phone</h1>
-                    <p>00 (987) 654 32 10<br />
-                      00 (987) 654 32 10
+                    <p> +91 9778699292
                     </p>
                   </div>
                 
@@ -63,9 +62,7 @@ function Contact() {
                   <div>
                     <h1 className="font-semibold">
                       E-mail</h1>
-                    <p>sandbox@email.com<br />
-                      help@sandbox.com
-
+                    <p>contact@skaktech.com
 
                     </p>
                   </div>

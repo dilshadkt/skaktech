@@ -10,7 +10,7 @@ const HeaderBanner = ({ image, title = null, desc = null }) => {
         width={1000}
         height={600}
         quality={100}
-        className="absolute w-full h-full object-cover opacity-60 left-0 right-0 top-0 bottom-0 m-auto"
+        className="absolute w-full h-full object-cover  left-0 right-0 top-0 bottom-0 m-auto"
       />
       
       {title && (

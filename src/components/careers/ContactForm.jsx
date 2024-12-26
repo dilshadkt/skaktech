@@ -7,7 +7,7 @@ const ContactForm = () => {
     firstName: '',
     lastName: '',
     email: '',
-    department: '',
+    services: '',
     message: ''
   };
 
@@ -15,7 +15,7 @@ const ContactForm = () => {
     firstName: Yup.string().required('Required'),
     lastName: Yup.string().required('Required'),
     email: Yup.string().email('Invalid email address').required('Required'),
-    department: Yup.string().required('Required'),
+    services: Yup.string().required('Required'),
     message: Yup.string().required('Required')
   });
 
@@ -102,11 +102,12 @@ const ContactForm = () => {
                     : 'border-gray-200'
                 } focus:outline-none focus:border-blue-500`}
               >
-                <option disabled value="">Select a department</option>
-                <option value="sales">Sales</option>
-                <option value="support">Support</option>
+                <option disabled value="">Select a service</option>
+                <option value="software development">Sofware Development</option>
+                <option value="low code development">Low code development platform</option>
+                <option value="robotic process automation">Robotic Process Automation</option>
+                <option value="cloud computing">Cloud Computing services</option>
                 
-                <option value="other">Other</option>
               </Field>
               {errors.department && touched.department && (
                 <div className="text-red-500 text-sm mt-1">{errors.department}</div>

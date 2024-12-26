@@ -25,12 +25,12 @@ const Services = () => {
 
       {/* about services  */}
       {serviceData.map((item, index) => (<div key={index}>
-        <div className="grid  md:grid-cols-2 px-5 md:px-10 lg:px-12 2xl:px-16 py-8 md:py-20 gap-5 items-center ">
-          <div className={`${item.order1}`}>
-            <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} />
+        <div className="grid  md:grid-cols-2 px-5 md:px-10 lg:px-20 py-8 md:py-20 gap-10 items-center ">
+          <div className={`${item.order1} h-[50vh] ` }>
+            <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} className="h-full object-cover"/>
           </div>
           <div
-            className={`flex text-sm flex-col mt-4 md:mt-0 gap-y-2 md:gap-y-4 leading-7 md:leading-10 
+            className={`flex text-sm flex-col mt-4 md:mt-0 gap-y-2 md:gap-y-4  leading-7 md:leading-10 
         md:text-base lg:text-lg ${item.order2}`}
           >
             <h1 className="font-bold text-4xl">{item.heading}</h1>

@@ -1,3 +1,4 @@
+'use client'
 import HeaderBanner from "@/components/Banner";
 import MeetOurTeam from "@/components/meetOurTeam";
 import Technologies from "@/components/technology";
@@ -5,9 +6,15 @@ import Testimonial from "@/components/testmonials";
 import WhatAreSkaktech from "@/components/whatAre";
 import WhySkaktech from "@/components/whySkaktech";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { servicesList } from "@/constants";
+import Link from "next/link";
 
 const About = () => {
+  const [selectedService, setSelectedService] = useState('Software Development');
+
+  const filteredServices = servicesList.filter(item => item.title === selectedService);
+
   return (
     <section className="overflow-x-hidden">
       <HeaderBanner
@@ -83,32 +90,38 @@ const About = () => {
           mt-10 md:mt-16 md:h-6 text-xs md:text-sm xl:text-lg
          font-medium justify-between"
         >
+          
           <li
-            className="hover:border-b-2 border p-3 flex items-center justify-center   text-center 
-          md:pb-1 cursor-pointer border-primary md:border-none"
-          >
-            Software Development
+            className={` p-3 flex items-center justify-center   text-center 
+          md:pb-1 cursor-pointer  ${selectedService === 'Software Development' ? 'border-b-2 border-primary' : 'hover:border-b-2 hover:border-primary border-transparent'}`} onClick={() => setSelectedService('Software Development')}
+
+          >Software Development
+            
           </li>
+          
           <li
-            className="hover:border-b-2 border p-3 flex items-center justify-center   text-center 
-          md:pb-1 cursor-pointer border-primary md:border-none"
+            className={` p-3 flex items-center justify-center   text-center 
+              md:pb-1 cursor-pointer  ${selectedService === 'Low-code development platform' ? 'border-b-2 border-primary' : 'hover:border-b-2 hover:border-primary border-transparent'}`} onClick={() => setSelectedService('Low-code development platform')}
+
           >
             Low-code development platform
           </li>
           <li
-            className="hover:border-b-2 border p-3 flex items-center justify-center   text-center 
-          md:pb-1 cursor-pointer border-primary md:border-none"
+            className={` p-3 flex items-center justify-center   text-center 
+              md:pb-1 cursor-pointer  ${selectedService === 'Robotic process automation (RPA)' ? 'border-b-2 border-primary' : 'hover:border-b-2 hover:border-primary border-transparent'}`} onClick={() => setSelectedService('Robotic process automation (RPA)')}
+
           >
             Robotic process automation (RPA)
           </li>
           <li
-            className="hover:border-b-2 border p-3 flex items-center justify-center   text-center 
-          md:pb-1 cursor-pointer border-primary md:border-none"
+            className={` p-3 flex items-center justify-center   text-center 
+              md:pb-1 cursor-pointer  ${selectedService === 'Cloud computing services' ? 'border-b-2 border-primary' : 'hover:border-b-2 hover:border-primary border-transparent'}`} onClick={() => setSelectedService('Cloud computing services')}
+
           >
             Cloud computing services
           </li>
         </ul>
-        <div className="grid gap-y-6 lg:grid-cols-2 gap-x-10 my-7 md:my-12">
+        {filteredServices.map((item)=>(<div key={item.id} className="grid gap-y-6 lg:grid-cols-2 gap-x-10 my-7 md:my-12">
           <div className="flex items-start  justify-center md:mr-7">
             <Image
               src={`/assets/images/service.png`}
@@ -119,22 +132,18 @@ const About = () => {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <h4 className=" text-xl md:text-3xl font-medium">
-              SOFTWARE DEVELOPMENT
+              {item.title}
             </h4>
-            <p className=" my-3 md:my-10 md:text-lg leading-8 md:leading-10">
-              At our company, we specialize in software developmentservices that
-              cater to the unique needs of businesses across various industries.
-              Ourexpert team designs, develops, and maintains custom software
-              solutions thatenhance efficiency, streamline operations, and drive
-              innovation.
+            <p className="   md:text-lg ">
+              {item.content}
             </p>
             <button className="text-sm rounded-md text-white font-medium bg-primary px-5 py-3 w-fit">
               ENQUIRE NOW
             </button>
           </div>
-        </div>
+        </div>))}
       </div>
       <MeetOurTeam />
       <Testimonial />
