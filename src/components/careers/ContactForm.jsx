@@ -56,9 +56,9 @@ const ContactForm = () => {
                       : 'border-gray-200'
                   } focus:outline-none focus:border-blue-500`}
                 />
-                {errors.firstName && touched.firstName && (
+                {/* {errors.firstName && touched.firstName && (
                   <div className="text-red-500 text-sm  ">{errors.firstName}</div>
-                )}
+                )} */}
               </div>
 
               <div>
@@ -72,9 +72,9 @@ const ContactForm = () => {
                       : 'border-gray-200'
                   } focus:outline-none focus:border-blue-500`}
                 />
-                {errors.lastName && touched.lastName && (
+                {/* {errors.lastName && touched.lastName && (
                   <div className="text-red-500 text-sm mt-1">{errors.lastName}</div>
-                )}
+                )} */}
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -87,9 +87,9 @@ const ContactForm = () => {
                   errors.email && touched.email ? 'border-red-500' : 'border-gray-200'
                 } focus:outline-none focus:border-blue-500`}
               />
-              {errors.email && touched.email && (
+              {/* {errors.email && touched.email && (
                 <div className="text-red-500 text-sm mt-1">{errors.email}</div>
-              )}
+              )} */}
             </div>
 
             <div>
@@ -109,9 +109,9 @@ const ContactForm = () => {
                 <option value="cloud computing">Cloud Computing services</option>
                 
               </Field>
-              {errors.department && touched.department && (
+              {/* {errors.department && touched.department && (
                 <div className="text-red-500 text-sm mt-1">{errors.department}</div>
-              )}
+              )} */}
             </div>
             </div>
 
@@ -125,9 +125,9 @@ const ContactForm = () => {
                   errors.message && touched.message ? 'border-red-500' : 'border-gray-200'
                 } focus:outline-none focus:border-blue-500`}
               />
-              {errors.message && touched.message && (
+              {/* {errors.message && touched.message && (
                 <div className="text-red-500 text-sm mt-1">{errors.message}</div>
-              )}
+              )} */}
             </div>
 
             <div className='w-full flex justify-center'>
