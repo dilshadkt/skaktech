@@ -124,12 +124,12 @@ const About = () => {
         {filteredServices.map((item)=>(<div key={item.id} className="grid gap-y-6 lg:grid-cols-2 gap-x-10 my-7 md:my-12">
           <div className="flex items-start  justify-center md:mr-7">
             <Image
-              src={`/assets/images/service.png`}
+              src={`/assets/images/${item.image}`}
               alt="service"
               width={600}
               height={800}
               quality={100}
-              className="w-full h-full object-contain"
+              className="w-full h-[50vh] object-contain"
             />
           </div>
           <div className="flex flex-col gap-4">

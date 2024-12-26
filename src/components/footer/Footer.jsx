@@ -134,7 +134,7 @@ export const Footer = () => {
                             key={item.id}
                             className=" "
                           >
-                            <a href={item.path}>
+                            <a href={item.path} target="_blank">
                               <item.Icon />
                             </a>
                           </motion.li>

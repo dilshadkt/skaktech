@@ -41,7 +41,7 @@ const WhySkaktech = () => {
           Why
           <span className="text-primary">Skaktech</span>
         </h4>
-        <p className="text-center md:text-lg mt-6 md:mt-11 md:w-[90%] leading-9  md:leading-[49px]">
+        <p className="text-start md:text-lg mt-6 md:mt-11 md:w-[90%] leading-9  md:leading-[49px]">
           At our software company, we are committed to delivering exceptional
           value through innovative, reliable, and tailored solutions that meet
           the unique needs of our customers. With nearly two decades of
