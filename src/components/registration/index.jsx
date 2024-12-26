@@ -65,7 +65,7 @@ export const Registration = () => {
                   width={1000}
                   height={1000}
                   quality={100}
-                  className=" object-cover h-10 w-full"
+                  className=" object-contain h-10 w-full"
                 />
               </li>
             ))}

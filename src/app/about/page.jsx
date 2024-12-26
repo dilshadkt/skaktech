@@ -17,7 +17,7 @@ const About = () => {
         desc={"Trusted by innovators and industry leaders"}
       />
 
-      <div className="flex px-5 md:px-10 lg:px-12 2xl:px-16 flex-col items-center py-20">
+      <div className="flex px-5 md:px-10 lg:px-12 2xl:px-16 flex-col items-center py-20 bg-white">
         <h4 className=" text-xl md:text-3xl text-center lg:text-4xl font-semibold">
           Neque porro quisquam est qui dolorem
         </h4>

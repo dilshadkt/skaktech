@@ -36,28 +36,28 @@ export const NewsLetter = () => {
             <h3 className=" ">
               Receive newsletters from Skaktech on a regular basis
             </h3>
-            <h4>
+            <h4 className="">
               Stay-up-to date with the latest news and updates on our journey.
             </h4>
-            <h4 className=" text-black text-[14px] my-5 md:my-1">
+            <h4 className=" text-black text-[14px] sm:text-[18px] my-5 md:my-3 ">
               In our newsletter you get the latest :
             </h4>
           </div>
 
           <ol
-            className="list-disc  list-inside gap-y-3 md:gap-y-0
-             text-sm md:px-5 lg:px-0 my-3 grid grid-cols-1
-            sm:grid-cols-2 md:grid-cols-3"
+            className="list-disc  list-inside gap-y-5 md:gap-y-0
+              md:px-5 lg:px-0 my-3 grid grid-cols-1
+            sm:grid-cols-2 md:grid-cols-3 text-base"
           >
             {newsletterList.map((item, index) => (
-              <li className="  flex items-center" key={index}>
+              <li className="  flex items-center py-1" key={index}>
                 <span className="w-[4px] h-[4px]   rounded-full  pt-3 lg:mt-0  bg-black "></span>
                 <span className="ml-3">{item}</span>
               </li>
             ))}
           </ol>
 
-          <div>
+          <div className="mt-2">
             <form className="  " action="">
               <input
                 required
@@ -67,7 +67,7 @@ export const NewsLetter = () => {
                 name=""
                 id=""
               />
-              <div className=" w-full my-3 flex flex-col lg:flex-row">
+              <div className=" w-full my-3 flex flex-col lg:flex-row gap-5">
                 <input
                   required
                   className=" w-full  xl:w-1/2 h-[40px] mr-4 rounded-md pl-5 border-2  "

@@ -12,14 +12,14 @@ const HeaderBanner = ({ image, title = null, desc = null }) => {
         quality={100}
         className="absolute w-full h-full object-cover opacity-60 left-0 right-0 top-0 bottom-0 m-auto"
       />
-      <div className="absolute inset-0 bg-black/60" />
+      
       {title && (
-        <h4 className="text-[#268BBF] w-[40%] leading-loose text-center font-bold text-xl md:text-5xl mt-10 relative z-30  ">
+        <h4 className="text-[#268BBF]  leading-loose text-center font-bold text-xl md:text-5xl mt-10 relative z-30  ">
           {title}
         </h4>
       )}
       {desc && (
-        <h6 className=" text-center text-base md:text-[26px] mt-2 md:mt-4 font-semibold text-white z-30">
+        <h6 className=" text-center text-base md:text-[26px] mt-2 md:mt-4 font-semibold text-[#404040] z-30">
           {desc}
         </h6>
       )}

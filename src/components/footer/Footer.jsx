@@ -20,13 +20,13 @@ export const Footer = () => {
               <CallIcon fontSize="inherit" className="text-[#414141]" />
 
               <a className="" href="tel:+91 9072514080">
-                <span className="  ml-1">+91 9072514080</span>
+                <span className="  ml-1">+91 9778699292</span>
               </a>
             </li>
             <li className=" md:ml-2 sm:ml-0 my-5 md:my-0 flex items-center">
               <EmailIcon fontSize="inherit" className="text-[#414141]" />
               <a className=" ml-2" href="mail:Info@skaktech.com">
-                Info@skaktech.com
+              contact@skaktech.com
               </a>
             </li>
             <li className="   md:mt-2 lg:mt-0  flex items-center">
@@ -119,10 +119,10 @@ export const Footer = () => {
                         className="flex flex-col"
                       >
                         <span>
-                          59/7757, Champion Arcade, Kozhikkode, Kerala
+                        Skaktech Software Solutions LLP, #59/7757, Champion Arcade,
                         </span>
 
-                        <span className="mt-2">India, PIN: 673002</span>
+                        <span className="mt-2">Annie hall cross road, Kozhikode ,PIN 673002, Kerala, India</span>
                       </a>
                     </address>
                     <div>
@@ -171,8 +171,8 @@ export const Footer = () => {
           <li className="sm:mt-5 mt-2  sm:pl-1 md:pl-0 md:mt-0 hover:underline md:w-1/2 w-full">
             <a href="">
               <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
-                <span>Copyright 2008-2019</span>
-                <span className="md:ml-4 hidden sm:block pr-4">
+                <span className=" whitespace-nowrap">Copyright 2008-2019</span>
+                <span className="md:ml-4   pr-4 whitespace-nowrap">
                   All Rights Reserved
                 </span>
               </span>

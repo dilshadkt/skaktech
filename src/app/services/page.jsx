@@ -17,7 +17,7 @@ const Services = () => {
 
       <div>
         <HeaderBanner
-          image={"/assets/images/Servicesimage.jpg"}
+          image={"/assets/images/Serviceimage.jpg"}
           title={"Our Services"}
 
         />

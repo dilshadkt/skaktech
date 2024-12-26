@@ -14,7 +14,7 @@ const Careers = () => {
         image={"/assets/images/Careers.jpg"}
         title={"Accelerate your career with skaktech"}
       />
-      <JobInfo/>
+      <JobInfo title={"Job Vacancies"}/>
       <MeetOurTeam />
       {/* <Mission/> */}
       <Life/>

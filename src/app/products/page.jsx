@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image";
+
 import React from "react";
 
 import Testimonial from "@/components/testmonials";
@@ -37,6 +39,7 @@ function Products() {
       icon: "desktop.svg",
     },
   ];
+  
 
   return (
     <>

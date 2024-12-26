@@ -14,6 +14,7 @@ export const NavBar = () => {
   const pathname = usePathname();
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [isScrolled, setIsScrolled] = useState(false)
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen((prev) => !prev); 
@@ -25,10 +26,25 @@ export const NavBar = () => {
     return () => window.removeEventListener('click', closeDropdown);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    handleScroll()
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
 
   return (
-    <nav className=" lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto shadow-xl md:h-[80px]     bg-white ">
+    <nav className={` lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto  md:h-[80px]  transition-colors duration-200 ease-in-out ${isScrolled ? 'bg-white': 'bg-transparent' } `}>
       <div
         className={`h-screen w-[250px] z-50 bg-primary absolute p-3 py-5 transition-all duration-700 ${showMenu ? `right-0` : `-right-[300px]`
           }`}
