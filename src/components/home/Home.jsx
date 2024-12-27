@@ -167,22 +167,22 @@ const HomePage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className=" relative  md:mt-5 items-center   md:px-5 lg:px-10 2xl:px-16  mt-10    xl:mt-0  flex flex-col  md:flex-row md:justify-between"
+          className=" grid grid-cols-1 md:grid-cols-5 gap-5 items-center justify-center px-10"
         >
-          <div className=" md:pl-5   px-5 md:px-0  flex justify-center md:justify-normal">
+          <div className="md:col-span-2 md:pl-5   px-5 md:px-0  flex justify-center md:justify-normal">
             <Image
-              className="    md:p-1 lg:p-0   mb-5 md:mb-0 md:mt-5 lg:mt-0 lg:pl-10"
+              className="h-[30vh] md:h-[50vh]"
               src={"/assets/images/about2.svg"}
               width={450}
               height={330}
               alt="about2"
             />
           </div>
-          <div>
-            <div className="  px-5 md:pl-10 xl:pl-0  ">
+          <div className="col-span-3  h-full ">
+            <div className="flex flex-col justify-between h-full">
               <p
-                className=" max-w-[800px] md:max-w-[1000px]
-               text-left md:text-right lg:max-w-[800px] leading-[36px] md:px-5   
+                className="
+               text-left md:text-right leading-[36px] md:px-5   
               text-[16px] md:text-[18px] xl:text-[20px]"
               >
                 At Skaktech, we pride ourselves on creating high-quality
@@ -194,10 +194,10 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" flex items-center justify-start md:justify-end ">
+              <div className=" flex items-end justify-start md:justify-end px-5">
                 <motion.div
                   whileHover={{ translateY: "-3px" }}
-                  className=" mt-3 md:ml-5     cursor-pointer text-[10px] md:text-[16px] md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex items-center text-white"
+                  className=" mt-3 md:ml-5 cursor-pointer text-[10px] md:text-[16px]  md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex  text-white"
                 >
                   <Image
                     src={"/assets/images/download1.svg"}
@@ -207,8 +207,8 @@ const HomePage = () => {
                   />
                   <span className=" ml-2">Company Profile</span>{" "}
                 </motion.div>
+                </div>
               </div>
-            </div>
           </div>
         </motion.div>
       </section>

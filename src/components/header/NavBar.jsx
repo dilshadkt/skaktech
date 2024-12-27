@@ -43,11 +43,12 @@ export const NavBar = () => {
 
  
   const  isHome = pathname === "/"
+  const isProductPage = pathname.startsWith('/products/')
 
 
 
   return (
-    <nav className={` lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto  md:h-[80px]  transition-colors duration-200 ease-in-out ${isHome || isScrolled ? 'bg-white': 'bg-transparent' } `}>
+    <nav className={` lg:px-10 2xl:px-16  w-full fixed z-50 top-0 left-0 right-0 m-auto  md:h-[80px]  transition-colors duration-200 ease-in-out ${isHome || isScrolled ? 'bg-white': 'bg-transparent' } ${isProductPage ? 'text-white' : 'text-black'} `}>
       <div
         className={`h-screen w-[250px] z-50 bg-primary absolute p-3 py-5 transition-all duration-700 ${showMenu ? `right-0` : `-right-[300px]`
           }`}
@@ -60,13 +61,13 @@ export const NavBar = () => {
           <CloseIcon />
         </button>
 
-        <ul className=" w-full  mt-7 text-white text-[16px]">
+        <ul className={` w-full  mt-7  text-[16px]`}>
           {NavBarData.map((item) => (
             item.title === "Products" ? (
               // Dropdown Item for Products
               <div key={item.id}>
                 <div
-                  className=" cursor-pointer py-2 border-b-[1px] mt-2 pl-3"
+                  className=" cursor-pointer py-2  border-b-[1px] mt-2 pl-3"
                   onClick={handleDropdownToggle}
                 >
                   {item.title}
@@ -87,7 +88,7 @@ export const NavBar = () => {
                 className=""
                 onClick={() => setShowMenu((prev) => !prev)}
               >
-                <li className="py-2 border-b-[1px] mt-2 pl-3">{item.title}</li>
+                <li className="py-2 border-b-[1px] mt-2 pl-3 ">{item.title}</li>
               </Link>
             )
           ))}
@@ -123,8 +124,8 @@ export const NavBar = () => {
                 <div className="group" key={item.id}>
                   <div
                     
-                    className={`cursor-pointer mx-5 font-medium text-black hover:text-primary py-5  
-                  hover:-translate-y-1 transition-all duration-300`}
+                    className={`cursor-pointer mx-5 font-medium  hover:text-primary py-5  
+                  hover:-translate-y-1 transition-all duration-300 ${isProductPage ? 'text-white': 'text-black'}`}
                   >
                     {item.title}
                   </div>
@@ -162,7 +163,7 @@ export const NavBar = () => {
                   <li
                     className={`${pathname === item.path && "text-primary"
                       } hover:text-primary hover:-translate-y-1 transition-all duration-300 py-5
-                cursor-pointer mx-5 font-medium text-black`}
+                cursor-pointer mx-5 font-medium ${isProductPage ? 'text-white': 'text-black'}`}
                   >
                     {item.title}
                   </li>
