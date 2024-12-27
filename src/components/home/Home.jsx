@@ -194,10 +194,10 @@ const HomePage = () => {
                 enhance operations, improve decision-making, and foster digital
                 transformation.
               </p>
-              <div className=" flex items-end justify-start md:justify-end px-5">
+              <div className=" flex items-end justify-start md:justify-end px-5 mb-2">
                 <motion.div
                   whileHover={{ translateY: "-3px" }}
-                  className=" mt-3 md:ml-5 cursor-pointer text-[10px] md:text-[16px]  md:mt-5 bg-primary px-3 py-2   rounded-md inline-flex  text-white"
+                  className=" md:ml-5 cursor-pointer text-[10px] md:text-[16px] bg-primary px-3 py-2 rounded-md inline-flex text-white"
                 >
                   <Image
                     src={"/assets/images/download1.svg"}
