@@ -53,7 +53,7 @@ function Products() {
   return (
     <>
       {<main>
-        <div className="relative h-[70vh] w-full">
+        <div className="relative h-[50vh] lg:h-[70vh] w-full">
           <Image src={`/assets/images/${product.img}`} alt="productimg" height={1000} width={1000} quality={100} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute inset-0 flex justify-center items-center text-white flex-col gap-3">
@@ -61,14 +61,14 @@ function Products() {
             <h3>{product.subtitle}</h3>
           </div>
         </div>
-        <div className="p-20">
+        <div className="p-5 md:p-10 xl:p-20">
         {/* about section */}
         <div className=" flex flex-col gap-5">
           <h1 className="text-4xl font-bold">About the Project</h1>
           <p className="leading-loose">{product.about}.</p>
         </div>
         {/* features Section */}
-        <div className="py-10">
+        <div className="py-5 md:py-10">
             <h1 className="font-semibold text-lg">Key features of a <span>{product.subtitle}</span></h1>
         </div>
         {product.features.map((item, index)=>(<div key={index} className="flex flex-col gap-2 py-2">
