@@ -19,7 +19,7 @@ const Gallery = () => {
           Life <span className=" text-primary">@Skaktech</span>
         </h1>
       </motion.div>
-      <div className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7 gap-4 xl:min-h-screen px-10">
+      <div className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7 gap-4  px-10">
         <div className="flex flex-col space-y-4">
           <div className=" flex items-center justify-center  h-[200px] md:h-[300px] relative">
             <Image
