@@ -64,7 +64,7 @@ function Products() {
         <div className="p-5 md:p-10 xl:p-20">
         {/* about section */}
         <div className=" flex flex-col gap-5">
-          <h1 className="text-4xl font-bold">About the Project</h1>
+          <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold">About the Project</h1>
           <p className="leading-loose">{product.about}.</p>
         </div>
         {/* features Section */}
