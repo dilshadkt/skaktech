@@ -3,18 +3,17 @@ import Image from "next/image";
 import { products } from "@/constants";
 import React from "react";
 import { useParams } from "next/navigation";
-import Testimonial from "@/components/testmonials";
-import WhySkaktech from "@/components/whySkaktech";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Products() {
 
 
-    
-    const params = useParams();
-    
-    const title = params.product;
-    
-    console.log(title)
+
+  const params = useParams();
+
+  const title = params.product;
+
+  console.log(title)
   const features = [
     {
       id: 1,
@@ -48,75 +47,41 @@ function Products() {
     },
   ];
   const product = products.find((item) => item.title === title);
-  
-  
+
+
 
   return (
     <>
-      <div className=" h-full  lg:h-screen grid lg:grid-cols-2 pt-20 relative px-5 md:px-12 lg:px-16">
-        <Image
-          src={"/assets/images/Landing (1).png"}
-          alt="products"
-          width={1200}
-          height={700}
-          quality={100}
-          className="w-full h-full left-0 right-0 bottom-0 m-auto top-0 absolute object-cover"
-        />
-        <div
-          className="flex flex-col items-center lg:items-start 
-      py-10 lg:py-0  justify-center gap-y-8  relative z-30"
-        >
-          <div
-            className="flex flex-col text-white   
-       left-16  2xl:left-24 gap-y-1 md:gap-y-3 z-30"
-          >
-            <h2 className="font-semibold w-full   text-3xl md:text-5xl xl:text-6xl">
-              {product.title}
-            </h2>
-            <p className=" text-sm md:text-lg">{product.subtitle}</p>
-          </div>
-          <div className=" w-[70%] md:w-full">
-            <Image
-              src={"/assets/images/tablet-mockup-large-medium-size 1 (1).png"}
-              alt="tablet"
-              width={490}
-              height={490}
-              className=""
-            />
+      {<main>
+        <div className="relative h-[70vh] w-full">
+          <Image src={`/assets/images/${product.img}`} alt="productimg" height={1000} width={1000} quality={100} className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 flex justify-center items-center text-white flex-col gap-3">
+            <h1 className="font-bold text-2xl md:text:4xl xl:text-6xl tracking-wider">{product.title}</h1>
+            <h3>{product.subtitle}</h3>
           </div>
         </div>
-        <div className="flex flex-col relative lg:pt-10 pb-20 z-30 text-white justify-center">
-          <p
-            className="md:text-lg 
-         leading-8 md:leading-9 2xl:leading-10"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged.
-          </p>
-          <div className="grid grid-cols-3 gap-x-3 md:gap-x-0 gap-y-10 mt-14 2xl:-translate-x-10 ">
-            {features.map((feature, index) => (
-              <div key={index} className="flex flex-col gap-y-4 items-center">
-                <Image
-                  src={`/assets/svg/${feature.icon}`}
-                  alt="features"
-                  width={55}
-                  height={55}
-                  className=" w-8 md:w-10 xl:w-12 2xl:w-[55px]"
-                />
-                <h5 className=" text-xs md:text-sm text-center xl:text-base">
-                  {feature.title}
-                </h5>
-              </div>
-            ))}
-          </div>
+        <div className="p-20">
+        {/* about section */}
+        <div className=" flex flex-col gap-5">
+          <h1 className="text-4xl font-bold">About the Project</h1>
+          <p className="leading-loose">{product.about}.</p>
         </div>
-      </div>
-      <WhySkaktech />
-      <Testimonial />
+        {/* features Section */}
+        <div className="py-10">
+            <h1 className="font-semibold text-lg">Key features of a <span>{product.subtitle}</span></h1>
+        </div>
+        {product.features.map((item, index)=>(<div key={index} className="flex flex-col gap-2 py-2">
+          <h1 className="font-semibold">{item.feature}</h1>
+          <p>{item.desc}</p>
+        </div>))}
+        <div className="  text-white gap-2 py-5">
+          <button className="bg-[#268BBF] hover:bg-blue-600 flex items-center gap-2 p-2 transition-colors duration-200 ease-in-out">Learn More <span><FaArrowRightLong /></span></button>
+        </div>
+        </div>
+        
+      </main>}
+      
     </>
   );
 }
