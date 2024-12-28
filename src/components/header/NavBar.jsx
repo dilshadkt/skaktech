@@ -125,7 +125,7 @@ export const NavBar = () => {
                   <div
                     
                     className={`cursor-pointer mx-5 font-medium  hover:text-primary py-5  
-                  hover:-translate-y-1 transition-all duration-300 ${isProductPage ? 'text-white': 'text-black'}`}
+                  hover:-translate-y-1 transition-all duration-300  ${isScrolled ? 'text-black': isProductPage ? 'text-white': 'text-black'}`}
                   >
                     {item.title}
                   </div>
@@ -163,7 +163,7 @@ export const NavBar = () => {
                   <li
                     className={`${pathname === item.path && "text-primary"
                       } hover:text-primary hover:-translate-y-1 transition-all duration-300 py-5
-                cursor-pointer mx-5 font-medium ${isProductPage ? 'text-white': 'text-black'}`}
+                cursor-pointer mx-5 font-medium ${isScrolled ? 'text-black': isProductPage ? 'text-white': 'text-black'}`}
                   >
                     {item.title}
                   </li>
