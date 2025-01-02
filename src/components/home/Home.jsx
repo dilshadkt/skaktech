@@ -31,9 +31,7 @@ const HomePage = () => {
       fullName: '',
       email: '',
       phone: '',
-      subject: '',
-      resume: null,
-      message: ''
+
   }
 
   // Handle form submission
