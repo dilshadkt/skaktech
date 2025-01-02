@@ -131,7 +131,7 @@ export const NavBar = () => {
                   </div>
                   
 
-                    <ul className="absolute top-16 -left-28 bg-white shadow-lg border-black min-w-[200px] group-hover:opacity-100 group-hover:flex hidden group-hover:transition-opacity duration-300 ease-in-out">
+                    <ul className="absolute top-16 -left-48 bg-white shadow-lg border-black min-w-[200px] group-hover:opacity-100 group-hover:flex hidden group-hover:transition-opacity duration-300 ease-in-out">
                       {item.dropdownItems.map((dropdownItem) => (
                         <li
                           key={dropdownItem.id}

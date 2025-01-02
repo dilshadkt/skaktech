@@ -66,7 +66,7 @@ const Services = () => {
         className={"text-primary"}
         iconClassName={`filter-primary`}
       />
-      <Testimonial />
+      
     </section>
   );
 };

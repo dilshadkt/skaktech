@@ -159,7 +159,7 @@ export const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom Section */}
-      <section className=" text-[#414141] md:px-28  px-3  bg-re  py-2 md:py-5  font-medium text-[10px] sm:text-sm bg-primary">
+      <section className=" text-[#ffffff] md:px-28  px-3  bg-re  py-2 md:py-5  font-medium text-[10px] sm:text-sm bg-primary">
         <ul className=" grid grid-cols-2  md:flex   justify-center    sm:flex-row  items-center   ">
           <li className="mt-5  w-full  md:mt-0 hover:underline md:w-1/2 ">
             <a className="    " href="https://scanntek.com/">

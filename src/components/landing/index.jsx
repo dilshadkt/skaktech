@@ -21,7 +21,7 @@ const LandingPage = () => {
           initial={{ scale: 0 }} 
           animate={{ scale: 1 }}  
           transition={{ duration: 0.6 }}
-          className=" py-10 lg:py-0 w-full  px-5 lg:px-0 pt-28 flex flex-col  justify-center items-center content-center h-full my-auto "
+          className=" py-10 lg:py-0 w-full  px-5 lg:px-0  flex flex-col  justify-end items-center content-center h-full  "
         >
           <h1 className=" text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-[#404040] ">
             Products You Can Rely On, Service that Makes
@@ -125,7 +125,7 @@ const LandingPage = () => {
       <section className=" py-5 lg:py-16">
         <Registration />
       </section>
-      <section>
+      {/* <section>
         <ul className=" overflow-x-hidden">
           {servicesList.map((item, index) => (
             <li className=" " key={item.id}>
@@ -138,10 +138,10 @@ const LandingPage = () => {
             </li>
           ))}
         </ul>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <ClientReviews />
-      </section>
+      </section> */}
       <section className=" my-12">
         <Industries />
       </section>
@@ -149,12 +149,12 @@ const LandingPage = () => {
         <Careers />
       </section> */}
 
-      <section>
+      {/* <section>
         <Gallery />
-      </section>
-      <section className=" my-10">
+      </section> */}
+      {/* <section className=" my-10">
         <NewsLetter />
-      </section>
+      </section> */}
     </div>
   );
 };
