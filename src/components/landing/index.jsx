@@ -21,9 +21,9 @@ const LandingPage = () => {
           initial={{ scale: 0 }} 
           animate={{ scale: 1 }}  
           transition={{ duration: 0.6 }}
-          className=" py-10 lg:py-0 w-full  px-5 lg:px-0  flex flex-col  justify-end items-center content-center h-full  "
+          className=" py-10 lg:py-0 w-full  px-5 lg:px-0  flex flex-col gap-5 justify-end items-center content-center h-full  "
         >
-          <h1 className=" text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-[#404040] ">
+          <h1 className=" text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-[#404040] xl:pt-28 2xl:pt-32">
             Products You Can Rely On, Service that Makes
             <span className=" text-[#268BBF]"> You Feel Valued</span>{" "}
           </h1>

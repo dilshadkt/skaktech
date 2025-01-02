@@ -160,34 +160,33 @@ export const Footer = () => {
       </div>
       {/* Footer Bottom Section */}
       <section className=" text-[#ffffff] md:px-28  px-3  bg-re  py-2 md:py-5  font-medium text-[10px] sm:text-sm bg-primary">
-        <ul className=" grid grid-cols-2  md:flex   justify-center    sm:flex-row  items-center   ">
-          <li className="mt-5  w-full  md:mt-0 hover:underline md:w-1/2 ">
+        <ul className=" grid grid-cols-2 md:grid-cols-7 justify-center items-center gap-5">
+          <li className="md:col-span-2 mt-5    md:mt-0 hover:underline xl:border-r-2 text-start md:text-center">
             <a className="    " href="https://scanntek.com/">
-              <span className="xl:border-r-2 pr-5">
+              <span className="  ">
                 Made with Scantekk Technologies
               </span>
             </a>
           </li>
-          <li className="sm:mt-5 mt-2  sm:pl-1 md:pl-0 md:mt-0 hover:underline md:w-1/2 w-full">
+          <li className="md:col-span-2 sm:mt-5 mt-2  md:mt-0 hover:underline text-start md:text-center  xl:border-r-2">
             <a href="">
-              <span className="flex flex-col md:flex-row xl:border-r-2 xl:pl-5">
-                <span className=" whitespace-nowrap">Copyright 2008-2019</span>
-                <span className="md:ml-4   pr-4 whitespace-nowrap">
-                  All Rights Reserved
-                </span>
-              </span>
+              <div className="flex flex-col xl:flex-row gap-2  ">
+                <span className=" whitespace-nowrap">Copyright 2008-2019 </span>
+                <span>All Rights Reserved</span>
+                
+              </div>
             </a>
           </li>
-          <li className="sm:mt-5 xl:pl-5 md:ml-5 sm:ml-0 mt-2      md:mt-0 hover:underline md:w-1/2 w-full">
+          <li className="md:col-span-1 sm:mt-5 mt-2 xl:border-r-2 md:mt-0 hover:underline text-start md:text-center">
             <Link href="/privacy-policy">
-              <span className="xl:border-r-2 text-left  pr-5">
+              <span className=" xl:pr-5">
                 Privacy Policy
               </span>
             </Link>
           </li>
-          <li className="sm:mt-5 mt-2 sm:pl-1 md:pl-0 xl:pl-5 md:mt-0 hover:underline md:w-1/2 w-full">
+          <li className="md:col-span-2 sm:mt-5 mt-2  md:mt-0 hover:underline  text-start md:text-center">
             <Link href="/terms-condition">
-              <span>Terms and Conditions</span>
+              <span  className="">Terms and Conditions</span>
             </Link>
           </li>
         </ul>
