@@ -228,6 +228,7 @@ const HomePage = () => {
               </p>
               <div className=" flex items-end justify-start md:justify-end px-5 mb-2">
                 <motion.div
+                onClick={handleModal}
                   whileHover={{ translateY: "-3px" }}
                   className=" md:ml-5 cursor-pointer text-[10px] md:text-[16px] bg-primary px-3 py-2 rounded-md inline-flex text-white"
                 >
@@ -237,7 +238,7 @@ const HomePage = () => {
                     width={20}
                     height={20}
                   />
-                  <span onClick={handleModal} className=" ml-2">Company Profile</span>{" "}
+                  <button  className=" ml-2">Company Profile</button>{" "}
                 </motion.div>
                 </div>
               </div>
