@@ -297,7 +297,7 @@ export const socialMedia = [
 
 export const industriesWeServe = [
   { id: 15, icon: "first-aid-kit.png", title: "Healthcare" },
-  { id: 16, icon: "finance.svg", title: "Finace" },
+  { id: 16, icon: "finance.svg", title: "Finance" },
   { id: 17, icon: "retail.svg", title: "Retail" },
   { id: 18, icon: "real-estate.svg", title: "Real Estate" },
   { id: 19, icon: "education.svg", title: "Education" },
