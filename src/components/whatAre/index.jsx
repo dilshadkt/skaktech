@@ -17,7 +17,7 @@ const WhatAreSkaktech = () => {
             What are Skaktech?
           </h3>
           <p className=" leading-7 md:leading-9 text-sm md:text-base font-light my-5 md:my-9">
-            Founded in 2005, our software company has been at the forefront of
+            Founded in 2015, our software company has been at the forefront of
             delivering innovative software solutions and services to clients
             across India, the Middle East, and Africa. Over the years, we have
             expanded our portfolio of products and services to meet the evolving

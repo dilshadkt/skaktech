@@ -8,37 +8,53 @@ import { sliders } from "@/constants";
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const HomePage = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const [sliderImage, setSliderImage] = useState(sliders[0].image);
   const [modalOpen, setModalOpen] = useState(false)
 
   const handleModal = () => {
-      setModalOpen(!modalOpen)
+    setModalOpen(!modalOpen)
   }
 
   const validationSchema = Yup.object({  // Now using 'Yup' instead of 'yup'
-      fullName: Yup.string().required('Full name is required'),
-      email: Yup.string().email('Invalid email format').required('Email is required'),
-      phone: Yup.string().required('Phone number is required'),
-      subject: Yup.string().required('Subject is required'),
-      message: Yup.string().required('Message is required'),
-      resume: Yup.mixed().required('Resume is required')
+    fullName: Yup.string().required('Full name is required'),
+    email: Yup.string().email('Invalid email format').required('Email is required'),
+    phone: Yup.string().required('Phone number is required'),
+
   });
 
   // Initialize form values
   const initialValues = {
-      fullName: '',
-      email: '',
-      phone: '',
+    fullName: '',
+    email: '',
+    phone: '',
 
   }
 
-  // Handle form submission
-  const handleSubmit = (values, { setSubmitting }) => {
-      console.log(values);
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      // Log the form values
+      console.log('Form values:', values);
+
+      // Show success toast
+      toast.success('Form submitted successfully!');
+
+      // Reset the form
+      resetForm();
+
+      // Close the modal
+      setModalOpen(false);
+    } catch (error) {
+      console.error('Submission error:', error);
+      toast.error('Failed to submit form');
+    } finally {
       setSubmitting(false);
-  }
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,6 +69,8 @@ const HomePage = () => {
   }, [sliderIndex, sliders]);
   return (
     <div className=" w-full overflow-hidden overflow-x-hidden">
+
+
       {/* Banner section */}
       <section className=" w-full">
         <div className=" relative  lg:px-10 2xl:px-16   overflow-hidden  h-[800px]  md:h-[1000px]  lg:h-[700px] xl:h-[750px]     bg-home bg-cover object-cover   w-full">
@@ -102,10 +120,9 @@ const HomePage = () => {
             {/* banner right side mobile sectio  */}
             <div
               className={`
-                ${
-                  sliderIndex === 1 || sliderIndex === 2
-                    ? "top-[100px]"
-                    : "top-[50px] "
+                ${sliderIndex === 1 || sliderIndex === 2
+                  ? "top-[100px]"
+                  : "top-[50px] "
                 }
                 
                 flex flex-col items-center content-center     absolute     md:top-[100px]   lg:top-[150px]   md:bottom-0 right-0 w-full lg:w-1/2`}
@@ -141,9 +158,8 @@ const HomePage = () => {
               {sliders.map((item, index) => (
                 <li
                   key={index}
-                  className={` ${
-                    sliderIndex === index ? " bg-[#D9D9D9] " : "bg-[#767676]"
-                  } rounded-full  mx-1  size-2`}
+                  className={` ${sliderIndex === index ? " bg-[#D9D9D9] " : "bg-[#767676]"
+                    } rounded-full  mx-1  size-2`}
                 ></li>
               ))}
             </ul>
@@ -226,7 +242,7 @@ const HomePage = () => {
               </p>
               <div className=" flex items-end justify-start md:justify-end px-5 mb-2">
                 <motion.div
-                onClick={handleModal}
+                  onClick={handleModal}
                   whileHover={{ translateY: "-3px" }}
                   className=" md:ml-5 cursor-pointer text-[10px] md:text-[16px] bg-primary px-3 py-2 rounded-md inline-flex text-white"
                 >
@@ -236,94 +252,105 @@ const HomePage = () => {
                     width={20}
                     height={20}
                   />
-                  <button  className=" ml-2">Company Profile</button>{" "}
+                  <button className=" ml-2">Company Profile</button>{" "}
                 </motion.div>
-                </div>
               </div>
+            </div>
 
           </div>
         </motion.div>
       </section>
       <div className={`fixed inset-0 flex items-center justify-center bg-black transition-opacity duration-300 z-50
     ${modalOpen ? 'bg-opacity-50 pointer-events-auto' : 'bg-opacity-0 pointer-events-none'}`}
-            >
-                <div
-                    className={`bg-white p-5 rounded-md shadow-lg w-4/5 md:w-1/3 transform transition-all duration-300 ease-in-out
+      >
+        <div
+          className={`bg-white p-5 rounded-md shadow-lg w-4/5 md:w-1/3 transform transition-all duration-300 ease-in-out
         ${modalOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
-                >
-                    <div className="flex justify-end items-center mb-6">
-                        
-                        <button
-                            onClick={handleModal}
-                            className="text-gray-500 hover:text-gray-700"
-                        >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    <Formik
-                        initialValues={initialValues}
-                        validationSchema={validationSchema}
-                        onSubmit={handleSubmit}
-                    >
-                        {({ handleSubmit, handleChange, values, setFieldValue }) => (
-                            <form onSubmit={handleSubmit} className="space-y-4">
-                                <div>
-                                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
-                                        Full Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="fullName"
-                                        id="fullName"
-                                        onChange={handleChange}
-                                        value={values.fullName}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    />
-                                </div>
+        >
+          <div className="flex justify-end items-center mb-6">
 
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        onChange={handleChange}
-                                        value={values.email}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                                        Phone Number
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        id="phone"
-                                        onChange={handleChange}
-                                        value={values.phone}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    />
-                                </div>
-
-                                <div className="flex justify-end">
-                                    <button
-                                        type="submit"
-                                        className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2"
-                                    >
-                                        Submit
-                                    </button>
-                                </div>
-                            </form>
-                        )}
-                    </Formik>
+            <button
+              onClick={handleModal}
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
+          >
+            {({ handleSubmit, handleChange, values }) => (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    onChange={handleChange}
+                    value={values.fullName}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
                 </div>
-            </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    onChange={handleChange}
+                    value={values.email}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    onChange={handleChange}
+                    value={values.phone}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            )}
+          </Formik>
+        </div>
+        <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={true}
+          newestOnTop={true}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          theme="dark"
+      />
+      </div>
       {/* Industry Section */}
       <section className=" py-5  lg:px-10 2xl:px-16">
         <Industries />
