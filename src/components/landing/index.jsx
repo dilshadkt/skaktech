@@ -23,9 +23,9 @@ const LandingPage = () => {
           initial={{ scale: 0 }} 
           animate={{ scale: 1 }}  
           transition={{ duration: 0.6 }}
-          className="  lg:py-0 w-full  px-5 lg:px-0  flex flex-col  justify-end items-center content-center h-full  "
+          className="  pt-10 w-full  px-5 lg:px-0  flex flex-col  justify-center items-center content-center h-full"
         >
-          <h1 className=" text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-[#404040] ">
+          <h1 className="pt-20 text-[24px] sm:text-[30px] lg:text-[64px] max-w-[500px] lg:max-w-[1080px] text-center font-bold text-[#404040] ">
             Products You Can Rely On, Service that Makes
             <span className=" text-[#268BBF]"> You Feel Valued</span>{" "}
           </h1>
@@ -41,45 +41,19 @@ const LandingPage = () => {
       </section>
       <section className=" my-16">
         <LandingSecond />
-        {/* <div className=" w-full  flex justify-between flex-col lg:flex-row items-center  px-10">
-          <div className=" w-full lg:w-1/2">
-            <Image
-              className="lg:p-5"
-              src={"/assets/images/landing1.png"}
-              width={640}
-              height={400}
-              
-              alt="landing1"
-              quality={100}
-              layout="responsvie"
-            />
-          </div>
-          <div className=" mt-10 lg:mt-0 w-full lg:w-1/2">
-            <p className=" text-center md:text-start text-[18px]  lg:pr-10  mx-auto text-black   leading-[40px]">
-              Founded in 2005, our software company has been at the forefront of
-              delivering innovative software solutions and services to clients
-              across India, the Middle East, and Africa. Over the years, we have
-              expanded our portfolio of products and services to meet the
-              evolving needs of our diverse clientele, ensuring quality and
-              reliability in every project we undertake. With a strong
-              commitment to excellence, we continue to empower businesses with
-              cutting-edge technology solutions that drive growth and success.
-            </p>
-          </div>
-        </div> */}
       </section>
       <section className=" my-10 lg:my-16">
         <div className="  px-5 md:px-10 flex justify-between flex-col  lg:flex-row w-full">
         <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
             className=" md:ml-3  w-full mt-10 lg:mt-0  lg:w-1/2   mx-auto"
           >
             <h1 className=" text-black text-center md:text-start font-semibold text-[40px]">
               Why <span className="   text-primary">Skaktech</span>
             </h1>
-            <p className="  mt-3 leading-[38px]  tex-[16px] md:text-[20px] ">
+            <p className="  mt-3 leading-[38px]  text-[16px] md:text-[20px] ">
               At our software company, we are committed to delivering
               exceptional value through innovative, reliable, and tailored
               solutions that meet the unique needs of our customers. With nearly
@@ -97,8 +71,8 @@ const LandingPage = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
             className=" w-full lg:w-1/2"
           >
