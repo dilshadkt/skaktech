@@ -18,7 +18,7 @@ import LandingSecond from "../landing-sections";
 const LandingPage = () => {
   return (
     <div className=" overflow-x-hidden">
-      <section className="   py-10  xl:h-[85vh] flex flex-col justify-center items-center bg-landing bg-cover bg-center bg-no-repeat">
+      <section className="   py-10  xl:h-[85vh] 2xl:[90vh] flex flex-col justify-center items-center bg-landing bg-cover bg-center bg-no-repeat">
         <motion.div
           initial={{ scale: 0 }} 
           animate={{ scale: 1 }}  
