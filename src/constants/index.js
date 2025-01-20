@@ -556,36 +556,31 @@ export const  caseStudyContent = [
 export const allProductsData = [
   {
     heading:"WareHouse360",
-    order1:'order-1',
-    order2:'order-2',
+   
     img:'serviceimg-1',
     desc1:"A 3PL Warehouse Management System (WMS) is a software solution designed to streamline and optimize warehouse operations for third-party logistics providers. It helps manage inventory, track orders, and improve efficiency across various warehouse functions, including receiving, storing, picking, packing, and shipping. By automating processes, a 3PL WMS enhances accuracy, reduces operational costs, and improves customer satisfaction. It offers real-time visibility into stock levels and order statuses, enabling better decision-making. Additionally, the system integrates seamlessly with other supply chain management tools, ensuring smooth communication between warehouse teams, clients, and vendors, ultimately boosting overall supply chain performance.",
   },
   {
     heading:"TrackSuite",
-    order1:'order-2',
-    order2:'order-1',
+    
     img:'serviceimg-1',
     desc1:"A Product Sales, Service, and AMC (Annual Maintenance Contract) Management application is a comprehensive software solution designed to streamline the sales, servicing, and maintenance processes for businesses. It enables the management of product sales, tracking of installations, and scheduling of regular services. The application also handles AMC contracts, including renewals, billing, and service history. By automating these processes, the application improves operational efficiency, enhances customer satisfaction, and ensures timely service delivery. It provides businesses with real-time insights into product performance, service requests, and contract statuses, helping optimize resource allocation and customer relationship management.",
   },
   {
     heading:"Pepper",
-    order1:'order-1',
-    order2:'order-2',
+   
     img:'serviceimg-1',
     desc1:"A Restaurant Point of Sale (POS) system is a technology solution designed to streamline restaurant operations, including order taking, payment processing, and inventory management. It enables servers to input orders quickly, track customer preferences, and ensure accurate billing. The system integrates with kitchen displays to send orders directly to the kitchen, reducing errors and wait times. Additionally, it manages inventory, tracks stock levels, and helps with reordering supplies. With features like employee management, sales reporting, and customer loyalty programs, a Restaurant POS system enhances efficiency, improves customer service, and provides valuable insights for better decision-makingand business growth.",
   },
   {
     heading:"QTrack",
-    order1:'order-2',
-    order2:'order-1',
+   
     img:'serviceimg-1',
     desc1:"A Queue Management System (QMS) is a technology solution designed to streamline customer flow in businesses or service centers by managing and organizing queues efficiently. It helps businesses minimize wait times, improve customer satisfaction, and enhance operational efficiency. The system uses digital signage, mobile apps, or ticket-based systems to guide customers through the process, alerting them when it's their turn. It can track the number of customers, monitor service times, and provide real-time data to optimize staffing. Additionally, QMS enables businesses to prioritize certain customers, manage appointments, and reduce congestion, creating a smoother and more organized experience for both customers and staff.",
   },
   {
     heading:"TradeEzy",
-    order1:'order-1',
-    order2:'order-2',
+
     img:'serviceimg-1',
     desc1:"A Sales and Inventory Management System is a software solution designed to streamline and automate the processes of tracking sales and managing inventory levels. It helps businesses maintain accurate records of stock, monitor product movement, and prevent stockouts or overstocking. The system provides real-time data on sales, inventory levels, and order status, allowing businesses to make informed decisions. It integrates sales transactions with inventory updates, automating the process and improving accuracy. Additionally, it supports reporting, reorder alerts, and supplier management, ensuring efficient stock replenishment and helping businesses optimize resources, reduce costs, and improve customer satisfaction.",
   },
