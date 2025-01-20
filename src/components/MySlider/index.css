@@ -1,0 +1,52 @@
+/* Default styling for dots */
+.custom-dot {
+    width: 8px; /* Default width for inactive dots */
+    height: 8px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded edges */
+    transition: all 0.3s ease; /* Smooth transition for width change */
+}
+
+/* Hover effect for dots */
+.custom-dot:hover {
+    background-color: black; /* Change color on hover */
+}
+
+/* Styling for active dots */
+.slick-dots li.slick-active .custom-dot {
+    padding: 5px; /* Wider width for the active dot */
+    background-color: gray; /* Optional: Change color for active dot */
+}
+
+
+
+/* Dots container */
+.slick-dots {
+
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important; /* Force flex display */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* This will now work with flex display */
+    width: auto; /* Remove any width constraints */
+    padding: 0; /* Remove any padding that might affect spacing */
+}
+
+/* Remove default styles from list items */
+.slick-dots li {
+    width: auto !important; /* Override any fixed width */
+    height: auto !important; /* Override any fixed height */
+    margin: 0 !important; /* Remove default margins */
+    padding: 0 !important; /* Remove default padding */
+}
+
+
+
+body{
+    overflow-x: hidden;
+}

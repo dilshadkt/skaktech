@@ -12,6 +12,8 @@ import { Careers } from "../careers";
 import ClientReviews from "../client-review";
 import Gallery from "../gallery";
 import LandingSecond from "../landing-sections";
+import MySlider from "../MySlider";
+
 
 
 
@@ -100,6 +102,9 @@ const LandingPage = () => {
       </section>
       <section className=" py-5 lg:py-16">
         <Registration />
+      </section>
+      <section>
+        <MySlider/>
       </section>
       {/* <section>
         <ul className=" overflow-x-hidden">

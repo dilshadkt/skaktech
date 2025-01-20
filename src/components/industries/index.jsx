@@ -20,10 +20,9 @@ export const Industries = () => {
   };
 
   return (
-    <div>
-      <h1 className=" text-[30px] sm:text-[40px] lg:text-[60px] text-center text-primary">
-        <span className=" font-medium">Industries</span>
-        <span className=" font-bold ml-2">we serve</span>
+    <div className="py-10">
+      <h1 className=" text-5xl text-center text-primary font-medium ">
+        Industries <span className="font-bold">We Serve</span>
       </h1>
       <div>
         <motion.ul
