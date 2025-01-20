@@ -92,7 +92,7 @@ const CardPage = () => {
                         <div className='bg-primary flex gap-2 items-center px-1 rounded-lg text-white' >
                             <button >Share</button>
                             <div className='' >
-                                <Image src={'/assets/images/card/plane.svg'} alt='logo' height={10} width={10} quality={100} className='h-4 w-4 object-contain' />
+                                <Image src={'/assets/images/card/Plane.svg'} alt='logo' height={10} width={10} quality={100} className='h-4 w-4 object-contain' />
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const CardPage = () => {
                             <div className='bg-primary flex gap-2 items-center px-1 rounded-lg text-white ' >
                                 <button >Share</button>
                                 <div className='' >
-                                    <Image src={'/assets/images/card/plane.svg'} alt='logo' height={10} width={10} quality={100} className='h-4 w-4 object-contain' />
+                                    <Image src={'/assets/images/card/Plane.svg'} alt='logo' height={10} width={10} quality={100} className='h-4 w-4 object-contain' />
                                 </div>
                             </div>
                         </div>))}
