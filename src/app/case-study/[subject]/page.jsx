@@ -34,7 +34,7 @@ const CaseStudy = () => {
             </div>
             <div className='px-5 md:px-10'>
                 <div className='-translate-y-20 xl:-translate-y-28 h-[50vh] xl:h-[90vh] w-full  rounded-2xl'>
-                    <Image src={'/assets/images/casestudyCenter.jpg'} alt='contentimg' width={1000} height={1000} quality={100} className='w-full h-full object-cover rounded-2xl'/>
+                    <Image src={'/assets/images/casestudyWarehouse.jpg'} alt='contentimg' width={1000} height={1000} quality={100} className='w-full h-full object-cover rounded-2xl'/>
                 </div>
                 <div className="flex flex-col  gap-5">
                     <div>
