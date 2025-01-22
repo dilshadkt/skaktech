@@ -3,6 +3,7 @@
 export const serviceData = [
     {
         heading:"Software Development",
+        id:"softwaredevelopment",
         order1:'order-1',
         order2:'order-2',
         img:'serviceimg-1',
@@ -25,6 +26,7 @@ export const serviceData = [
     },
     {
         heading:"Low-code development platform",
+        id:"lowcode",
         order1:'order-2',
         order2:'order-1',
         img:'serviceimg-2',
@@ -46,6 +48,7 @@ export const serviceData = [
     },
     {
         heading:"Robotic process automation (RPA)",
+        id:"robotics",
         order1:'order-1',
         order2:'order-2',
         img:'serviceimg-3',
@@ -67,6 +70,7 @@ export const serviceData = [
     },
     {
         heading:"Cloud computing services",
+        id:"cloudcomputing",
         order1:"order-2",
         order2:'order-1',
         img:'serviceimg-4',

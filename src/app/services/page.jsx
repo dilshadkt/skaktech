@@ -24,7 +24,7 @@ const Services = () => {
       </div>
 
       {/* about services  */}
-      {serviceData.map((item, index) => (<div key={index}>
+      {serviceData.map((item, index) => (<div key={index} id={item.id}>
         <div className="grid  md:grid-cols-2 px-5 md:px-10 lg:px-20 py-8 md:py-20 gap-10 items-center ">
           <div className={`${item.order1} h-[50vh] ` }>
             <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} className="h-full object-cover"/>

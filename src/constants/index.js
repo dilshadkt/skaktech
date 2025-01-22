@@ -272,15 +272,39 @@ export const products = [
 ]
 
 export const serviceDropDown = [
-  "Call Centre Outsourcing ",
-  "Helpdesk outsourcing ",
-  "Virtual IT partnering",
-  "Outsource Legacy Software Support",
-  "Software Development",
-  "Low-code development platform",
-  "Robotic process automation (RPA)",
-  "Cloud computing services"
-]
+  {
+    name: "Software Development",
+    id: "softwaredevelopment",
+  },
+  {
+    name: "Low-code development platform",
+    id: "lowcode",
+  },
+  {
+    name: "Robotic process automation (RPA)",
+    id: "robotics",
+  },
+  {
+    name: "Cloud computing services",
+    id: "cloudcomputing",
+  },
+  {
+    name: "Call Centre Outsourcing",
+    id: "callcentreoutsourcing",
+  },
+  {
+    name: "Helpdesk outsourcing",
+    id: "helpdeskoutsourcing",
+  },
+  {
+    name: "Virtual IT partnering",
+    id: "virtualitpartnering",
+  },
+  {
+    name: "Outsource Legacy Software Support",
+    id: "legacysoftwaresupport",
+  },
+];
 
 
 
