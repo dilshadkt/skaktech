@@ -12,26 +12,22 @@ const Services = () => {
 
   return (
     <section className="">
-
-
-
       <div>
         <HeaderBanner
           image={"/assets/images/Serviceimage.jpg"}
           title={"Our Services"}
-
         />
       </div>
 
       {/* about services  */}
       {serviceData.map((item, index) => (<div key={index} id={item.id}>
-        <div className="grid  md:grid-cols-2 px-5 md:px-10 lg:px-20 py-8 md:py-20 gap-10 items-center ">
-          <div className={`${item.order1} h-[50vh] ` }>
-            <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} className="h-full object-cover"/>
+        <div className="grid  xl:grid-cols-2 px-5 md:px-10 xl:px-20 py-8 xl:py-20 gap-10 items-stretch ">
+          <div className={`  ${index % 2 === 0 ? 'xl:order-1' : 'xl:order-2'} ` }>
+            <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} className="h-full w-full object-cover"/>
           </div>
           <div
-            className={`flex text-sm flex-col mt-4 md:mt-0 gap-y-2 md:gap-y-4  leading-7 md:leading-10 
-        md:text-base lg:text-lg ${item.order2}`}
+            className={`flex text-sm flex-col mt-4 md:mt-0 gap-y-2 md:gap-y-4  leading-7 lg:leading-10 
+        md:text-base lg:text-lg  justify-between  ${index % 2 === 0 ? 'xl:order-2' : 'xl:order-1'}`}
           >
             <h1 className="font-bold text-4xl">{item.heading}</h1>
             <p>
@@ -61,12 +57,10 @@ const Services = () => {
         </div>
       </div>))}
       <div className=" px-5 md:px-10 lg:px-12 2xl:px-16"> </div>
-
       <Technologies
         className={"text-primary"}
         iconClassName={`filter-primary`}
       />
-      
     </section>
   );
 };
