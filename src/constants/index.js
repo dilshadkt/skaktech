@@ -654,6 +654,6 @@ export const sliderItems = [
   },
   {
     id:4,
-    img:"productImg4"
+    img:"productimg4"
   },
 ]
