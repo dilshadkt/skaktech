@@ -1,0 +1,87 @@
+/* Reset default styles */
+.slick-dots {
+    display: flex !important;
+    width: 100% !important; /* Full width */
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    margin: 0 !important;
+    position: relative;
+    list-style: none;
+    gap: 5px !important; /* Remove gap as we want connected segments */
+}
+
+/* Style for dot items */
+.slick-dots li {
+    flex: 1 !important; /* Equal width distribution */
+    height: 6px !important; /* Height of the loader bar */
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    
+}
+
+/* Base dot style */
+.custom-dot {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #E5E7EB;
+     /* Light gray for inactive */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px; /* Remove border radius for connected look */
+    position: relative;
+    overflow: hidden; /* For loader animation */
+}
+
+
+
+/* Loader animation for active dot */
+.slick-dots li.slick-active .custom-dot::after {
+    content: '';
+    position: absolute;
+    height: 5px !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6B7280; /* Loader color */
+    animation: loadProgress 4s linear; /* Match this with your autoplaySpeed */
+}
+
+
+/* First and last segment border radius */
+.slick-dots li:first-child .custom-dot {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.slick-dots li:last-child .custom-dot {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* Loader animation keyframes */
+@keyframes loadProgress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Ensure body overflow control */
+body {
+    overflow-x: hidden;
+}
+
+/* Optional: Add separator lines between segments */
+.slick-dots li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    z-index: 1;
+}

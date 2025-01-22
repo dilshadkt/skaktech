@@ -6,10 +6,10 @@ import Link from 'next/link';
 
 const ProductList = () => {
   return (
-    <div>
+    <div className='py-5'>
         {allProductsData.map((item, index) => (<div key={index}>
                 <div className="grid  md:grid-cols-2 px-5 md:px-10 lg:px-20 py-8 md:py-20 gap-10 items-stretch ">
-                  <div className={`min-h-[40vh]  ${index % 2 === 0 ? 'xl:order-1' : 'xl:order-2'}` }>
+                  <div className={`h-[40vh]  ${index % 2 === 0 ? 'xl:order-1' : 'xl:order-2'}` }>
                     <Image src={`/assets/images/${item.img}.png`} alt="serviceimg" height={700} width={600} quality={100} className="h-full object-cover"/>
                   </div>
                   <div

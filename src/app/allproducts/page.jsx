@@ -1,14 +1,17 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import ProductList from '@/components/productList'
+import ProductSlider from '@/components/ProductSlider'
+
 
 const AllProducts = () => {
   return (
     <div>
-        <div className='px-5 py-14 xl:p-20 h-[60vh] xl:h-[100vh]'>
-            <Image src={'/assets/images/AllProductsBanner.jpg'} alt='banner' height={1000} width={1000} quality={100} className='h-full w-full object-cover rounded-2xl'/>
-        </div>
-        <ProductList/>
+            <div className='px-5 pt-14 xl:pt-20 xl:px-20  '>
+             <ProductSlider/>
+            </div>
+            <ProductList/>
     </div>
   )
 }

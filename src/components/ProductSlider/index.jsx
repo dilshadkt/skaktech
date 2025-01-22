@@ -1,16 +1,13 @@
-"use client"
 import React from 'react'
 import Slider from "react-slick";
-
+import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import OurCaseStudy from '../OurCaseStudy';
-import { sliderData } from '@/constants';
+import './index.css'
 
-import './indexx.css'
 
-const MySlider = () => {
-
+const ProductSlider = () => {
+    const sliderItems = Array.from({ length: 4 }, (_, index) => index);
     var settings = {
         dots: true,
         infinite: true,
@@ -24,19 +21,16 @@ const MySlider = () => {
             <div className="custom-dot "></div>
         ),
     };
-
     return (
         <div>
-            <h1 className='text-4xl md:text-5xl text-center text-[#268BBF] py-5 md:py-10 xl:py-20 font-medium'>Our <span className='font-bold'>Case Study</span></h1>
             <Slider {...settings}>
-                {sliderData.map((item) => (<div key={item.id}>
-                    <OurCaseStudy heading={item.heading} desc={item.desc} />
+                {sliderItems.map((item, index) => (<div key={index}>
+                    <div className=' h-[60vh] xl:h-[100vh] px-2 xl:px-5 rounded-2xl '>
+                        <Image src={'/assets/images/AllProductsBanner.jpg'} alt='banner' height={1000} width={1000} quality={100} className='h-full w-full object-cover rounded-2xl overflow-hidden bg-green-600' />
+                    </div>
                 </div>))}
             </Slider>
         </div>
-
-
     )
 }
-
-export default MySlider
+export default ProductSlider
