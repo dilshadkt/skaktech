@@ -638,3 +638,22 @@ export const sliderData = [
     desc:"A warehouse management system"
   },
 ]
+
+export const sliderItems = [
+  {
+    id:1,
+    img:"AllProductsBanner"
+  },
+  {
+    id:2,
+    img:"productImg2"
+  },
+  {
+    id:3,
+    img:"productImg3"
+  },
+  {
+    id:4,
+    img:"productImg4"
+  },
+]

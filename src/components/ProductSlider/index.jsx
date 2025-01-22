@@ -4,10 +4,11 @@ import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css'
+import { sliderItems } from '@/constants';
 
 
 const ProductSlider = () => {
-    const sliderItems = Array.from({ length: 4 }, (_, index) => index);
+    
     var settings = {
         dots: true,
         infinite: true,
@@ -24,9 +25,9 @@ const ProductSlider = () => {
     return (
         <div>
             <Slider {...settings}>
-                {sliderItems.map((item, index) => (<div key={index}>
+                {sliderItems.map((item) => (<div key={item.id}>
                     <div className=' h-[60vh] xl:h-[100vh] px-2 xl:px-5 rounded-2xl '>
-                        <Image src={'/assets/images/AllProductsBanner.jpg'} alt='banner' height={1000} width={1000} quality={100} className='h-full w-full object-cover rounded-2xl overflow-hidden bg-green-600' />
+                        <Image src={`/assets/images/${item.img}.jpg`} alt='banner' height={1000} width={1000} quality={100} className='h-full w-full object-cover rounded-2xl overflow-hidden bg-green-600' />
                     </div>
                 </div>))}
             </Slider>
